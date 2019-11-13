@@ -8,7 +8,7 @@ Needed : GTK+ 3.22</br>
 Have been test on : Debian Buster (10), Ubuntu 18.04.3 LTS, Linux Mint 19.2</br>
 Install themes : For a better result, Extract Archive File On Directory<i> /usr/share/themes (as root),</i> </br>
 If you install theme on local system, <i>/.themes or /.local/share/themes</i> may be GTK2 Theme not working properly.</br>
-Download themes : https://www.opendesktop.org/p/1258305/</br>
+Download themes : https://www.pling.com/p/1336259/</br>
 
 ## Change themes
 "This is the theme of gtk+ 3 and gtk+ 2. You can use it on Linux distributions in every desktop environment that supports it"</br>
