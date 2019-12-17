@@ -3554,6 +3554,10 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   color: #E8C4C8; }
   .thunar notebook .view .rubberband, .thunar notebook iconview .rubberband {
     background-color: rgba(85, 35, 32, 0.2); }
+.thunar notebook tab button image {
+  border-bottom: 2px solid transparent; }
+.thunar notebook tab button:hover image {
+  border-bottom: 2px solid red; }
 
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
