@@ -2124,8 +2124,11 @@ window.csd > .titlebar:not(headerbar) {
   border-style: none;
   border-color: transparent;
   box-shadow: none; }
-.titlebar:not(headerbar) separator {
-  background-color: #201d1d; }
+.titlebar:not(headerbar) separator, .titlebar:not(headerbar) separator:backdrop {
+  background-color: black; }
+
+headerbar separator.sidebar, headerbar separator.sidebar:backdrop, .titlebar separator.sidebar, .titlebar separator.sidebar:backdrop {
+  background-color: black; }
 
 window.devel headerbar.titlebar:not(.selection-mode) {
   background: #3a3636 cross-fade(10% -gtk-icontheme("system-run-symbolic"), image(transparent)) 90% 0/256px 256px no-repeat, linear-gradient(to right, transparent 65%, rgba(190, 59, 57, 0.1)), linear-gradient(to top, #282525 3px, #2d2a2a); }
@@ -2478,31 +2481,58 @@ notebook > header {
     notebook > header.bottom > tabs {
       margin-top: -2px; }
       notebook > header.bottom > tabs > tab:hover {
-        box-shadow: inset 0 4px #201d1d; }
+        box-shadow: none;
+        border-left-width: 2px;
+        border-top-left-radius: 20px;
+        border-left-color: #be3b39; }
       notebook > header.bottom > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.bottom > tabs > tab:checked {
-        box-shadow: inset 0 4px #be3b39; }
+        text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+        box-shadow: none;
+        border-left-width: 2px;
+        border-top-left-radius: 20px;
+        border-left-color: #be3b39; }
+        notebook > header.bottom > tabs > tab:checked:hover, notebook > header.bottom > tabs > tab:checked {
+          background-color: #444040; }
   notebook > header.left {
     border-right-style: solid; }
     notebook > header.left > tabs {
       margin-right: -2px; }
       notebook > header.left > tabs > tab:hover {
-        box-shadow: inset -4px 0 #201d1d; }
+        box-shadow: none;
+        border-left-width: 2px;
+        border-top-left-radius: 20px;
+        border-left-color: #be3b39; }
       notebook > header.left > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.left > tabs > tab:checked {
-        box-shadow: inset -4px 0 #be3b39; }
+        text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+        box-shadow: none;
+        border-left-width: 2px;
+        border-top-left-radius: 20px;
+        border-left-color: #be3b39; }
+        notebook > header.left > tabs > tab:checked:hover, notebook > header.left > tabs > tab:checked {
+          background-color: #444040; }
   notebook > header.right {
     border-left-style: solid; }
     notebook > header.right > tabs {
       margin-left: -2px; }
       notebook > header.right > tabs > tab:hover {
-        box-shadow: inset 4px 0 #201d1d; }
+        box-shadow: none;
+        border-left-width: 2px;
+        border-top-left-radius: 20px;
+        border-left-color: #be3b39; }
       notebook > header.right > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.right > tabs > tab:checked {
-        box-shadow: inset 4px 0 #be3b39; }
+        text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+        box-shadow: none;
+        border-left-width: 2px;
+        border-top-left-radius: 20px;
+        border-left-color: #be3b39; }
+        notebook > header.right > tabs > tab:checked:hover, notebook > header.right > tabs > tab:checked {
+          background-color: #444040; }
   notebook > header.top > tabs > arrow {
     border-top-style: none; }
   notebook > header.bottom > tabs > arrow {
@@ -4014,6 +4044,9 @@ separator {
   min-width: 1px;
   min-height: 1px; }
 
+hdyleaflet > separator {
+  background-color: #201d1d; }
+
 list {
   color: #e3dede;
   background-color: #444040;
@@ -4182,9 +4215,9 @@ stacksidebar row {
     background-size: 6px 6px, 0 0; }
 
 separator.sidebar {
-  background-color: #3f3c3c; }
+  background-color: #201d1d; }
   separator.sidebar:backdrop {
-    background-color: #3f3c3c; }
+    background-color: #201d1d; }
   separator.sidebar.selection-mode, .selection-mode separator.sidebar {
     background-color: #6f2321; }
 
@@ -4260,7 +4293,7 @@ paned > separator {
   -gtk-icon-source: none;
   border-style: none;
   background-color: transparent;
-  background-image: image(#322f2f);
+  background-image: image(#201d1d);
   background-size: 1px 1px; }
   paned > separator:selected {
     background-image: image(#be3b39); }
