@@ -1177,9 +1177,6 @@ button.circular {
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.07);
     border-color: transparent; }
 
-.linked button:first-child, .linked button:last-child, .linked button {
-  border-radius: 20px; }
-
 .stack-switcher > button.needs-attention > label,
 .stack-switcher > button.needs-attention > image, stacksidebar row.needs-attention > label {
   animation: needs_attention 150ms ease-in;
@@ -1270,24 +1267,16 @@ entry, .inline-toolbar button, .linked > button, filechooser .linked.path-bar bu
 toolbar.inline-toolbar toolbutton:first-child > button.flat, .linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) >
 entry:first-child, .inline-toolbar button:first-child, .linked > button:first-child, filechooser .path-bar.linked > button:dir(ltr):first-child, filechooser .path-bar.linked > button:dir(rtl):last-child, combobox.linked button:nth-child(2):dir(rtl), .linked:not(.vertical) > combobox:first-child > box > button.combo {
   border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
   -gtk-outline-top-left-radius: 20px;
-  -gtk-outline-top-right-radius: 20px;
-  -gtk-outline-bottom-left-radius: 20px;
-  -gtk-outline-bottom-right-radius: 20px; }
+  -gtk-outline-bottom-left-radius: 20px; }
 
 toolbar.inline-toolbar toolbutton:last-child > button.flat, .linked:not(.vertical) > spinbutton:last-child:not(.vertical), .linked:not(.vertical) >
 entry:last-child, .inline-toolbar button:last-child, .linked > button:last-child, filechooser .path-bar.linked > button:dir(ltr):last-child, filechooser .path-bar.linked > button:dir(rtl):first-child, combobox.linked button:nth-child(2):dir(ltr), .linked:not(.vertical) > combobox:last-child > box > button.combo {
   border-right-style: solid;
-  border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  -gtk-outline-top-left-radius: 20px;
   -gtk-outline-top-right-radius: 20px;
-  -gtk-outline-bottom-left-radius: 20px;
   -gtk-outline-bottom-right-radius: 20px; }
 
 filechooser .linked.path-bar button.image-button:last-child, filechooser .linked.path-bar button.text-button:last-child, filechooser .linked.path-bar button.slider-button:last-child, filechooser .linked.path-bar button.toggle:last-child, .nautilus-path-bar button:last-child {
@@ -1736,6 +1725,51 @@ searchbar > revealer > box {
     border-color: #a79999;
     background-image: image(#baaeae);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
+  .titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button),
+  headerbar .linked > button.toggle.popup:not(.disclosure-button) {
+    color: rgba(255, 255, 255, 0.6);
+    outline-color: rgba(255, 255, 255, 0);
+    border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 2px, transparent);
+    text-shadow: 0 -1px black;
+    -gtk-icon-shadow: 0 -1px black;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07); }
+    .titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):hover,
+    headerbar .linked > button.toggle.popup:not(.disclosure-button):hover {
+      color: rgba(255, 255, 255, 0.6);
+      outline-color: rgba(255, 255, 255, 0);
+      border-color: #220a0a;
+      border-bottom-color: black;
+      background-image: linear-gradient(to top, #491616, #4d1717 1px);
+      text-shadow: 0 -1px rgba(0, 0, 0, 0.8020392157);
+      -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8020392157);
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+      border-color: #0b0303; }
+    .titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):active,
+    headerbar .linked > button.toggle.popup:not(.disclosure-button):active {
+      outline-color: rgba(255, 255, 255, 0);
+      border-color: #c74646;
+      background-image: linear-gradient(to top, #c74646, #d36d6d 1px);
+      text-shadow: 0 -1px rgba(0, 0, 0, 0.5300392157);
+      -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.5300392157);
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.07);
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+      text-shadow: none;
+      -gtk-icon-shadow: none;
+      border-color: #0b0303; }
+      .titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):active label, .titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):active image, .titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):active,
+      headerbar .linked > button.toggle.popup:not(.disclosure-button):active label,
+      headerbar .linked > button.toggle.popup:not(.disclosure-button):active image,
+      headerbar .linked > button.toggle.popup:not(.disclosure-button):active {
+        color: rgba(255, 255, 255, 0.6); }
+    .titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):checked,
+    headerbar .linked > button.toggle.popup:not(.disclosure-button):checked {
+      background: image(#c74646);
+      border-color: black; }
+  .titlebar:not(headerbar) .linked button,
+  headerbar .linked button {
+    border-radius: 20px; }
   .titlebar:not(headerbar) stackswitcher button:hover, .titlebar:not(headerbar) stackswitcher button:checked,
   headerbar stackswitcher button:hover,
   headerbar stackswitcher button:checked {
