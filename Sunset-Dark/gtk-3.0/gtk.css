@@ -4148,6 +4148,8 @@ row {
     background-color: transparent; }
   row.activatable:selected:backdrop {
     background-color: transparent; }
+  row.activatable separator.vertical {
+    background-color: transparent; }
 
 list row.activatable {
   border: 1px solid transparent; }
