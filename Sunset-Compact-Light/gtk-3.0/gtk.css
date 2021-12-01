@@ -109,6 +109,17 @@ flowbox flowboxchild {
   padding: 3px; }
   flowbox flowboxchild:selected {
     outline-offset: -2px; }
+flowbox button.remove-button {
+  border-right: 1px solid rgba(199, 70, 70, 0.3); }
+  flowbox button.remove-button:hover {
+    border-right: 1px solid rgba(199, 70, 70, 0.6); }
+    flowbox button.remove-button:hover label, flowbox button.remove-button:hover image, flowbox button.remove-button:hover {
+      color: #ff8989; }
+  flowbox button.remove-button:active {
+    border-right: 1px solid #c74646;
+    background: image(rgba(0, 0, 0, 0.7)); }
+    flowbox button.remove-button:active label, flowbox button.remove-button:active image, flowbox button.remove-button:active {
+      color: #ff5151; }
 
 .content-view .tile {
   margin: 2px;
@@ -718,7 +729,7 @@ button.osd {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
     background-color: transparent;
-    background-image: image(rgba(0, 0, 0, 0.7));
+    background-image: image(#c74646);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -726,6 +737,11 @@ button.osd {
     outline-color: rgba(238, 238, 236, 0.3);
     border: none;
     box-shadow: none; }
+    button.osd:active label,
+    button.osd:active image,
+    button.osd:checked label,
+    button.osd:checked image {
+      color: #ffffff; }
   button.osd:disabled:backdrop,
   button.osd:disabled {
     color: #929291;
@@ -778,7 +794,7 @@ button.osd {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
     background-color: transparent;
-    background-image: image(rgba(0, 0, 0, 0.7));
+    background-image: image(#c74646);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -854,7 +870,7 @@ button.osd {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
       background-color: transparent;
-      background-image: image(rgba(0, 0, 0, 0.7));
+      background-image: image(#c74646);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -1096,7 +1112,7 @@ button.destructive-action {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
       background-color: transparent;
-      background-image: image(#e01b24);
+      background-image: image(#c74646);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -1578,7 +1594,7 @@ spinbutton {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
       background-color: transparent;
-      background-image: image(rgba(0, 0, 0, 0.7));
+      background-image: image(#c74646);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -3155,7 +3171,7 @@ check, radio {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
       background-color: transparent;
-      background-image: image(rgba(0, 0, 0, 0.7));
+      background-image: image(#c74646);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -3383,7 +3399,7 @@ scale {
         color: white;
         border-color: rgba(0, 0, 0, 0.7);
         background-color: transparent;
-        background-image: image(rgba(0, 0, 0, 0.7));
+        background-image: image(#c74646);
         background-clip: padding-box;
         box-shadow: none;
         text-shadow: none;
