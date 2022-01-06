@@ -1431,6 +1431,67 @@ list row button.image-button:not(.flat) {
     list row button.image-button:not(.flat):active label, list row button.image-button:not(.flat):active image, list row button.image-button:not(.flat):active, list row button.image-button:not(.flat):checked label, list row button.image-button:not(.flat):checked image, list row button.image-button:not(.flat):checked {
       color: #272121; }
 
+/*********
+ * Links *
+ *********/
+button:link,
+button:visited, button:link > label,
+button:visited > label, *:link {
+  color: #a73333; }
+  button:visited, button:link > label:visited,
+  button:visited > label:visited, *:link:visited {
+    color: #802727; }
+    *:selected button:visited, *:selected button:link > label:visited,
+    *:selected button:visited > label:visited,
+    *:selected *:link:visited {
+      color: #cca9a9; }
+  button:hover:link,
+  button:hover:visited, button:link > label:hover,
+  button:visited > label:hover, *:link:hover {
+    color: #c74646; }
+    *:selected button:hover:link,
+    *:selected button:hover:visited, *:selected button:link > label:hover,
+    *:selected button:visited > label:hover,
+    *:selected *:link:hover {
+      color: #f9eded; }
+  button:active:link,
+  button:active:visited, button:link > label:active,
+  button:visited > label:active, *:link:active {
+    color: #a73333; }
+    *:selected button:active:link,
+    *:selected button:active:visited, *:selected button:link > label:active,
+    *:selected button:visited > label:active,
+    *:selected *:link:active {
+      color: #edd6d6; }
+  button:disabled:link,
+  button:disabled:visited, button:link > label:disabled,
+  button:visited > label:disabled, button:disabled:backdrop:link,
+  button:disabled:backdrop:visited, button:link > label:disabled:backdrop,
+  button:visited > label:disabled:backdrop,
+  *:link:disabled,
+  *:link:disabled:backdrop {
+    color: rgba(109, 109, 109, 0.8); }
+  button:backdrop:backdrop:hover:link,
+  button:backdrop:backdrop:hover:visited, button:link > label:backdrop:backdrop:hover,
+  button:visited > label:backdrop:backdrop:hover, button:backdrop:backdrop:hover:selected:link,
+  button:backdrop:backdrop:hover:selected:visited, button:link > label:backdrop:backdrop:hover:selected,
+  button:visited > label:backdrop:backdrop:hover:selected, button:backdrop:link,
+  button:backdrop:visited, button:link > label:backdrop,
+  button:visited > label:backdrop,
+  *:link:backdrop:backdrop:hover,
+  *:link:backdrop:backdrop:hover:selected,
+  *:link:backdrop {
+    color: rgba(167, 51, 51, 0.9); }
+  .selection-mode .titlebar:not(headerbar) .subtitle:link, .selection-mode.titlebar:not(headerbar) .subtitle:link,
+  .selection-mode headerbar .subtitle:link, headerbar.selection-mode .subtitle:link, button:selected:link,
+  button:selected:visited, button:link > label:selected,
+  button:visited > label:selected, *:selected button:link,
+  *:selected button:visited, *:selected button:link > label,
+  *:selected button:visited > label,
+  *:link:selected,
+  *:selected *:link {
+    color: #edd6d6; }
+
 button:link,
 button:visited {
   text-shadow: none; }
@@ -5053,64 +5114,6 @@ headerbar button.minimize.titlebutton:active, headerbar button.maximize.titlebut
 headerbar button.minimize.titlebutton:backdrop image, headerbar button.minimize.titlebutton:backdrop, headerbar button.maximize.titlebutton:backdrop image, headerbar button.maximize.titlebutton:backdrop, headerbar button.close.titlebutton:backdrop image, headerbar button.close.titlebutton:backdrop {
   color: rgba(255, 255, 255, 0.2); }
 
-button:link,
-button:visited, button:link > label,
-button:visited > label, *:link {
-  color: #a73333; }
-  button:visited, button:link > label:visited,
-  button:visited > label:visited, *:link:visited {
-    color: #802727; }
-    *:selected button:visited, *:selected button:link > label:visited,
-    *:selected button:visited > label:visited,
-    *:selected *:link:visited {
-      color: #cca9a9; }
-  button:hover:link,
-  button:hover:visited, button:link > label:hover,
-  button:visited > label:hover, *:link:hover {
-    color: #c74646; }
-    *:selected button:hover:link,
-    *:selected button:hover:visited, *:selected button:link > label:hover,
-    *:selected button:visited > label:hover,
-    *:selected *:link:hover {
-      color: #f9eded; }
-  button:active:link,
-  button:active:visited, button:link > label:active,
-  button:visited > label:active, *:link:active {
-    color: #a73333; }
-    *:selected button:active:link,
-    *:selected button:active:visited, *:selected button:link > label:active,
-    *:selected button:visited > label:active,
-    *:selected *:link:active {
-      color: #edd6d6; }
-  button:disabled:link,
-  button:disabled:visited, button:link > label:disabled,
-  button:visited > label:disabled, button:disabled:backdrop:link,
-  button:disabled:backdrop:visited, button:link > label:disabled:backdrop,
-  button:visited > label:disabled:backdrop,
-  *:link:disabled,
-  *:link:disabled:backdrop {
-    color: rgba(109, 109, 109, 0.8); }
-  button:backdrop:backdrop:hover:link,
-  button:backdrop:backdrop:hover:visited, button:link > label:backdrop:backdrop:hover,
-  button:visited > label:backdrop:backdrop:hover, button:backdrop:backdrop:hover:selected:link,
-  button:backdrop:backdrop:hover:selected:visited, button:link > label:backdrop:backdrop:hover:selected,
-  button:visited > label:backdrop:backdrop:hover:selected, button:backdrop:link,
-  button:backdrop:visited, button:link > label:backdrop,
-  button:visited > label:backdrop,
-  *:link:backdrop:backdrop:hover,
-  *:link:backdrop:backdrop:hover:selected,
-  *:link:backdrop {
-    color: rgba(167, 51, 51, 0.9); }
-  .selection-mode .titlebar:not(headerbar) .subtitle:link, .selection-mode.titlebar:not(headerbar) .subtitle:link,
-  .selection-mode headerbar .subtitle:link, headerbar.selection-mode .subtitle:link, button:selected:link,
-  button:selected:visited, button:link > label:selected,
-  button:visited > label:selected, *:selected button:link,
-  *:selected button:visited, *:selected button:link > label,
-  *:selected button:visited > label,
-  *:link:selected,
-  *:selected *:link {
-    color: #edd6d6; }
-
 .nautilus-path-bar button.image-button, .nautilus-path-bar button.text-button, .nautilus-path-bar button {
   background: #421414 linear-gradient(to top, #3a1111, #451515);
   box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
@@ -5140,6 +5143,11 @@ event.slanted-end label, event.slanted-end {
   color: black; }
 event.slanted-end:backdrop label, event.slanted-end:backdrop {
   color: rgba(0, 0, 0, 0.5); }
+
+.thunar treeview.view {
+  box-shadow: none; }
+  .thunar treeview.view:selected {
+    border: none; }
 
 /* GTK NAMED COLORS
    ----------------
