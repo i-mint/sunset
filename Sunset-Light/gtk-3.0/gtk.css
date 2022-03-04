@@ -2154,6 +2154,45 @@ headerbar button.toggle:checked label,
 headerbar button.toggle:checked image {
   color: #ffffff;
 }
+.titlebar:not(headerbar) stackswitcher button:active .popup menuitem label, .titlebar:not(headerbar) stackswitcher button:active .popup menuitem, .titlebar:not(headerbar) stackswitcher button:checked .popup menuitem label, .titlebar:not(headerbar) stackswitcher button:checked .popup menuitem,
+.titlebar:not(headerbar) button.toggle:active .popup menuitem label,
+.titlebar:not(headerbar) button.toggle:active .popup menuitem,
+.titlebar:not(headerbar) button.toggle:checked .popup menuitem label,
+.titlebar:not(headerbar) button.toggle:checked .popup menuitem,
+headerbar stackswitcher button:active .popup menuitem label,
+headerbar stackswitcher button:active .popup menuitem,
+headerbar stackswitcher button:checked .popup menuitem label,
+headerbar stackswitcher button:checked .popup menuitem,
+headerbar button.toggle:active .popup menuitem label,
+headerbar button.toggle:active .popup menuitem,
+headerbar button.toggle:checked .popup menuitem label,
+headerbar button.toggle:checked .popup menuitem {
+  color: #272121;
+}
+.titlebar:not(headerbar) stackswitcher button:active .popup menuitem:hover, .titlebar:not(headerbar) stackswitcher button:checked .popup menuitem:hover,
+.titlebar:not(headerbar) button.toggle:active .popup menuitem:hover,
+.titlebar:not(headerbar) button.toggle:checked .popup menuitem:hover,
+headerbar stackswitcher button:active .popup menuitem:hover,
+headerbar stackswitcher button:checked .popup menuitem:hover,
+headerbar button.toggle:active .popup menuitem:hover,
+headerbar button.toggle:checked .popup menuitem:hover {
+  background-color: #c74646;
+}
+.titlebar:not(headerbar) stackswitcher button:active .popup menuitem:hover label, .titlebar:not(headerbar) stackswitcher button:active .popup menuitem:hover, .titlebar:not(headerbar) stackswitcher button:checked .popup menuitem:hover label, .titlebar:not(headerbar) stackswitcher button:checked .popup menuitem:hover,
+.titlebar:not(headerbar) button.toggle:active .popup menuitem:hover label,
+.titlebar:not(headerbar) button.toggle:active .popup menuitem:hover,
+.titlebar:not(headerbar) button.toggle:checked .popup menuitem:hover label,
+.titlebar:not(headerbar) button.toggle:checked .popup menuitem:hover,
+headerbar stackswitcher button:active .popup menuitem:hover label,
+headerbar stackswitcher button:active .popup menuitem:hover,
+headerbar stackswitcher button:checked .popup menuitem:hover label,
+headerbar stackswitcher button:checked .popup menuitem:hover,
+headerbar button.toggle:active .popup menuitem:hover label,
+headerbar button.toggle:active .popup menuitem:hover,
+headerbar button.toggle:checked .popup menuitem:hover label,
+headerbar button.toggle:checked .popup menuitem:hover {
+  color: #ffffff;
+}
 .titlebar:not(headerbar) stackswitcher button:backdrop,
 .titlebar:not(headerbar) button.toggle:backdrop,
 headerbar stackswitcher button:backdrop,
@@ -6514,6 +6553,24 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
 }
 .xfce4-panel wnck-pager:selected {
   background: #c74646;
+  box-shadow: none;
+  border: none;
+}
+
+.gedit-side-panel-paned .view:hover, .gedit-side-panel-paned iconview:hover {
+  background-color: rgba(39, 33, 33, 0.15);
+}
+.gedit-side-panel-paned .view:selected, .gedit-side-panel-paned iconview:selected, .gedit-side-panel-paned .view:selected:focus, .gedit-side-panel-paned .view:selected:hover {
+  background: image(#c74646);
+  border-color: #c74646;
+  box-shadow: none;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.gedit-side-panel-paned .view:selected label, .gedit-side-panel-paned iconview:selected label, .gedit-side-panel-paned .view:selected, .gedit-side-panel-paned iconview:selected, .gedit-side-panel-paned .view:selected:focus label, .gedit-side-panel-paned .view:selected:focus, .gedit-side-panel-paned .view:selected:hover label, .gedit-side-panel-paned .view:selected:hover {
+  color: #ffffff;
+}
+.gedit-side-panel-paned .view:selected:backdrop, .gedit-side-panel-paned iconview:selected:backdrop, .gedit-side-panel-paned .view:selected:focus:backdrop, .gedit-side-panel-paned .view:selected:hover:backdrop {
   box-shadow: none;
   border: none;
 }
