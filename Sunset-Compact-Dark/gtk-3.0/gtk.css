@@ -693,7 +693,7 @@ button:active,
 button:checked {
   outline-color: rgba(227, 222, 222, 0.3);
   border-color: #201d1d;
-  background-image: linear-gradient(to top, #151414, #3d3838 1px);
+  background-image: linear-gradient(to top, black, #222020 1px);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -1053,7 +1053,7 @@ button.suggested-action:active,
 button.suggested-action:checked {
   outline-color: rgba(255, 255, 255, 0.3);
   border-color: #be3b39;
-  background-image: linear-gradient(to top, #872a28, #c23c3a 1px);
+  background-image: linear-gradient(to top, #601e1d, #9a302e 1px);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.6611764706);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.6611764706);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -1221,7 +1221,7 @@ button.destructive-action:active,
 button.destructive-action:checked {
   outline-color: rgba(255, 255, 255, 0.3);
   border-color: #b2161d;
-  background-image: linear-gradient(to top, #730e12, #b7161d 1px);
+  background-image: linear-gradient(to top, #45080b, #8a1116 1px);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.7342745098);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7342745098);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -1471,7 +1471,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
 .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
   outline-color: rgba(227, 222, 222, 0.3);
   border-color: #201d1d;
-  background-image: linear-gradient(to top, #151414, #3d3838 1px);
+  background-image: linear-gradient(to top, black, #222020 1px);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -1587,7 +1587,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-radius: 20px;
 }
 
-row:selected, row.activatable:selected, row.activatable.has-open-popup, row.activatable:hover {
+.budgie-popover:not(.csd).budgie-menu .category-button:active, .budgie-popover:not(.csd).budgie-menu row button:active, .budgie-popover:not(.csd).budgie-menu list button:active, .budgie-menu .category-button:active, .budgie-menu row button:active, .budgie-popover:not(.csd).budgie-menu .category-button:selected, .budgie-popover:not(.csd).budgie-menu row button:selected, .budgie-popover:not(.csd).budgie-menu list button:selected, .budgie-menu .category-button:selected, .budgie-menu row button:selected, .budgie-popover:not(.csd).budgie-menu .category-button:checked, .budgie-popover:not(.csd).budgie-menu row button:checked, .budgie-popover:not(.csd).budgie-menu list button:checked, .budgie-menu .category-button:checked, .budgie-menu row button:checked, .budgie-menu row button:selected:hover, .budgie-menu row button:checked:hover, .budgie-popover:not(.csd).budgie-menu .category-button:hover, .budgie-popover:not(.csd).budgie-menu row button:hover, .budgie-popover:not(.csd).budgie-menu list button:hover, .budgie-menu .category-button:hover, .budgie-menu row button:hover, row:selected, row.activatable:selected, row.activatable.has-open-popup, row.activatable:hover {
   border-right-style: solid;
   border-top-left-radius: 0px;
   border-top-right-radius: 20px;
@@ -1697,7 +1697,7 @@ list row button.image-button:not(.flat):hover {
 list row button.image-button:not(.flat):active, list row button.image-button:not(.flat):checked {
   outline-color: rgba(227, 222, 222, 0.3);
   border-color: #201d1d;
-  background-image: linear-gradient(to top, #151414, #3d3838 1px);
+  background-image: linear-gradient(to top, black, #222020 1px);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -2217,7 +2217,7 @@ headerbar .linked > button.toggle.popup:not(.disclosure-button):hover {
 headerbar .linked > button.toggle.popup:not(.disclosure-button):active {
   outline-color: rgba(255, 255, 255, 0);
   border-color: #be3b39;
-  background-image: linear-gradient(to top, #872a28, #c23c3a 1px);
+  background-image: linear-gradient(to top, #601e1d, #9a302e 1px);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.6611764706);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.6611764706);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -2327,7 +2327,7 @@ headerbar.selection-mode button.toggle:checked,
 headerbar.selection-mode button.toggle:active {
   outline-color: rgba(255, 255, 255, 0.3);
   border-color: #be3b39;
-  background-image: linear-gradient(to top, #872a28, #c23c3a 1px);
+  background-image: linear-gradient(to top, #601e1d, #9a302e 1px);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.6611764706);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.6611764706);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -2485,7 +2485,7 @@ headerbar.selection-mode button.suggested-action:hover {
 headerbar.selection-mode button.suggested-action:active {
   outline-color: rgba(227, 222, 222, 0.3);
   border-color: #201d1d;
-  background-image: linear-gradient(to top, #151414, #3d3838 1px);
+  background-image: linear-gradient(to top, black, #222020 1px);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -3169,7 +3169,7 @@ popover.background button:not(.flat):not(.toggle):not(.switch):hover {
 popover.background button:not(.flat):not(.toggle):not(.switch):active, popover.background button:not(.flat):not(.toggle):not(.switch):checked, popover.background button:not(.flat):not(.toggle):not(.switch):selected {
   outline-color: rgba(255, 255, 255, 0.3);
   border-color: black;
-  background-image: linear-gradient(to top, #151414, #3d3838 1px);
+  background-image: linear-gradient(to top, black, #222020 1px);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -5685,7 +5685,7 @@ infobar.info button:hover, infobar.question button:hover, infobar.warning button
 infobar.info button:active, infobar.info button:checked, infobar.question button:active, infobar.question button:checked, infobar.warning button:active, infobar.warning button:checked, infobar.error button:active, infobar.error button:checked {
   outline-color: rgba(227, 222, 222, 0.3);
   border-color: #201d1d;
-  background-image: linear-gradient(to top, #151414, #3d3838 1px);
+  background-image: linear-gradient(to top, black, #222020 1px);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -6334,7 +6334,7 @@ headerbar button:hover {
 headerbar button:active {
   outline-color: rgba(255, 255, 255, 0);
   border-color: #be3b39;
-  background-image: linear-gradient(to top, #872a28, #c23c3a 1px);
+  background-image: linear-gradient(to top, #601e1d, #9a302e 1px);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.6611764706);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.6611764706);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -6376,7 +6376,7 @@ headerbar button.minimize.titlebutton:hover, headerbar button.maximize.titlebutt
 headerbar button.minimize.titlebutton:active, headerbar button.maximize.titlebutton:active, headerbar button.close.titlebutton:active {
   outline-color: rgba(255, 255, 255, 0);
   border-color: #be3b39;
-  background-image: linear-gradient(to top, #872a28, #c23c3a 1px);
+  background-image: linear-gradient(to top, #601e1d, #9a302e 1px);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.6611764706);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.6611764706);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -6390,6 +6390,700 @@ headerbar button.minimize.titlebutton:active label, headerbar button.minimize.ti
 }
 headerbar button.minimize.titlebutton:backdrop image, headerbar button.minimize.titlebutton:backdrop, headerbar button.maximize.titlebutton:backdrop image, headerbar button.maximize.titlebutton:backdrop, headerbar button.close.titlebutton:backdrop image, headerbar button.close.titlebutton:backdrop {
   color: rgba(255, 255, 255, 0.2);
+}
+
+.budgie-container {
+  background-color: transparent;
+  border: none;
+}
+.budgie-container:backdrop {
+  background: transparent;
+}
+
+.budgie-popover:not(.csd).budgie-menu .category-button, .budgie-popover:not(.csd).budgie-menu row button, .budgie-popover:not(.csd).budgie-menu list button, .budgie-menu .category-button, .budgie-menu row button {
+  background: image(transparent);
+  border: 1px solid transparent;
+  border-right-width: 2px;
+  border-radius: 4px;
+  box-shadow: none;
+}
+.budgie-popover:not(.csd).budgie-menu .category-button label, .budgie-popover:not(.csd).budgie-menu row button label, .budgie-popover:not(.csd).budgie-menu list button label, .budgie-menu .category-button label, .budgie-menu row button label, .budgie-popover:not(.csd).budgie-menu .category-button image, .budgie-popover:not(.csd).budgie-menu row button image, .budgie-popover:not(.csd).budgie-menu list button image, .budgie-menu .category-button image, .budgie-menu row button image, .budgie-popover:not(.csd).budgie-menu .category-button, .budgie-popover:not(.csd).budgie-menu row button, .budgie-popover:not(.csd).budgie-menu list button, .budgie-menu .category-button, .budgie-menu row button {
+  color: #e3dede;
+}
+.budgie-popover:not(.csd).budgie-menu .category-button:hover, .budgie-popover:not(.csd).budgie-menu row button:hover, .budgie-popover:not(.csd).budgie-menu list button:hover, .budgie-menu .category-button:hover, .budgie-menu row button:hover {
+  background: image(rgba(227, 222, 222, 0.08));
+  border: 1px solid #201d1d;
+  border-right-width: 2px;
+  box-shadow: none;
+}
+.budgie-popover:not(.csd).budgie-menu .category-button:hover label, .budgie-popover:not(.csd).budgie-menu row button:hover label, .budgie-popover:not(.csd).budgie-menu list button:hover label, .budgie-menu .category-button:hover label, .budgie-menu row button:hover label, .budgie-popover:not(.csd).budgie-menu .category-button:hover image, .budgie-popover:not(.csd).budgie-menu row button:hover image, .budgie-popover:not(.csd).budgie-menu list button:hover image, .budgie-menu .category-button:hover image, .budgie-menu row button:hover image, .budgie-popover:not(.csd).budgie-menu .category-button:hover, .budgie-popover:not(.csd).budgie-menu row button:hover, .budgie-popover:not(.csd).budgie-menu list button:hover, .budgie-menu .category-button:hover, .budgie-menu row button:hover {
+  color: #e3dede;
+}
+.budgie-popover:not(.csd).budgie-menu .category-button:active, .budgie-popover:not(.csd).budgie-menu row button:active, .budgie-popover:not(.csd).budgie-menu list button:active, .budgie-menu .category-button:active, .budgie-menu row button:active, .budgie-popover:not(.csd).budgie-menu .category-button:selected, .budgie-popover:not(.csd).budgie-menu row button:selected, .budgie-popover:not(.csd).budgie-menu list button:selected, .budgie-menu .category-button:selected, .budgie-menu row button:selected, .budgie-popover:not(.csd).budgie-menu .category-button:checked, .budgie-popover:not(.csd).budgie-menu row button:checked, .budgie-popover:not(.csd).budgie-menu list button:checked, .budgie-menu .category-button:checked, .budgie-menu row button:checked, .budgie-menu row button:selected:hover, .budgie-menu row button:checked:hover {
+  background: image(#3a3636);
+  border: 1px solid #222020;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: #be3b39;
+  font-weight: normal;
+}
+.budgie-popover:not(.csd).budgie-menu .category-button:active label, .budgie-popover:not(.csd).budgie-menu row button:active label, .budgie-popover:not(.csd).budgie-menu list button:active label, .budgie-menu .category-button:active label, .budgie-menu row button:active label, .budgie-popover:not(.csd).budgie-menu .category-button:active image, .budgie-popover:not(.csd).budgie-menu row button:active image, .budgie-popover:not(.csd).budgie-menu list button:active image, .budgie-menu .category-button:active image, .budgie-menu row button:active image, .budgie-popover:not(.csd).budgie-menu .category-button:active, .budgie-popover:not(.csd).budgie-menu row button:active, .budgie-popover:not(.csd).budgie-menu list button:active, .budgie-menu .category-button:active, .budgie-menu row button:active, .budgie-popover:not(.csd).budgie-menu .category-button:selected label, .budgie-popover:not(.csd).budgie-menu row button:selected label, .budgie-popover:not(.csd).budgie-menu list button:selected label, .budgie-menu .category-button:selected label, .budgie-menu row button:selected label, .budgie-popover:not(.csd).budgie-menu .category-button:selected image, .budgie-popover:not(.csd).budgie-menu row button:selected image, .budgie-popover:not(.csd).budgie-menu list button:selected image, .budgie-menu .category-button:selected image, .budgie-menu row button:selected image, .budgie-popover:not(.csd).budgie-menu .category-button:selected, .budgie-popover:not(.csd).budgie-menu row button:selected, .budgie-popover:not(.csd).budgie-menu list button:selected, .budgie-menu .category-button:selected, .budgie-menu row button:selected, .budgie-popover:not(.csd).budgie-menu .category-button:checked label, .budgie-popover:not(.csd).budgie-menu row button:checked label, .budgie-popover:not(.csd).budgie-menu list button:checked label, .budgie-menu .category-button:checked label, .budgie-menu row button:checked label, .budgie-popover:not(.csd).budgie-menu .category-button:checked image, .budgie-popover:not(.csd).budgie-menu row button:checked image, .budgie-popover:not(.csd).budgie-menu list button:checked image, .budgie-menu .category-button:checked image, .budgie-menu row button:checked image, .budgie-popover:not(.csd).budgie-menu .category-button:checked, .budgie-popover:not(.csd).budgie-menu row button:checked, .budgie-popover:not(.csd).budgie-menu list button:checked, .budgie-menu .category-button:checked, .budgie-menu row button:checked, .budgie-menu row button:selected:hover label, .budgie-menu row button:selected:hover image, .budgie-menu row button:selected:hover, .budgie-menu row button:checked:hover label, .budgie-menu row button:checked:hover image, .budgie-menu row button:checked:hover {
+  color: #e3dede;
+}
+
+.budgie-menu scrolledwindow,
+.budgie-menu list,
+.budgie-menu row,
+.budgie-menu scrollbar {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+.budgie-menu entry {
+  border-color: transparent;
+  border-bottom: 2px solid #be3b39;
+  border-radius: 0;
+  background: transparent;
+  padding: 9px 4px;
+  box-shadow: none;
+  caret-color: currentColor;
+}
+.budgie-menu entry label, .budgie-menu entry image, .budgie-menu entry {
+  color: #e3dede;
+}
+.budgie-menu .categories {
+  padding: 0 2px;
+}
+.budgie-menu .categories label, .budgie-menu .categories {
+  color: #e3dede;
+}
+.budgie-menu .category-button {
+  padding: 4px 6px;
+}
+.budgie-notification-window, .raven-background,
+.raven-frame,
+.raven,
+.raven-notifications-view > .raven-background > .frame > list, .budgie-popover:not(.csd).user-menu, .budgie-popover:not(.csd).places-menu, .budgie-popover:not(.csd).background {
+  background-image: linear-gradient(to bottom left, #423e3e, #433d3d, #443c3c);
+}
+.budgie-notification-window label, .raven-background label,
+.raven-frame label,
+.raven label,
+.raven-notifications-view > .raven-background > .frame > list label, .budgie-popover:not(.csd).user-menu label, .budgie-popover:not(.csd).places-menu label, .budgie-popover:not(.csd).background label {
+  color: #e3dede;
+}
+
+.budgie-popover:not(.csd).background {
+  border-radius: 4px;
+  background-clip: border-box;
+  border: none;
+  color: transparent;
+  box-shadow: 0 1px 9px 1px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+.budgie-popover:not(.csd) > frame.container,
+.budgie-popover:not(.csd) > frame.container > border {
+  border-style: none;
+  background: transparent;
+}
+.budgie-popover:not(.csd) list:hover label, .budgie-popover:not(.csd) list:hover, .budgie-popover:not(.csd) list:focus label, .budgie-popover:not(.csd) list:focus, .budgie-popover:not(.csd) list:active label, .budgie-popover:not(.csd) list:active, .budgie-popover:not(.csd) list:checked label, .budgie-popover:not(.csd) list:checked, .budgie-popover:not(.csd) list:selected label, .budgie-popover:not(.csd) list:selected, .budgie-popover:not(.csd) row:hover label, .budgie-popover:not(.csd) row:hover, .budgie-popover:not(.csd) row:focus label, .budgie-popover:not(.csd) row:focus, .budgie-popover:not(.csd) row:active label, .budgie-popover:not(.csd) row:active, .budgie-popover:not(.csd) row:checked label, .budgie-popover:not(.csd) row:checked, .budgie-popover:not(.csd) row:selected label, .budgie-popover:not(.csd) row:selected {
+  color: #e3dede;
+}
+.budgie-popover:not(.csd) list:backdrop, .budgie-popover:not(.csd) list:disabled, .budgie-popover:not(.csd) row:backdrop, .budgie-popover:not(.csd) row:disabled {
+  background: image(transparent);
+}
+.budgie-popover:not(.csd) .categories {
+  border-right: 1px solid rgba(227, 222, 222, 0.1);
+}
+.budgie-popover:not(.csd).user-menu row, .budgie-popover:not(.csd).user-menu list, .budgie-popover:not(.csd).places-menu row, .budgie-popover:not(.csd).places-menu list {
+  background: image(transparent);
+}
+.budgie-popover:not(.csd).user-menu row button, .budgie-popover:not(.csd).user-menu list button, .budgie-popover:not(.csd).places-menu row button, .budgie-popover:not(.csd).places-menu list button {
+  margin: 1px 0;
+  background: image(transparent);
+}
+.budgie-popover:not(.csd).user-menu row button:hover, .budgie-popover:not(.csd).user-menu list button:hover, .budgie-popover:not(.csd).places-menu row button:hover, .budgie-popover:not(.csd).places-menu list button:hover {
+  color: #e3dede;
+  outline-color: rgba(227, 222, 222, 0.3);
+  border-color: #201d1d;
+  border-bottom-color: #0a0a0a;
+  background-image: linear-gradient(to top, #373434, #3d3838 1px);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.budgie-popover:not(.csd).user-menu row button:active, .budgie-popover:not(.csd).user-menu list button:active, .budgie-popover:not(.csd).places-menu row button:active, .budgie-popover:not(.csd).places-menu list button:active {
+  outline-color: rgba(227, 222, 222, 0.3);
+  border-color: #201d1d;
+  background-image: linear-gradient(to top, black, #222020 1px);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.budgie-popover:not(.csd).user-menu row button:active label, .budgie-popover:not(.csd).user-menu row button:active image, .budgie-popover:not(.csd).user-menu row button:active, .budgie-popover:not(.csd).user-menu list button:active label, .budgie-popover:not(.csd).user-menu list button:active image, .budgie-popover:not(.csd).user-menu list button:active, .budgie-popover:not(.csd).places-menu row button:active label, .budgie-popover:not(.csd).places-menu row button:active image, .budgie-popover:not(.csd).places-menu row button:active, .budgie-popover:not(.csd).places-menu list button:active label, .budgie-popover:not(.csd).places-menu list button:active image, .budgie-popover:not(.csd).places-menu list button:active {
+  color: #e3dede;
+}
+.budgie-popover:not(.csd).budgie-menu row, .budgie-popover:not(.csd).budgie-menu list {
+  background: image(transparent);
+}
+.budgie-popover:not(.csd).budgie-menu row button, .budgie-popover:not(.csd).budgie-menu list button {
+  padding: 4px 6px;
+  margin: 1px 0 0 0;
+}
+.budgie-popover:not(.csd).budgie-menu .category-button {
+  margin: 3px 0 2px 0;
+}
+.budgie-popover:not(.csd).budgie-menu .category-button:first-child {
+  margin: 1px 0 2px 0;
+}
+.budgie-popover:not(.csd).workspace-popover button {
+  background: image(transparent);
+}
+.budgie-popover:not(.csd).workspace-popover button:hover {
+  color: #e3dede;
+  outline-color: rgba(227, 222, 222, 0.3);
+  border-color: #201d1d;
+  border-bottom-color: #0a0a0a;
+  background-image: linear-gradient(to top, #373434, #3d3838 1px);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.budgie-popover:not(.csd).workspace-popover button:active {
+  outline-color: rgba(227, 222, 222, 0.3);
+  border-color: #201d1d;
+  background-image: linear-gradient(to top, black, #222020 1px);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.budgie-popover:not(.csd).workspace-popover button:active label, .budgie-popover:not(.csd).workspace-popover button:active image, .budgie-popover:not(.csd).workspace-popover button:active {
+  color: #e3dede;
+}
+.budgie-popover:not(.csd) stack.icon-popover-stack {
+  padding: 2px;
+}
+.budgie-popover:not(.csd) stack.icon-popover-stack button {
+  background: image(transparent);
+}
+.budgie-popover:not(.csd) stack.icon-popover-stack button:hover {
+  color: #e3dede;
+  outline-color: rgba(227, 222, 222, 0.3);
+  border-color: #201d1d;
+  border-bottom-color: #0a0a0a;
+  background-image: linear-gradient(to top, #373434, #3d3838 1px);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.budgie-popover:not(.csd) stack.icon-popover-stack button:active {
+  outline-color: rgba(227, 222, 222, 0.3);
+  border-color: #201d1d;
+  background-image: linear-gradient(to top, black, #222020 1px);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.budgie-popover:not(.csd) stack.icon-popover-stack button:active label, .budgie-popover:not(.csd) stack.icon-popover-stack button:active image, .budgie-popover:not(.csd) stack.icon-popover-stack button:active {
+  color: #e3dede;
+}
+.budgie-popover:not(.csd) stack.clock-applet-stack button {
+  background: image(transparent);
+}
+.budgie-popover:not(.csd) stack.clock-applet-stack button:hover {
+  color: #e3dede;
+  outline-color: rgba(227, 222, 222, 0.3);
+  border-color: #201d1d;
+  border-bottom-color: #0a0a0a;
+  background-image: linear-gradient(to top, #373434, #3d3838 1px);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.budgie-popover:not(.csd) stack.clock-applet-stack button:active {
+  outline-color: rgba(227, 222, 222, 0.3);
+  border-color: #201d1d;
+  background-image: linear-gradient(to top, black, #222020 1px);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.budgie-popover:not(.csd) stack.clock-applet-stack button:active label, .budgie-popover:not(.csd) stack.clock-applet-stack button:active image, .budgie-popover:not(.csd) stack.clock-applet-stack button:active {
+  color: #e3dede;
+}
+
+.night-light-indicator .container {
+  padding: 4px 6px;
+}
+.night-light-indicator .view-header {
+  background: transparent;
+}
+.night-light-indicator button, .night-light-indicator button.display-settings-button {
+  background: image(transparent);
+}
+.night-light-indicator button:hover, .night-light-indicator button.display-settings-button:hover {
+  color: #e3dede;
+  outline-color: rgba(227, 222, 222, 0.3);
+  border-color: #201d1d;
+  border-bottom-color: #0a0a0a;
+  background-image: linear-gradient(to top, #373434, #3d3838 1px);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.night-light-indicator button:active, .night-light-indicator button.display-settings-button:active {
+  outline-color: rgba(227, 222, 222, 0.3);
+  border-color: #201d1d;
+  background-image: linear-gradient(to top, black, #222020 1px);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.night-light-indicator button:active label, .night-light-indicator button:active image, .night-light-indicator button:active, .night-light-indicator button.display-settings-button:active label, .night-light-indicator button.display-settings-button:active image, .night-light-indicator button.display-settings-button:active {
+  color: #e3dede;
+}
+.night-light-indicator spinbutton {
+  background: image(#444040);
+  color: #e3dede;
+  border-radius: 4px;
+  border: 1px solid #be3b39;
+}
+.night-light-indicator spinbutton button.up:hover, .night-light-indicator spinbutton button.up:active, .night-light-indicator spinbutton button.up {
+  border-radius: 0px 4px 4px 0px;
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+.night-light-indicator spinbutton button.down:hover, .night-light-indicator spinbutton button.down:active, .night-light-indicator spinbutton button.down {
+  border-radius: 0;
+  background: transparent;
+  border-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+.night-light-indicator spinbutton button.up:active, .night-light-indicator spinbutton button.down:active {
+  border-color: transparent;
+  border-color: transparent;
+}
+.night-light-indicator spinbutton button.up:active image, .night-light-indicator spinbutton button.up:active, .night-light-indicator spinbutton button.down:active image, .night-light-indicator spinbutton button.down:active {
+  color: #be3b39;
+}
+.night-light-indicator entry {
+  border-color: transparent;
+}
+.night-light-indicator entry:focus, .night-light-indicator entry {
+  background: transparent;
+  border-color: transparent;
+}
+.night-light-indicator entry selection {
+  background: #be3b39;
+  color: #ffffff;
+}
+.night-light-indicator button.combo {
+  padding: 2px 8px;
+  background: image(transparent);
+}
+.night-light-indicator button.combo:hover {
+  background: image(rgba(227, 222, 222, 0.1));
+  border-color: #201d1d;
+}
+
+.budgie-panel {
+  background: image(black);
+  box-shadow: none;
+  border: none;
+}
+.budgie-panel label, .budgie-panel image {
+  color: rgba(255, 255, 255, 0.4);
+}
+.budgie-panel button {
+  background: image(transparent);
+  box-shadow: none;
+  border-radius: 4px;
+  border: none;
+}
+.budgie-panel button label, .budgie-panel button image, .budgie-panel button {
+  color: rgba(255, 255, 255, 0.4);
+}
+.budgie-panel button:hover {
+  background: image(#230b0b);
+}
+.budgie-panel button:active, .budgie-panel button:checked, .budgie-panel button:selected {
+  background: image(#2f0f0e);
+  border: none;
+}
+.budgie-panel button:active label, .budgie-panel button:active image, .budgie-panel button:active, .budgie-panel button:checked label, .budgie-panel button:checked image, .budgie-panel button:checked, .budgie-panel button:selected label, .budgie-panel button:selected image, .budgie-panel button:selected {
+  color: rgba(255, 255, 255, 0.6);
+}
+.budgie-panel button#tasklist-button, .budgie-panel button.flat {
+  background: image(black);
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+.budgie-panel button#tasklist-button label, .budgie-panel button#tasklist-button image, .budgie-panel button.flat label, .budgie-panel button.flat image {
+  color: rgba(255, 255, 255, 0.4);
+}
+.top .budgie-panel button#tasklist-button, .top .budgie-panel button.flat {
+  border-top: 2px solid black;
+}
+.bottom .budgie-panel button#tasklist-button, .bottom .budgie-panel button.flat {
+  border-bottom: 2px solid black;
+}
+.left .budgie-panel button#tasklist-button, .left .budgie-panel button.flat {
+  border-left: 2px solid black;
+}
+.right .budgie-panel button#tasklist-button, .right .budgie-panel button.flat {
+  border-right: 2px solid black;
+}
+.budgie-panel button#tasklist-button:hover, .budgie-panel button.flat:hover {
+  background: image(black);
+}
+.top .budgie-panel button#tasklist-button:hover, .top .budgie-panel button.flat:hover {
+  border-top: 2px solid #872a28;
+}
+.bottom .budgie-panel button#tasklist-button:hover, .bottom .budgie-panel button.flat:hover {
+  border-bottom: 2px solid #872a28;
+}
+.left .budgie-panel button#tasklist-button:hover, .left .budgie-panel button.flat:hover {
+  border-left: 2px solid #872a28;
+}
+.right .budgie-panel button#tasklist-button:hover, .right .budgie-panel button.flat:hover {
+  border-right: 2px solid #872a28;
+}
+.budgie-panel button#tasklist-button:active label, .budgie-panel button#tasklist-button:active image, .budgie-panel button#tasklist-button:active, .budgie-panel button#tasklist-button:checked label, .budgie-panel button#tasklist-button:checked image, .budgie-panel button#tasklist-button:checked, .budgie-panel button#tasklist-button:selected label, .budgie-panel button#tasklist-button:selected image, .budgie-panel button#tasklist-button:selected, .budgie-panel button.flat:active label, .budgie-panel button.flat:active image, .budgie-panel button.flat:active, .budgie-panel button.flat:checked label, .budgie-panel button.flat:checked image, .budgie-panel button.flat:checked, .budgie-panel button.flat:selected label, .budgie-panel button.flat:selected image, .budgie-panel button.flat:selected {
+  color: rgba(255, 255, 255, 0.6);
+}
+.top .budgie-panel button#tasklist-button:active, .top .budgie-panel button#tasklist-button:checked, .top .budgie-panel button#tasklist-button:selected, .top .budgie-panel button.flat:active, .top .budgie-panel button.flat:checked, .top .budgie-panel button.flat:selected {
+  border-top: 2px solid #be3b39;
+  border-radius: 4px 4px 0 0;
+}
+.bottom .budgie-panel button#tasklist-button:active, .bottom .budgie-panel button#tasklist-button:checked, .bottom .budgie-panel button#tasklist-button:selected, .bottom .budgie-panel button.flat:active, .bottom .budgie-panel button.flat:checked, .bottom .budgie-panel button.flat:selected {
+  border-bottom: 2px solid #be3b39;
+  border-radius: 0 0 4px 4px;
+}
+.left .budgie-panel button#tasklist-button:active, .left .budgie-panel button#tasklist-button:checked, .left .budgie-panel button#tasklist-button:selected, .left .budgie-panel button.flat:active, .left .budgie-panel button.flat:checked, .left .budgie-panel button.flat:selected {
+  border-left: 2px solid #be3b39;
+  border-radius: 0 4px 4px 0;
+}
+.right .budgie-panel button#tasklist-button:active, .right .budgie-panel button#tasklist-button:checked, .right .budgie-panel button#tasklist-button:selected, .right .budgie-panel button.flat:active, .right .budgie-panel button.flat:checked, .right .budgie-panel button.flat:selected {
+  border-right: 2px solid #be3b39;
+  border-radius: 4px 0 0 4px;
+}
+.budgie-panel button#tasklist-button:active, .budgie-panel button#tasklist-button:checked, .budgie-panel button#tasklist-button:selected {
+  background: image(#2f0f0e);
+}
+.budgie-panel button.flat:active, .budgie-panel button.flat:checked, .budgie-panel button.flat:selected {
+  background: image(#471615);
+}
+.top .budgie-panel button.flat:active, .top .budgie-panel button.flat:checked, .top .budgie-panel button.flat:selected {
+  border-top: 2px solid #be3b39;
+  border-radius: 4px 4px 0 0;
+}
+.bottom .budgie-panel button.flat:active, .bottom .budgie-panel button.flat:checked, .bottom .budgie-panel button.flat:selected {
+  border-bottom: 2px solid #be3b39;
+  border-radius: 0 0 4px 4px;
+}
+.left .budgie-panel button.flat:active, .left .budgie-panel button.flat:checked, .left .budgie-panel button.flat:selected {
+  border-left: 2px solid #be3b39;
+  border-radius: 0 4px 4px 0;
+}
+.right .budgie-panel button.flat:active, .right .budgie-panel button.flat:checked, .right .budgie-panel button.flat:selected {
+  border-right: 2px solid #be3b39;
+  border-radius: 4px 0 0 4px;
+}
+.budgie-panel button.flat.running {
+  background: image(black);
+}
+.budgie-panel button.launcher, .budgie-panel button.flat.running {
+  border-radius: 0;
+}
+.top .budgie-panel button.launcher, .top .budgie-panel button.flat.running {
+  border-top: 2px solid black;
+}
+.bottom .budgie-panel button.launcher, .bottom .budgie-panel button.flat.running {
+  border-bottom: 2px solid black;
+}
+.left .budgie-panel button.launcher, .left .budgie-panel button.flat.running {
+  border-left: 2px solid black;
+}
+.right .budgie-panel button.launcher, .right .budgie-panel button.flat.running {
+  border-right: 2px solid black;
+}
+.top .budgie-panel button.launcher:hover, .top .budgie-panel button.flat.running:hover {
+  border-top: 2px solid #872a28;
+}
+.bottom .budgie-panel button.launcher:hover, .bottom .budgie-panel button.flat.running:hover {
+  border-bottom: 2px solid #872a28;
+}
+.left .budgie-panel button.launcher:hover, .left .budgie-panel button.flat.running:hover {
+  border-left: 2px solid #872a28;
+}
+.right .budgie-panel button.launcher:hover, .right .budgie-panel button.flat.running:hover {
+  border-right: 2px solid #872a28;
+}
+.budgie-panel button.launcher:checked, .budgie-panel button.launcher:selected, .budgie-panel button.flat.running:checked, .budgie-panel button.flat.running:selected {
+  background: black;
+  border-radius: 0;
+}
+.top .budgie-panel button.launcher:checked, .top .budgie-panel button.launcher:selected, .top .budgie-panel button.flat.running:checked, .top .budgie-panel button.flat.running:selected {
+  border-top: 2px solid #be3b39;
+}
+.bottom .budgie-panel button.launcher:checked, .bottom .budgie-panel button.launcher:selected, .bottom .budgie-panel button.flat.running:checked, .bottom .budgie-panel button.flat.running:selected {
+  border-bottom: 2px solid #be3b39;
+}
+.left .budgie-panel button.launcher:checked, .left .budgie-panel button.launcher:selected, .left .budgie-panel button.flat.running:checked, .left .budgie-panel button.flat.running:selected {
+  border-left: 2px solid #be3b39;
+}
+.right .budgie-panel button.launcher:checked, .right .budgie-panel button.launcher:selected, .right .budgie-panel button.flat.running:checked, .right .budgie-panel button.flat.running:selected {
+  border-right: 2px solid #be3b39;
+}
+.budgie-panel separator {
+  background: rgba(255, 255, 255, 0);
+}
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item {
+  background: #1b0908;
+  border-radius: 0;
+}
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item label, .budgie-panel .workspace-switcher .workspace-layout .workspace-item image {
+  color: rgba(255, 255, 255, 0.4);
+}
+.top .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  margin: 0 2px;
+}
+.bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  margin: 0 2px;
+}
+.left .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  margin: 2px 0;
+}
+.right .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  margin: 2px 0;
+}
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
+  background: image(#2f0f0e);
+}
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace button.workspace-icon-button {
+  background: transparent;
+  border: none;
+}
+.top .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
+  border-top: 2px solid #be3b39;
+  border-radius: 4px 4px 0 0;
+}
+.bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
+  border-bottom: 2px solid #be3b39;
+  border-radius: 0 0 4px 4px;
+}
+.left .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
+  border-left: 2px solid #be3b39;
+  border-radius: 4px 0 0 4px;
+}
+.right .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
+  border-right: 2px solid #be3b39;
+  border-radius: 0 4px 4px 0;
+}
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item button.workspace-icon-button {
+  padding: 4px;
+}
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item label.workspace-more-label {
+  font-weight: normal;
+  color: #ffffff;
+  opacity: 1;
+}
+.budgie-panel .workspace-switcher button.image-button.workspace-add-button {
+  background: black;
+  border-radius: 4px;
+}
+.budgie-panel .workspace-switcher button.image-button.workspace-add-button label, .budgie-panel .workspace-switcher button.image-button.workspace-add-button image {
+  color: rgba(255, 255, 255, 0.4);
+}
+.budgie-panel .workspace-switcher button.image-button.workspace-add-button:active {
+  background: #be3b39;
+  border: none;
+}
+.budgie-panel .workspace-switcher button.image-button.workspace-add-button:active label, .budgie-panel .workspace-switcher button.image-button.workspace-add-button:active image {
+  color: #ffffff;
+}
+.budgie-panel.transparent {
+  background: image(transparent);
+}
+.budgie-panel.transparent .workspace-layout .workspace-item,
+.budgie-panel.transparent .workspace-layout .workspace-item.current-workspace {
+  background: transparent;
+}
+.budgie-panel.transparent button.flat.running,
+.budgie-panel.transparent button.flat,
+.budgie-panel.transparent button.launcher,
+.budgie-panel.transparent button#tasklist-button,
+.budgie-panel.transparent button.image-button.workspace-add-button {
+  background: image(transparent);
+}
+.top .budgie-panel.transparent button.launcher, .top .budgie-panel.transparent button.flat, .top .budgie-panel.transparent button#tasklist-button {
+  border-top-color: transparent;
+}
+.bottom .budgie-panel.transparent button.launcher, .bottom .budgie-panel.transparent button.flat, .bottom .budgie-panel.transparent button#tasklist-button {
+  border-bottom-color: transparent;
+}
+.left .budgie-panel.transparent button.launcher, .left .budgie-panel.transparent button.flat, .left .budgie-panel.transparent button#tasklist-button {
+  border-left-color: transparent;
+}
+.right .budgie-panel.transparent button.launcher, .right .budgie-panel.transparent button.flat, .right .budgie-panel.transparent button#tasklist-button {
+  border-right-color: transparent;
+}
+.top .budgie-panel button.flat:not(.raven-trigger):not(.budgie-menu-launcher), .bottom .budgie-panel button.flat:not(.raven-trigger):not(.budgie-menu-launcher) {
+  padding: 0 4px;
+}
+.left .budgie-panel button.flat:not(.raven-trigger):not(.budgie-menu-launcher), .right .budgie-panel button.flat:not(.raven-trigger):not(.budgie-menu-launcher) {
+  padding: 2px 0;
+}
+
+.raven-background,
+.raven-header,
+.raven-frame,
+.raven,
+.raven-notifications-view > .raven-background > .frame > list {
+  border-radius: 4px;
+  box-shadow: none;
+}
+.raven-background label, .raven-background image, .raven-background,
+.raven-header label,
+.raven-header image,
+.raven-header,
+.raven-frame label,
+.raven-frame image,
+.raven-frame,
+.raven label,
+.raven image,
+.raven,
+.raven-notifications-view > .raven-background > .frame > list label,
+.raven-notifications-view > .raven-background > .frame > list image,
+.raven-notifications-view > .raven-background > .frame > list {
+  color: #e3dede;
+}
+
+.raven-frame > border {
+  border: none 0 transparent;
+  border-left: 0.2px solid #201d1d;
+  box-shadow: none;
+}
+
+.raven calendar.raven-calendar {
+  background: _solid(#3a3636);
+  color: #e3dede;
+  padding: 4px;
+  border-color: transparent;
+}
+.raven calendar.raven-calendar.button, .raven calendar.raven-calendar.button-focus {
+  background: transparent;
+}
+.raven calendar.raven-calendar:selected {
+  background: image(transparent);
+  color: #be3b39;
+}
+.raven button {
+  color: #e3dede;
+  outline-color: rgba(227, 222, 222, 0.3);
+  border-color: #201d1d;
+  border-bottom-color: #0a0a0a;
+  background-image: linear-gradient(to top, #353131 2px, #3a3636);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8243137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8243137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.raven button label {
+  color: inherit;
+}
+.raven button:hover {
+  color: #e3dede;
+  outline-color: rgba(227, 222, 222, 0.3);
+  border-color: #201d1d;
+  border-bottom-color: #0a0a0a;
+  background-image: linear-gradient(to top, #373434, #3d3838 1px);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.raven button:hover label {
+  color: inherit;
+}
+.raven button:active, .raven button:checked, .raven button:selected, .raven button:checked:hover, .raven button:selected:hover {
+  outline-color: rgba(227, 222, 222, 0.3);
+  border-color: #201d1d;
+  background-image: linear-gradient(to top, black, #222020 1px);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8723137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.raven button:active label, .raven button:active image, .raven button:active, .raven button:checked label, .raven button:checked image, .raven button:checked, .raven button:selected label, .raven button:selected image, .raven button:selected, .raven button:checked:hover label, .raven button:checked:hover image, .raven button:checked:hover, .raven button:selected:hover label, .raven button:selected:hover image, .raven button:selected:hover {
+  color: #e3dede;
+}
+.raven button:active label, .raven button:checked label, .raven button:selected label, .raven button:checked:hover label, .raven button:selected:hover label {
+  color: inherit;
+}
+
+.budgie-run-dialog {
+  border-radius: 4px;
+  border-color: #201d1d;
+}
+.budgie-run-dialog entry.search,
+.budgie-run-dialog entry.search:focus {
+  background: image(transparent);
+  padding: 9px 4px;
+  box-shadow: none;
+  border-radius: 4px;
+  border-color: #201d1d;
+  border-bottom: 2px solid #be3b39;
+}
+.budgie-run-dialog entry.search label, .budgie-run-dialog entry.search image, .budgie-run-dialog entry.search,
+.budgie-run-dialog entry.search:focus label,
+.budgie-run-dialog entry.search:focus image,
+.budgie-run-dialog entry.search:focus {
+  color: #e3dede;
+}
+.budgie-run-dialog entry.search image,
+.budgie-run-dialog entry.search:focus image {
+  padding: 0 9px;
+}
+.budgie-run-dialog list row:selected,
+.budgie-run-dialog list row:selected:hover {
+  background: image(rgba(227, 222, 222, 0.1));
+  border-color: #201d1d;
+}
+.budgie-run-dialog list row:selected label, .budgie-run-dialog list row:selected image, .budgie-run-dialog list row:selected,
+.budgie-run-dialog list row:selected:hover label,
+.budgie-run-dialog list row:selected:hover image,
+.budgie-run-dialog list row:selected:hover {
+  color: #e3dede;
+}
+
+.budgie-notification-window {
+  border-radius: 4px;
+  background-clip: border-box;
+}
+.budgie-notification-window button {
+  border-radius: 4px;
 }
 
 .nautilus-path-bar button.image-button, .nautilus-path-bar button.text-button, .nautilus-path-bar button {
