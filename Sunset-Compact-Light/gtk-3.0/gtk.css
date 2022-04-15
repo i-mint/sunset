@@ -1590,7 +1590,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-radius: 20px;
 }
 
-.budgie-popover:not(.csd).budgie-menu .category-button:active, .budgie-popover:not(.csd).budgie-menu row button:active, .budgie-popover:not(.csd).budgie-menu list button:active, .budgie-menu .category-button:active, .budgie-menu row button:active, .budgie-popover:not(.csd).budgie-menu .category-button:selected, .budgie-popover:not(.csd).budgie-menu row button:selected, .budgie-popover:not(.csd).budgie-menu list button:selected, .budgie-menu .category-button:selected, .budgie-menu row button:selected, .budgie-popover:not(.csd).budgie-menu .category-button:checked, .budgie-popover:not(.csd).budgie-menu row button:checked, .budgie-popover:not(.csd).budgie-menu list button:checked, .budgie-menu .category-button:checked, .budgie-menu row button:checked, .budgie-menu row button:selected:hover, .budgie-menu row button:checked:hover, .budgie-popover:not(.csd).budgie-menu .category-button:hover, .budgie-popover:not(.csd).budgie-menu row button:hover, .budgie-popover:not(.csd).budgie-menu list button:hover, .budgie-menu .category-button:hover, .budgie-menu row button:hover, row:selected, row.activatable:selected, row.activatable.has-open-popup, row.activatable:hover {
+.thunar .linked button:active, .thunar .linked button:checked, .thunar .linked button:hover, .thunar .sidebar .view:hover, .thunar .sidebar iconview:hover, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .budgie-popover:not(.csd).budgie-menu .category-button:active, .budgie-popover:not(.csd).budgie-menu row button:active, .budgie-popover:not(.csd).budgie-menu list button:active, .budgie-menu .category-button:active, .budgie-menu row button:active, .budgie-popover:not(.csd).budgie-menu .category-button:selected, .budgie-popover:not(.csd).budgie-menu row button:selected, .budgie-popover:not(.csd).budgie-menu list button:selected, .budgie-menu .category-button:selected, .budgie-menu row button:selected, .budgie-popover:not(.csd).budgie-menu .category-button:checked, .budgie-popover:not(.csd).budgie-menu row button:checked, .budgie-popover:not(.csd).budgie-menu list button:checked, .budgie-menu .category-button:checked, .budgie-menu row button:checked, .budgie-menu row button:selected:hover, .budgie-menu row button:checked:hover, .budgie-popover:not(.csd).budgie-menu .category-button:hover, .budgie-popover:not(.csd).budgie-menu row button:hover, .budgie-popover:not(.csd).budgie-menu list button:hover, .budgie-menu .category-button:hover, .budgie-menu row button:hover, row:selected, row.activatable:selected, row.activatable.has-open-popup, row.activatable:hover {
   border-right-style: solid;
   border-top-left-radius: 0px;
   border-top-right-radius: 20px;
@@ -6022,7 +6022,7 @@ headerbar.selection-mode button.titlebutton:backdrop,
   -gtk-icon-shadow: none;
 }
 
-.nautilus-window .sidebar-row:selected, flowbox flowboxchild:selected, modelbutton.flat:selected,
+.thunar .linked button:active, .thunar .linked button:checked, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .nautilus-window .sidebar-row:selected, flowbox flowboxchild:selected, modelbutton.flat:selected,
 .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, row.activatable:selected, calendar:selected {
   color: #272121;
   outline-color: rgba(39, 33, 33, 0.3);
@@ -6035,20 +6035,20 @@ headerbar.selection-mode button.titlebutton:backdrop,
   text-shadow: 0 1px rgba(0, 0, 0, 0.4);
   -gtk-icon-shadow: none;
 }
-label:selected, .selection-mode button.titlebutton, .nautilus-window .sidebar-row:selected, flowbox flowboxchild:selected, modelbutton.flat:selected,
+label:selected, .selection-mode button.titlebutton, .thunar .linked button:active, .thunar .linked button:checked, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .nautilus-window .sidebar-row:selected, flowbox flowboxchild:selected, modelbutton.flat:selected,
 .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, row.activatable:selected, calendar:selected {
   color: #272121;
 }
-label:disabled selection, label:disabled:selected, .selection-mode button.titlebutton:disabled, .nautilus-window .sidebar-row:disabled:selected, flowbox flowboxchild:disabled:selected, modelbutton.flat:disabled:selected,
+label:disabled selection, label:disabled:selected, .selection-mode button.titlebutton:disabled, .thunar .linked button:disabled:active, .thunar .linked button:disabled:checked, .thunar .sidebar .view:disabled:selected, .thunar .sidebar iconview:disabled:selected, .nautilus-window .sidebar-row:disabled:selected, flowbox flowboxchild:disabled:selected, modelbutton.flat:disabled:selected,
 .menuitem.button.flat:disabled:selected, treeview.view:disabled:selected, row:disabled:selected, calendar:disabled:selected {
   color: #787171;
 }
 
-label:backdrop selection, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, .nautilus-window .sidebar-row:backdrop:selected, flowbox flowboxchild:backdrop:selected, modelbutton.flat:backdrop:selected,
+label:backdrop selection, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, .thunar .linked button:backdrop:active, .thunar .linked button:backdrop:checked, .thunar .sidebar .view:backdrop:selected, .thunar .sidebar iconview:backdrop:selected, .nautilus-window .sidebar-row:backdrop:selected, flowbox flowboxchild:backdrop:selected, modelbutton.flat:backdrop:selected,
 .menuitem.button.flat:backdrop:selected, treeview.view:backdrop:selected, row:backdrop:selected, calendar:backdrop:selected {
   color: #787171;
 }
-label:backdrop selection:disabled, label:backdrop:disabled:selected, .selection-mode button.titlebutton:backdrop:disabled, .nautilus-window .sidebar-row:backdrop:disabled:selected, flowbox flowboxchild:backdrop:disabled:selected, modelbutton.flat:backdrop:disabled:selected,
+label:backdrop selection:disabled, label:backdrop:disabled:selected, .selection-mode button.titlebutton:backdrop:disabled, .thunar .linked button:backdrop:disabled:active, .thunar .linked button:backdrop:disabled:checked, .thunar .sidebar .view:backdrop:disabled:selected, .thunar .sidebar iconview:backdrop:disabled:selected, .nautilus-window .sidebar-row:backdrop:disabled:selected, flowbox flowboxchild:backdrop:disabled:selected, modelbutton.flat:backdrop:disabled:selected,
 .menuitem.button.flat:backdrop:disabled:selected, treeview.view:backdrop:disabled:selected, row:backdrop:disabled:selected, calendar:backdrop:disabled:selected {
   color: #b1a8a8;
 }
@@ -6509,7 +6509,7 @@ headerbar button.minimize.titlebutton:backdrop image, headerbar button.minimize.
   background-clip: border-box;
   border: none;
   color: transparent;
-  box-shadow: 0 1px 9px 1px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 .budgie-popover:not(.csd) > frame.container,
 .budgie-popover:not(.csd) > frame.container > border {
@@ -7155,6 +7155,94 @@ event.slanted-end label, event.slanted-end {
 }
 event.slanted-end:backdrop label, event.slanted-end:backdrop {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.thunar .sidebar .view, .thunar .sidebar iconview {
+  background: #dcd4d4;
+}
+.thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover {
+  border-right: 2px solid #c74646;
+  box-shadow: none;
+}
+.thunar .sidebar .view:hover, .thunar .sidebar iconview:hover {
+  background-color: rgba(39, 33, 33, 0.1);
+  box-shadow: none;
+}
+.thunar .linked button {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  border: 1px solid transparent;
+  border-right: 2px solid transparent;
+}
+.thunar .linked button:hover {
+  background-color: rgba(39, 33, 33, 0.1);
+  box-shadow: none;
+  border: 1px solid transparent;
+  border-right: 2px solid transparent;
+}
+.thunar .linked button:active, .thunar .linked button:checked {
+  box-shadow: none;
+  border: 1px solid #9f8f8f;
+  border-right: 2px solid #c74646;
+  text-shadow: none;
+}
+.thunar .linked button:active:backdrop, .thunar .linked button:checked:backdrop {
+  opacity: 0.4;
+}
+.thunar menubar, .thunar toolbar {
+  background: transparent;
+}
+
+.panel.xfce4-panel {
+  background-color: #160707;
+  color: rgba(255, 255, 255, 0.6);
+}
+.panel.xfce4-panel label, .panel.xfce4-panel image {
+  color: inherit;
+}
+.panel.xfce4-panel button.toggle, .panel.xfce4-panel button.flat {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+.panel.xfce4-panel button.toggle:hover, .panel.xfce4-panel button.flat:hover {
+  color: white;
+}
+.panel.xfce4-panel button.toggle:active, .panel.xfce4-panel button.flat:active {
+  background: #3a1111;
+  color: white;
+}
+.panel.xfce4-panel button.toggle:active label, .panel.xfce4-panel button.toggle:active image, .panel.xfce4-panel button.flat:active label, .panel.xfce4-panel button.flat:active image {
+  color: inherit;
+}
+.panel.xfce4-panel button.toggle:checked, .panel.xfce4-panel button.toggle:checked:focus, .panel.xfce4-panel button.toggle:checked:hover, .panel.xfce4-panel button.flat:checked, .panel.xfce4-panel button.flat:checked:focus, .panel.xfce4-panel button.flat:checked:hover {
+  background: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid #c74646;
+  box-shadow: none;
+}
+.panel.xfce4-panel button.toggle:checked label, .panel.xfce4-panel button.toggle:checked image, .panel.xfce4-panel button.toggle:checked:focus label, .panel.xfce4-panel button.toggle:checked:focus image, .panel.xfce4-panel button.toggle:checked:hover label, .panel.xfce4-panel button.toggle:checked:hover image, .panel.xfce4-panel button.flat:checked label, .panel.xfce4-panel button.flat:checked image, .panel.xfce4-panel button.flat:checked:focus label, .panel.xfce4-panel button.flat:checked:focus image, .panel.xfce4-panel button.flat:checked:hover label, .panel.xfce4-panel button.flat:checked:hover image {
+  color: inherit;
+}
+.panel.xfce4-panel button.toggle:backdrop, .panel.xfce4-panel button.flat:backdrop {
+  opacity: 0.6;
+}
+.panel.xfce4-panel wnck-pager {
+  background: #611d1d;
+}
+.panel.xfce4-panel wnck-pager:hover {
+  background: rgba(199, 70, 70, 0.4);
+}
+.panel.xfce4-panel wnck-pager:selected {
+  background: #c74646;
+  box-shadow: none;
+  border: none;
 }
 
 .gedit-side-panel-paned .view:hover, .gedit-side-panel-paned iconview:hover {
