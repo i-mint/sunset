@@ -1528,7 +1528,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 
-.linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .nautilus-path-bar button.image-button, .nautilus-path-bar button.text-button, .nautilus-path-bar button, filechooser .linked.path-bar button.image-button, filechooser .linked.path-bar button.text-button, filechooser .linked.path-bar button.slider-button, filechooser .linked.path-bar button.toggle, .linked:not(.vertical) > spinbutton:not(.vertical),
+.linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .nautilus-path-bar button:not(.popup).image-button, .nautilus-path-bar button:not(.popup).text-button, .nautilus-path-bar button:not(.popup), filechooser .linked.path-bar button.image-button, filechooser .linked.path-bar button.text-button, filechooser .linked.path-bar button.slider-button, filechooser .linked.path-bar button.toggle, .linked:not(.vertical) > spinbutton:not(.vertical),
 .linked:not(.vertical) > entry,
 .inline-toolbar button,
 .linked > button, toolbar.inline-toolbar toolbutton > button.flat {
@@ -1558,7 +1558,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-bottom-right-radius: 20px;
 }
 
-.nautilus-path-bar button:last-child, filechooser .linked.path-bar button.image-button:last-child, filechooser .linked.path-bar button.text-button:last-child, filechooser .linked.path-bar button.slider-button:last-child, filechooser .linked.path-bar button.toggle:last-child {
+.nautilus-path-bar button:last-child:not(.popup), filechooser .linked.path-bar button.image-button:last-child, filechooser .linked.path-bar button.text-button:last-child, filechooser .linked.path-bar button.slider-button:last-child, filechooser .linked.path-bar button.toggle:last-child {
   border-right-style: solid;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -1570,7 +1570,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-bottom-right-radius: 20px;
 }
 
-.nautilus-path-bar button:first-child, filechooser .linked.path-bar button.image-button:first-child, filechooser .linked.path-bar button.text-button:first-child, filechooser .linked.path-bar button.slider-button:first-child, filechooser .linked.path-bar button.toggle:first-child {
+.nautilus-path-bar button:first-child:not(.popup), filechooser .linked.path-bar button.image-button:first-child, filechooser .linked.path-bar button.text-button:first-child, filechooser .linked.path-bar button.slider-button:first-child, filechooser .linked.path-bar button.toggle:first-child {
   border-top-left-radius: 20px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1581,7 +1581,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-bottom-right-radius: 0px;
 }
 
-.linked:not(.vertical) > combobox:only-child > box > button.combo, filechooser .path-bar.linked > button:only-child, .nautilus-path-bar button:only-child, filechooser .linked.path-bar button.image-button:only-child, filechooser .linked.path-bar button.text-button:only-child, filechooser .linked.path-bar button.slider-button:only-child, filechooser .linked.path-bar button.toggle:only-child, .linked:not(.vertical) > spinbutton:only-child:not(.vertical),
+.linked:not(.vertical) > combobox:only-child > box > button.combo, filechooser .path-bar.linked > button:only-child, .nautilus-path-bar button:only-child:not(.popup), filechooser .linked.path-bar button.image-button:only-child, filechooser .linked.path-bar button.text-button:only-child, filechooser .linked.path-bar button.slider-button:only-child, filechooser .linked.path-bar button.toggle:only-child, .linked:not(.vertical) > spinbutton:only-child:not(.vertical),
 .linked:not(.vertical) > entry:only-child,
 .inline-toolbar button:only-child,
 .linked > button:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat {
@@ -7117,27 +7117,48 @@ headerbar button.minimize.titlebutton:backdrop image, headerbar button.minimize.
   border-radius: 4px;
 }
 
-.nautilus-path-bar button.image-button, .nautilus-path-bar button.text-button, .nautilus-path-bar button {
+.nautilus-path-bar button:not(.popup).image-button, .nautilus-path-bar button:not(.popup).text-button, .nautilus-path-bar button:not(.popup) {
   background: #421414 linear-gradient(to top, #3a1111, #451515);
   box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
   color: rgba(255, 255, 255, 0.6);
   border-color: #421414;
   transition: 0s;
 }
-.nautilus-path-bar button.image-button:last-child, .nautilus-path-bar button.text-button:last-child, .nautilus-path-bar button:last-child {
+.nautilus-path-bar button:not(.popup).image-button:last-child, .nautilus-path-bar button:not(.popup).text-button:last-child, .nautilus-path-bar button:not(.popup):last-child {
   color: white;
 }
-.nautilus-path-bar button.image-button:backdrop, .nautilus-path-bar button.text-button:backdrop, .nautilus-path-bar button:backdrop {
+.nautilus-path-bar button:not(.popup).image-button:backdrop, .nautilus-path-bar button:not(.popup).text-button:backdrop, .nautilus-path-bar button:not(.popup):backdrop {
   background: #1a0d0d linear-gradient(to top, #140a0a, #1e0f0f);
   box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
   border-color: #1a0d0d;
 }
-.nautilus-path-bar button.image-button:hover, .nautilus-path-bar button.text-button:hover, .nautilus-path-bar button:hover {
+.nautilus-path-bar button:not(.popup).image-button:hover, .nautilus-path-bar button:not(.popup).text-button:hover, .nautilus-path-bar button:not(.popup):hover {
   color: white;
 }
 
 .nautilus-window .sidebar-row:selected {
   border-right: 2px solid #c74646;
+}
+
+.horizontal.path-buttons-box {
+  background: image(transparent);
+}
+.horizontal.path-buttons-box button {
+  background: image(transparent);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.horizontal.path-buttons-box button:not(.current-dir):hover label,
+.horizontal.path-buttons-box button:not(.current-dir):hover image, .horizontal.path-buttons-box button:not(.current-dir):hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+.horizontal.path-buttons-box button.current-dir {
+  background: transparent;
+  color: white;
+  border-color: #421414;
+  transition: 0s;
+  border-radius: 20px 0 0 0;
 }
 
 .tweak-group row.activatable, .tweak row.activatable {
