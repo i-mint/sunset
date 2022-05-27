@@ -7075,16 +7075,17 @@ headerbar button.minimize.titlebutton:backdrop image, headerbar button.minimize.
 }
 
 .budgie-run-dialog {
-  border-radius: 4px;
+  border-radius: 20px 20px 0 0;
   border-color: #9f8f8f;
+  background: image(transparent);
 }
 .budgie-run-dialog entry.search,
 .budgie-run-dialog entry.search:focus {
   background: image(transparent);
   padding: 9px 4px;
   box-shadow: none;
-  border-radius: 4px;
-  border-color: #9f8f8f;
+  border-radius: 0;
+  border-color: transparent;
   border-bottom: 2px solid #c74646;
 }
 .budgie-run-dialog entry.search label, .budgie-run-dialog entry.search image, .budgie-run-dialog entry.search,
@@ -7101,6 +7102,7 @@ headerbar button.minimize.titlebutton:backdrop image, headerbar button.minimize.
 .budgie-run-dialog list row:selected:hover {
   background: image(rgba(39, 33, 33, 0.1));
   border-color: #9f8f8f;
+  border-radius: 99px;
 }
 .budgie-run-dialog list row:selected label, .budgie-run-dialog list row:selected image, .budgie-run-dialog list row:selected,
 .budgie-run-dialog list row:selected:hover label,
