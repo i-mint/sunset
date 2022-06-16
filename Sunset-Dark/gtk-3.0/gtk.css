@@ -1525,7 +1525,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 
-.linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .nautilus-path-bar button:not(.popup).image-button, .nautilus-path-bar button:not(.popup).text-button, .nautilus-path-bar button:not(.popup), filechooser .linked.path-bar button.image-button, filechooser .linked.path-bar button.text-button, filechooser .linked.path-bar button.slider-button, filechooser .linked.path-bar button.toggle, .linked:not(.vertical) > spinbutton:not(.vertical),
+.linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .nautilus-path-bar button:not(.popup).image-button, .nautilus-path-bar button:not(.popup).text-button, .nautilus-path-bar button:not(.popup), filechooser .linked.path-bar button.image-button, filechooser .linked.path-bar button.text-button, filechooser .linked.path-bar button.slider-button, filechooser .linked.path-bar button.toggle, .raven .linked:not(.vertical) button, .linked:not(.vertical) > spinbutton:not(.vertical),
 .linked:not(.vertical) > entry,
 .inline-toolbar button,
 .linked > button, toolbar.inline-toolbar toolbutton > button.flat {
@@ -1534,7 +1534,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-radius: 0;
 }
 
-.linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
+.linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .raven .linked:not(.vertical) button:first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
 .linked:not(.vertical) > entry:first-child,
 .inline-toolbar button:first-child,
 .linked > button:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
@@ -1544,7 +1544,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-bottom-left-radius: 20px;
 }
 
-.linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
+.linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .raven .linked:not(.vertical) button:last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
 .linked:not(.vertical) > entry:last-child,
 .inline-toolbar button:last-child,
 .linked > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
@@ -1578,7 +1578,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-bottom-right-radius: 0px;
 }
 
-.linked:not(.vertical) > combobox:only-child > box > button.combo, filechooser .path-bar.linked > button:only-child, .nautilus-path-bar button:only-child:not(.popup), filechooser .linked.path-bar button.image-button:only-child, filechooser .linked.path-bar button.text-button:only-child, filechooser .linked.path-bar button.slider-button:only-child, filechooser .linked.path-bar button.toggle:only-child, .linked:not(.vertical) > spinbutton:only-child:not(.vertical),
+.linked:not(.vertical) > combobox:only-child > box > button.combo, filechooser .path-bar.linked > button:only-child, .nautilus-path-bar button:only-child:not(.popup), filechooser .linked.path-bar button.image-button:only-child, filechooser .linked.path-bar button.text-button:only-child, filechooser .linked.path-bar button.slider-button:only-child, filechooser .linked.path-bar button.toggle:only-child, .raven .linked:not(.vertical) button:only-child, .linked:not(.vertical) > spinbutton:only-child:not(.vertical),
 .linked:not(.vertical) > entry:only-child,
 .inline-toolbar button:only-child,
 .linked > button:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat {
@@ -6316,10 +6316,13 @@ headerbar .linked:not(.vertical) entry.search:focus label, headerbar .linked:not
   color: #ffffff;
 }
 
-.linked:not(.vertical):last-child button.radio {
-  border-radius: 20px;
+/*
+// linked button radio (gnome screenshot)
+.linked:not(.vertical):last-child button {
+  &.radio { border-radius: $button_radius; }
 }
 
+remove in 1.3.4 */
 headerbar button:hover {
   color: rgba(255, 255, 255, 0.6);
   outline-color: rgba(255, 255, 255, 0);
@@ -6997,7 +7000,9 @@ headerbar button.minimize.titlebutton:backdrop image, headerbar button.minimize.
 }
 .raven calendar.raven-calendar:selected {
   background: image(transparent);
-  color: #be3b39;
+  color: #ffffff;
+  text-shadow: none;
+  box-shadow: inset 0 16px 0 0 #be3b39;
 }
 .raven button {
   color: #e3dede;
@@ -7042,20 +7047,15 @@ headerbar button.minimize.titlebutton:backdrop image, headerbar button.minimize.
 .raven button:active label, .raven button:checked label, .raven button:selected label, .raven button:checked:hover label, .raven button:selected:hover label {
   color: inherit;
 }
-
 .budgie-run-dialog {
-  border-radius: 20px 20px 0 0;
-  border-color: #201d1d;
-  background: image(transparent);
+  border-radius: 23px;
+  background: image(#423e3e);
 }
 .budgie-run-dialog entry.search,
 .budgie-run-dialog entry.search:focus {
   background: image(transparent);
   padding: 9px 4px;
   box-shadow: none;
-  border-radius: 0;
-  border-color: transparent;
-  border-bottom: 2px solid #be3b39;
 }
 .budgie-run-dialog entry.search label, .budgie-run-dialog entry.search image, .budgie-run-dialog entry.search,
 .budgie-run-dialog entry.search:focus label,
@@ -7067,17 +7067,33 @@ headerbar button.minimize.titlebutton:backdrop image, headerbar button.minimize.
 .budgie-run-dialog entry.search:focus image {
   padding: 0 9px;
 }
-.budgie-run-dialog list row:selected,
+.budgie-run-dialog list row:selected {
+  background: image(transparent);
+  border-radius: 0;
+  border-color: transparent;
+  box-shadow: none;
+}
+.budgie-run-dialog list row:hover,
 .budgie-run-dialog list row:selected:hover {
   background: image(rgba(227, 222, 222, 0.1));
-  border-color: #201d1d;
-  border-radius: 99px;
+  border-radius: 0;
+  border-color: transparent;
 }
-.budgie-run-dialog list row:selected label, .budgie-run-dialog list row:selected image, .budgie-run-dialog list row:selected,
+.budgie-run-dialog list row:hover label, .budgie-run-dialog list row:hover image, .budgie-run-dialog list row:hover,
 .budgie-run-dialog list row:selected:hover label,
 .budgie-run-dialog list row:selected:hover image,
 .budgie-run-dialog list row:selected:hover {
   color: #e3dede;
+}
+.budgie-run-dialog list row:active,
+.budgie-run-dialog list row:selected:active {
+  background: image(#be3b39);
+  color: #ffffff;
+}
+.budgie-run-dialog list row:active label, .budgie-run-dialog list row:active image,
+.budgie-run-dialog list row:selected:active label,
+.budgie-run-dialog list row:selected:active image {
+  color: inherit;
 }
 
 .budgie-notification-window {
