@@ -2966,7 +2966,8 @@ menubar > menuitem menu:dir(rtl), menubar > menuitem menu:dir(ltr),
 menubar > menuitem:hover,
 .menubar > menuitem:hover {
   box-shadow: inset 0 -3px #c74646;
-  color: #a73333;
+  color: #272121;
+  background-color: #c9c0c0;
 }
 menubar > menuitem:disabled,
 .menubar > menuitem:disabled {
@@ -7297,53 +7298,103 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
 
 .panel.xfce4-panel {
   background-color: #160707;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.4);
+  text-shadow: none;
 }
 .panel.xfce4-panel label, .panel.xfce4-panel image {
   color: inherit;
 }
-.panel.xfce4-panel button.toggle, .panel.xfce4-panel button.flat {
-  background: transparent;
-  color: rgba(255, 255, 255, 0.6);
+.panel.xfce4-panel button.flat,
+.panel.xfce4-panel #clock-button {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.4);
   border-radius: 4px;
+  border: 1px solid transparent;
   box-shadow: none;
   text-shadow: none;
-  border: none;
-  border-bottom: 2px solid transparent;
 }
-.panel.xfce4-panel button.toggle:hover, .panel.xfce4-panel button.flat:hover {
-  color: white;
-}
-.panel.xfce4-panel button.toggle:active, .panel.xfce4-panel button.flat:active {
-  background: #3a1111;
-  color: white;
-}
-.panel.xfce4-panel button.toggle:active label, .panel.xfce4-panel button.toggle:active image, .panel.xfce4-panel button.flat:active label, .panel.xfce4-panel button.flat:active image {
+.panel.xfce4-panel button.flat label, .panel.xfce4-panel button.flat image,
+.panel.xfce4-panel #clock-button label,
+.panel.xfce4-panel #clock-button image {
   color: inherit;
 }
-.panel.xfce4-panel button.toggle:checked, .panel.xfce4-panel button.toggle:checked:focus, .panel.xfce4-panel button.toggle:checked:hover, .panel.xfce4-panel button.flat:checked, .panel.xfce4-panel button.flat:checked:focus, .panel.xfce4-panel button.flat:checked:hover {
-  background: transparent;
-  color: white;
-  border: none;
-  border-bottom: 2px solid #c74646;
+.panel.xfce4-panel button.flat:hover,
+.panel.xfce4-panel #clock-button:hover {
+  background: image(#4d1717);
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: none;
+}
+.panel.xfce4-panel button.flat:active, .panel.xfce4-panel button.flat:checked,
+.panel.xfce4-panel #clock-button:active,
+.panel.xfce4-panel #clock-button:checked {
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: #c74646;
+  background-image: linear-gradient(to top, #c74646, #d36d6d 1px);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5300392157);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.5300392157);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  border: 1px solid #c74646;
+}
+.panel.xfce4-panel button.flat:active label, .panel.xfce4-panel button.flat:active image, .panel.xfce4-panel button.flat:active, .panel.xfce4-panel button.flat:checked label, .panel.xfce4-panel button.flat:checked image, .panel.xfce4-panel button.flat:checked,
+.panel.xfce4-panel #clock-button:active label,
+.panel.xfce4-panel #clock-button:active image,
+.panel.xfce4-panel #clock-button:active,
+.panel.xfce4-panel #clock-button:checked label,
+.panel.xfce4-panel #clock-button:checked image,
+.panel.xfce4-panel #clock-button:checked {
+  color: #ffffff;
+}
+.panel.xfce4-panel button.flat:active label, .panel.xfce4-panel button.flat:active image, .panel.xfce4-panel button.flat:checked label, .panel.xfce4-panel button.flat:checked image,
+.panel.xfce4-panel #clock-button:active label,
+.panel.xfce4-panel #clock-button:active image,
+.panel.xfce4-panel #clock-button:checked label,
+.panel.xfce4-panel #clock-button:checked image {
+  color: inherit;
+}
+.panel.xfce4-panel .tasklist button {
+  background: image(rgba(62, 19, 19, 0.5));
+  color: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  text-shadow: none;
   box-shadow: none;
+  border: 1px solid black;
+  margin: 0 1px;
 }
-.panel.xfce4-panel button.toggle:checked label, .panel.xfce4-panel button.toggle:checked image, .panel.xfce4-panel button.toggle:checked:focus label, .panel.xfce4-panel button.toggle:checked:focus image, .panel.xfce4-panel button.toggle:checked:hover label, .panel.xfce4-panel button.toggle:checked:hover image, .panel.xfce4-panel button.flat:checked label, .panel.xfce4-panel button.flat:checked image, .panel.xfce4-panel button.flat:checked:focus label, .panel.xfce4-panel button.flat:checked:focus image, .panel.xfce4-panel button.flat:checked:hover label, .panel.xfce4-panel button.flat:checked:hover image {
+.panel.xfce4-panel .tasklist button label, .panel.xfce4-panel .tasklist button image {
   color: inherit;
 }
-.panel.xfce4-panel button.toggle:backdrop, .panel.xfce4-panel button.flat:backdrop {
-  opacity: 0.6;
+.panel.xfce4-panel .tasklist button:hover {
+  background: image(#4d1717);
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: none;
+}
+.panel.xfce4-panel .tasklist button:active, .panel.xfce4-panel .tasklist button:checked, .panel.xfce4-panel .tasklist button:checked:focus, .panel.xfce4-panel .tasklist button:checked:hover {
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: #c74646;
+  background-image: linear-gradient(to top, #c74646, #d36d6d 1px);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5300392157);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.5300392157);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  border: 1px solid #c74646;
+}
+.panel.xfce4-panel .tasklist button:active label, .panel.xfce4-panel .tasklist button:active image, .panel.xfce4-panel .tasklist button:active, .panel.xfce4-panel .tasklist button:checked label, .panel.xfce4-panel .tasklist button:checked image, .panel.xfce4-panel .tasklist button:checked, .panel.xfce4-panel .tasklist button:checked:focus label, .panel.xfce4-panel .tasklist button:checked:focus image, .panel.xfce4-panel .tasklist button:checked:focus, .panel.xfce4-panel .tasklist button:checked:hover label, .panel.xfce4-panel .tasklist button:checked:hover image, .panel.xfce4-panel .tasklist button:checked:hover {
+  color: #ffffff;
+}
+.panel.xfce4-panel .tasklist button:active label, .panel.xfce4-panel .tasklist button:active image, .panel.xfce4-panel .tasklist button:checked label, .panel.xfce4-panel .tasklist button:checked image, .panel.xfce4-panel .tasklist button:checked:focus label, .panel.xfce4-panel .tasklist button:checked:focus image, .panel.xfce4-panel .tasklist button:checked:hover label, .panel.xfce4-panel .tasklist button:checked:hover image {
+  color: inherit;
 }
 .panel.xfce4-panel wnck-pager {
-  background: #611d1d;
+  background-color: rgba(199, 70, 70, 0.1);
+  box-shadow: inset 2px 0 0 0 rgba(255, 255, 255, 0.1);
 }
-.panel.xfce4-panel wnck-pager:hover {
-  background: rgba(199, 70, 70, 0.4);
-}
-.panel.xfce4-panel wnck-pager:selected {
-  background: #c74646;
-  box-shadow: none;
-  border: none;
+.panel.xfce4-panel wnck-pager:hover, .panel.xfce4-panel wnck-pager:selected {
+  background-color: #c74646;
 }
 
 .gedit-side-panel-paned .view:hover, .gedit-side-panel-paned iconview:hover {
