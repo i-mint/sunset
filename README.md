@@ -6,4 +6,5 @@ Xfwm4 themes base on [Default-theme](https://gitlab.xfce.org/Dridi/xfwm4/-/tree/
 License : [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)</br></br>
 Theme can be download [here](https://www.pling.com/p/1336259/)</br></br>
 SCREENSHOTS:</br>
-![sunsetscreenshot](https://i.ibb.co/Z2rhPST/sunset-screenshots002.png "sunset screenshot")</br></br>
+![sunsetscreenshot](https://i.ibb.co/nLTK2vB/sunset-nautilus-screenshots.png "sunset-nautilus-screenshot")</br></br>
+![sunsetscreenshot](https://i.ibb.co/D4YKRjX/sunset-widget-factory-screenshots.png "sunset-widget-factory-screenshot")</br></br>
