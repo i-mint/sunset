@@ -4,6 +4,6 @@ Type=X-GNOME-Metatheme
 Comment= Sunset Gtk Themes 
 Encoding=UTF-8
 GtkTheme=Sunset-Compact-Dark
-IconTheme=Yaru-Red
+IconTheme=Yaru
 CursorTheme=Adwaita
 CursorSize=24
