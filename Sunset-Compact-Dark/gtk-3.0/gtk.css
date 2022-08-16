@@ -2639,12 +2639,11 @@ window.csd > .titlebar:not(headerbar) {
   border-color: transparent;
   box-shadow: none;
 }
-.titlebar:not(headerbar) separator, .titlebar:not(headerbar) separator:backdrop {
-  background-color: black;
+.titlebar:not(headerbar) separator {
+  background-color: #0a0a0a;
 }
-
-headerbar separator.sidebar, headerbar separator.sidebar:backdrop, .titlebar separator.sidebar, .titlebar separator.sidebar:backdrop {
-  background-color: black;
+.titlebar:not(headerbar) separator:backdrop {
+  background-color: #141313;
 }
 
 window.devel headerbar.titlebar:not(.selection-mode) {
@@ -2712,10 +2711,10 @@ treeview.view {
 
 treeview.view:selected:focus, treeview.view:selected {
   border-radius: 0;
+  border: none;
 }
 treeview.view:selected:backdrop, treeview.view:selected {
-  border-left-color: #df9d9c;
-  border-top-color: rgba(227, 222, 222, 0.1);
+  border: none;
 }
 treeview.view:disabled {
   color: #7e7979;
@@ -2731,10 +2730,10 @@ treeview.view:disabled:backdrop {
 }
 treeview.view.separator {
   min-height: 2px;
-  color: #3a3636;
+  color: #0a0a0a;
 }
 treeview.view.separator:backdrop {
-  color: rgba(58, 54, 54, 0.1);
+  color: rgba(20, 19, 19, 0.1);
 }
 treeview.view:backdrop {
   border-left-color: #656060;
@@ -5113,10 +5112,6 @@ separator {
   min-height: 1px;
 }
 
-hdyleaflet > separator {
-  background-color: #201d1d;
-}
-
 list {
   color: #e3dede;
   background-color: #444040;
@@ -5344,10 +5339,10 @@ stacksidebar row.needs-attention > label {
 }
 
 separator.sidebar {
-  background-color: #201d1d;
+  background-color: #0a0a0a;
 }
 separator.sidebar:backdrop {
-  background-color: #201d1d;
+  background-color: #141313;
 }
 separator.sidebar.selection-mode, .selection-mode separator.sidebar {
   background-color: #6f2321;
@@ -5522,14 +5517,14 @@ paned > separator {
   -gtk-icon-source: none;
   border-style: none;
   background-color: transparent;
-  background-image: image(#201d1d);
+  background-image: image(#0a0a0a);
   background-size: 1px 1px;
 }
 paned > separator:selected {
   background-image: image(#be3b39);
 }
 paned > separator:backdrop {
-  background-image: image(#252222);
+  background-image: image(#141313);
 }
 paned > separator.wide {
   min-width: 5px;
