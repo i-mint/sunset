@@ -651,11 +651,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .calendar .calendar-week-number {
   font-size: 7pt;
   font-weight: bold !important;
-  height: 1.4em !important;
-  width: 1.4em !important;
+  height: 1.3em !important;
+  width: 1.3em !important;
   border-radius: 2px;
-  margin: 6px;
-  padding: 4px;
+  margin: 6px !important;
+  padding: 6px !important;
   background-color: #322f2f;
   color: #efecec;
   text-align: center !important;
