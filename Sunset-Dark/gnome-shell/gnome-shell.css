@@ -335,12 +335,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding-right: 0;
   padding-left: 1.75em;
 }
-.popup-menu-item:checked {
-  background-color: #3f3b3b !important;
+.popup-menu-item:checked, .popup-menu-item:checked:hover {
+  background-color: #5f5858 !important;
   box-shadow: none;
 }
 .popup-menu-item.selected {
-  background-color: #474242 !important;
+  background-color: #4a4545 !important;
   color: #e3dede;
 }
 .popup-menu-item:active {
@@ -368,6 +368,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   box-shadow: none;
   border-top: 1px solid rgba(32, 29, 29, 0.8);
   border-bottom: 1px solid rgba(32, 29, 29, 0.8);
+  border-radius: 0;
 }
 
 .popup-menu-ornament {
