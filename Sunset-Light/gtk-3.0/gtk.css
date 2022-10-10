@@ -1516,8 +1516,12 @@ stacksidebar row.needs-attention > label:dir(rtl),
 .linked > button:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   -gtk-outline-top-left-radius: 20px;
   -gtk-outline-bottom-left-radius: 20px;
+  -gtk-outline-top-right-radius: 0;
+  -gtk-outline-bottom-right-radius: 0;
 }
 
 .linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .raven .linked:not(.vertical) button:last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
@@ -1525,8 +1529,12 @@ stacksidebar row.needs-attention > label:dir(rtl),
 .inline-toolbar button:last-child,
 .linked > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
   border-right-style: solid;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  -gtk-outline-top-left-radius: 0;
+  -gtk-outline-bottom-left-radius: 0;
   -gtk-outline-top-right-radius: 20px;
   -gtk-outline-bottom-right-radius: 20px;
 }
@@ -2104,18 +2112,45 @@ headerbar .subtitle {
   padding-left: 12px;
   padding-right: 12px;
 }
-.titlebar:not(headerbar) stackswitcher button:checked,
+.titlebar:not(headerbar) stackswitcher button:hover,
+.titlebar:not(headerbar) button.toggle:hover,
+.titlebar:not(headerbar) .linked button:hover,
+headerbar stackswitcher button:hover,
+headerbar button.toggle:hover,
+headerbar .linked button:hover {
+  color: rgba(39, 33, 33, 0.8);
+  outline-color: rgba(39, 33, 33, 0.1);
+  border-color: #bdb2b2;
+  border-bottom-color: #a69797;
+  background-image: linear-gradient(to top, #d5cece, #d7d0d0 1px);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.07);
+  border-radius: 999px;
+}
+.titlebar:not(headerbar) stackswitcher button:active, .titlebar:not(headerbar) stackswitcher button:checked,
+.titlebar:not(headerbar) button.toggle:active,
 .titlebar:not(headerbar) button.toggle:checked,
+.titlebar:not(headerbar) .linked button:active,
+.titlebar:not(headerbar) .linked button:checked,
+headerbar stackswitcher button:active,
 headerbar stackswitcher button:checked,
-headerbar button.toggle:checked {
+headerbar button.toggle:active,
+headerbar button.toggle:checked,
+headerbar .linked button:active,
+headerbar .linked button:checked {
+  color: #ffffff;
   background-image: image(#c74646);
   border-color: #c74646;
+  border-radius: 999px;
 }
 .titlebar:not(headerbar) stackswitcher button:active label, .titlebar:not(headerbar) stackswitcher button:active image, .titlebar:not(headerbar) stackswitcher button:checked label, .titlebar:not(headerbar) stackswitcher button:checked image,
 .titlebar:not(headerbar) button.toggle:active label,
 .titlebar:not(headerbar) button.toggle:active image,
 .titlebar:not(headerbar) button.toggle:checked label,
 .titlebar:not(headerbar) button.toggle:checked image,
+.titlebar:not(headerbar) .linked button:active label,
+.titlebar:not(headerbar) .linked button:active image,
+.titlebar:not(headerbar) .linked button:checked label,
+.titlebar:not(headerbar) .linked button:checked image,
 headerbar stackswitcher button:active label,
 headerbar stackswitcher button:active image,
 headerbar stackswitcher button:checked label,
@@ -2123,7 +2158,11 @@ headerbar stackswitcher button:checked image,
 headerbar button.toggle:active label,
 headerbar button.toggle:active image,
 headerbar button.toggle:checked label,
-headerbar button.toggle:checked image {
+headerbar button.toggle:checked image,
+headerbar .linked button:active label,
+headerbar .linked button:active image,
+headerbar .linked button:checked label,
+headerbar .linked button:checked image {
   color: #ffffff;
 }
 .titlebar:not(headerbar) stackswitcher button:active .popup menuitem label, .titlebar:not(headerbar) stackswitcher button:active .popup menuitem, .titlebar:not(headerbar) stackswitcher button:checked .popup menuitem label, .titlebar:not(headerbar) stackswitcher button:checked .popup menuitem,
@@ -2131,6 +2170,10 @@ headerbar button.toggle:checked image {
 .titlebar:not(headerbar) button.toggle:active .popup menuitem,
 .titlebar:not(headerbar) button.toggle:checked .popup menuitem label,
 .titlebar:not(headerbar) button.toggle:checked .popup menuitem,
+.titlebar:not(headerbar) .linked button:active .popup menuitem label,
+.titlebar:not(headerbar) .linked button:active .popup menuitem,
+.titlebar:not(headerbar) .linked button:checked .popup menuitem label,
+.titlebar:not(headerbar) .linked button:checked .popup menuitem,
 headerbar stackswitcher button:active .popup menuitem label,
 headerbar stackswitcher button:active .popup menuitem,
 headerbar stackswitcher button:checked .popup menuitem label,
@@ -2138,16 +2181,24 @@ headerbar stackswitcher button:checked .popup menuitem,
 headerbar button.toggle:active .popup menuitem label,
 headerbar button.toggle:active .popup menuitem,
 headerbar button.toggle:checked .popup menuitem label,
-headerbar button.toggle:checked .popup menuitem {
+headerbar button.toggle:checked .popup menuitem,
+headerbar .linked button:active .popup menuitem label,
+headerbar .linked button:active .popup menuitem,
+headerbar .linked button:checked .popup menuitem label,
+headerbar .linked button:checked .popup menuitem {
   color: #272121;
 }
 .titlebar:not(headerbar) stackswitcher button:active .popup menuitem:hover, .titlebar:not(headerbar) stackswitcher button:checked .popup menuitem:hover,
 .titlebar:not(headerbar) button.toggle:active .popup menuitem:hover,
 .titlebar:not(headerbar) button.toggle:checked .popup menuitem:hover,
+.titlebar:not(headerbar) .linked button:active .popup menuitem:hover,
+.titlebar:not(headerbar) .linked button:checked .popup menuitem:hover,
 headerbar stackswitcher button:active .popup menuitem:hover,
 headerbar stackswitcher button:checked .popup menuitem:hover,
 headerbar button.toggle:active .popup menuitem:hover,
-headerbar button.toggle:checked .popup menuitem:hover {
+headerbar button.toggle:checked .popup menuitem:hover,
+headerbar .linked button:active .popup menuitem:hover,
+headerbar .linked button:checked .popup menuitem:hover {
   background-color: #c74646;
 }
 .titlebar:not(headerbar) stackswitcher button:active .popup menuitem:hover label, .titlebar:not(headerbar) stackswitcher button:active .popup menuitem:hover, .titlebar:not(headerbar) stackswitcher button:checked .popup menuitem:hover label, .titlebar:not(headerbar) stackswitcher button:checked .popup menuitem:hover,
@@ -2155,6 +2206,10 @@ headerbar button.toggle:checked .popup menuitem:hover {
 .titlebar:not(headerbar) button.toggle:active .popup menuitem:hover,
 .titlebar:not(headerbar) button.toggle:checked .popup menuitem:hover label,
 .titlebar:not(headerbar) button.toggle:checked .popup menuitem:hover,
+.titlebar:not(headerbar) .linked button:active .popup menuitem:hover label,
+.titlebar:not(headerbar) .linked button:active .popup menuitem:hover,
+.titlebar:not(headerbar) .linked button:checked .popup menuitem:hover label,
+.titlebar:not(headerbar) .linked button:checked .popup menuitem:hover,
 headerbar stackswitcher button:active .popup menuitem:hover label,
 headerbar stackswitcher button:active .popup menuitem:hover,
 headerbar stackswitcher button:checked .popup menuitem:hover label,
@@ -2162,47 +2217,57 @@ headerbar stackswitcher button:checked .popup menuitem:hover,
 headerbar button.toggle:active .popup menuitem:hover label,
 headerbar button.toggle:active .popup menuitem:hover,
 headerbar button.toggle:checked .popup menuitem:hover label,
-headerbar button.toggle:checked .popup menuitem:hover {
+headerbar button.toggle:checked .popup menuitem:hover,
+headerbar .linked button:active .popup menuitem:hover label,
+headerbar .linked button:active .popup menuitem:hover,
+headerbar .linked button:checked .popup menuitem:hover label,
+headerbar .linked button:checked .popup menuitem:hover {
   color: #ffffff;
 }
-.titlebar:not(headerbar) stackswitcher button:backdrop,
-.titlebar:not(headerbar) button.toggle:backdrop,
-headerbar stackswitcher button:backdrop,
-headerbar button.toggle:backdrop {
+.titlebar:not(headerbar) stackswitcher button:active:backdrop, .titlebar:not(headerbar) stackswitcher button:checked:backdrop,
+.titlebar:not(headerbar) button.toggle:active:backdrop,
+.titlebar:not(headerbar) button.toggle:checked:backdrop,
+.titlebar:not(headerbar) .linked button:active:backdrop,
+.titlebar:not(headerbar) .linked button:checked:backdrop,
+headerbar stackswitcher button:active:backdrop,
+headerbar stackswitcher button:checked:backdrop,
+headerbar button.toggle:active:backdrop,
+headerbar button.toggle:checked:backdrop,
+headerbar .linked button:active:backdrop,
+headerbar .linked button:checked:backdrop {
   color: #787171;
   border-color: #a79999;
   background-image: image(#baaeae);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
-.titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button),
-headerbar .linked > button.toggle.popup:not(.disclosure-button) {
-  border-color: transparent;
-}
-.titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):hover,
-headerbar .linked > button.toggle.popup:not(.disclosure-button):hover {
-  color: rgba(39, 33, 33, 0.8);
-  outline-color: rgba(39, 33, 33, 0.1);
-  border-color: #9f8f8f;
-  border-bottom-color: #917e7e;
-  background-image: linear-gradient(to top, #c9c0c0, #cbc3c3 1px);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.07);
-}
-.titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):checked,
-headerbar .linked > button.toggle.popup:not(.disclosure-button):checked {
-  border-color: #c74646;
-}
-.titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):disabled,
-headerbar .linked > button.toggle.popup:not(.disclosure-button):disabled {
-  color: #6a6666;
-  border-color: rgba(159, 143, 143, 0.4);
-  background-image: image(#d3cccc);
+.titlebar:not(headerbar) stackswitcher button:backdrop,
+.titlebar:not(headerbar) button.toggle:backdrop,
+.titlebar:not(headerbar) .linked button:backdrop,
+headerbar stackswitcher button:backdrop,
+headerbar button.toggle:backdrop,
+headerbar .linked button:backdrop {
+  color: #787171;
+  border-color: #a79999;
+  background-image: image(#c9c0c0);
   text-shadow: none;
   -gtk-icon-shadow: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
-.titlebar:not(headerbar) .linked button,
-headerbar .linked button {
-  border-radius: 20px;
+.titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button),
+headerbar .linked > button.toggle.popup:not(.disclosure-button) {
+  border-color: transparent;
+  border-radius: 100%;
+}
+.titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):hover,
+headerbar .linked > button.toggle.popup:not(.disclosure-button):hover {
+  border-radius: 100%;
+  border-color: #d5cece;
+}
+.titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):active, .titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):checked,
+headerbar .linked > button.toggle.popup:not(.disclosure-button):active,
+headerbar .linked > button.toggle.popup:not(.disclosure-button):checked {
+  border-color: #c74646;
+  border-radius: 100%;
 }
 .titlebar:not(headerbar) stackswitcher button:hover, .titlebar:not(headerbar) stackswitcher button:checked,
 headerbar stackswitcher button:hover,
@@ -2899,7 +2964,7 @@ menubar > menuitem:hover,
 .menubar > menuitem:hover {
   color: #ffffff;
   background-color: #c74646;
-  border-radius: 4px -2;
+  border-radius: 2px;
 }
 menubar > menuitem:disabled,
 .menubar > menuitem:disabled {
@@ -3133,6 +3198,10 @@ popover.background button:not(.flat):not(.toggle):not(.switch):disabled {
   text-shadow: none;
   -gtk-icon-shadow: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+
+popover .linked > button {
+  border-radius: 0;
 }
 
 popover.combo list, popover.combo {
@@ -7072,16 +7141,28 @@ headerbar button.minimize.titlebutton:backdrop image, headerbar button.minimize.
   border-radius: 0;
   box-shadow: none;
 }
+.horizontal.path-buttons-box button:not(.current-dir):hover {
+  background: image(transparent);
+  border: none;
+  box-shadow: none;
+}
 .horizontal.path-buttons-box button:not(.current-dir):hover label,
 .horizontal.path-buttons-box button:not(.current-dir):hover image, .horizontal.path-buttons-box button:not(.current-dir):hover {
   color: rgba(39, 33, 33, 0.8);
 }
-.horizontal.path-buttons-box button.current-dir {
+.horizontal.path-buttons-box button.current-dir, .horizontal.path-buttons-box button.current-dir:hover {
   background: transparent;
-  color: white;
-  border-color: #d0c8c8;
+  color: black;
+  border: none;
+  box-shadow: none;
   transition: 0s;
-  border-radius: 20px 0 0 0;
+  border-radius: 0;
+}
+.horizontal.path-buttons-box button.current-dir:active label, .horizontal.path-buttons-box button.current-dir:active image, .horizontal.path-buttons-box button.current-dir:active, .horizontal.path-buttons-box button.current-dir:hover:active label, .horizontal.path-buttons-box button.current-dir:hover:active image, .horizontal.path-buttons-box button.current-dir:hover:active {
+  color: #c74646;
+}
+.horizontal.path-buttons-box button:backdrop {
+  background: image(transparent);
 }
 
 .tweak-group row.activatable, .tweak row.activatable {
