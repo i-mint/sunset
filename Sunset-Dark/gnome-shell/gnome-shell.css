@@ -38,7 +38,7 @@ stage {
   padding: 12px;
 }
 
-.workspace-thumbnails, #dash {
+.workspace-thumbnails {
   color: #eeeeec;
   background-color: rgba(38, 38, 38, 0.7);
   border: 2px solid rgba(0, 0, 0, 0.4);
@@ -1878,6 +1878,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 /* Dash */
 #dash {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: black;
+  border: 2px solid rgba(0, 0, 0, 0.4);
   font-size: 9pt;
   padding: 5px 0;
   border-radius: 0 15px 15px 0;
@@ -1895,6 +1898,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #dash .empty-dash-drop-target {
   width: 32px;
   height: 32px;
+}
+#dash .app-well-app:hover .overview-icon, .right #dash .app-well-app:hover .overview-icon, .bottom #dash .app-well-app:hover .overview-icon, .top #dash .app-well-app:hover .overview-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#dash .app-well-app:active .overview-icon, .right #dash .app-well-app:active .overview-icon, .bottom #dash .app-well-app:active .overview-icon, .top #dash .app-well-app:active .overview-icon {
+  box-shadow: none;
+  background-color: #be3b39;
 }
 
 .dash-item-container > StWidget {
@@ -1915,13 +1925,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .show-apps .overview-icon {
-  color: #eeeeec;
+  color: rgba(255, 255, 255, 0.6);
 }
 .show-apps:hover .overview-icon, .show-apps:selected .overview-icon {
-  background-color: rgba(238, 238, 236, 0.1);
+  background-color: rgba(255, 255, 255, 0);
 }
 .show-apps:focus .overview-icon {
-  background-color: rgba(238, 238, 236, 0.3);
+  background-color: rgba(255, 255, 255, 0);
 }
 .show-apps:drop .overview-icon {
   background-color: rgba(190, 59, 57, 0.85);
@@ -1929,9 +1939,20 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .show-apps:active .overview-icon, .show-apps:checked .overview-icon {
   background-color: rgba(12, 12, 12, 0.4);
 }
+.show-apps:hover .overview-icon {
+  color: #ffffff;
+  background-color: #be3b39;
+  border-radius: 5px;
+}
+.show-apps:active .overview-icon, .show-apps:checked:active .overview-icon {
+  color: black;
+  background-color: #be3b39;
+  border-radius: 5px;
+}
 .show-apps:focus .overview-icon, .show-apps:checked .overview-icon {
-  background-color: rgba(12, 12, 12, 0.9);
-  color: #e3dede;
+  color: #ffffff;
+  background-color: #be3b39;
+  border-radius: 5px;
 }
 
 /* Workspace pager */
