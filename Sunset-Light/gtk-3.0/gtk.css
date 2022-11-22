@@ -2085,7 +2085,7 @@ headerbar {
   min-height: 46px;
   border-width: 0 0 1px;
   border-style: solid;
-  border-color: #917e7e;
+  border-color: #b4a7a7;
   border-radius: 0;
   background: #c4bbbb linear-gradient(to top, #c0b5b5, #c7bdbd);
   box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
@@ -2094,7 +2094,7 @@ headerbar {
 }
 .titlebar:backdrop:not(headerbar),
 headerbar:backdrop {
-  border-color: #a79999;
+  border-color: #b8acac;
   box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
   background: #b6aaaa linear-gradient(to top, #b1a5a5, #b9adad);
   box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
@@ -2717,10 +2717,10 @@ window.csd > .titlebar:not(headerbar) {
   box-shadow: none;
 }
 .titlebar:not(headerbar) separator {
-  background-color: #917e7e;
+  background-color: #b4a7a7;
 }
 .titlebar:not(headerbar) separator:backdrop {
-  background-color: #9c8b8b;
+  background-color: #b8acac;
 }
 
 window.devel headerbar.titlebar:not(.selection-mode) {
@@ -2807,10 +2807,10 @@ treeview.view:disabled:backdrop {
 }
 treeview.view.separator {
   min-height: 2px;
-  color: #917e7e;
+  color: #b4a7a7;
 }
 treeview.view.separator:backdrop {
-  color: rgba(156, 139, 139, 0.1);
+  color: rgba(184, 172, 172, 0.1);
 }
 treeview.view:backdrop {
   border-left-color: #a19999;
@@ -5436,10 +5436,10 @@ stacksidebar row.needs-attention > label {
 }
 
 separator.sidebar {
-  background-color: #917e7e;
+  background-color: #b4a7a7;
 }
 separator.sidebar:backdrop {
-  background-color: #9c8b8b;
+  background-color: #b8acac;
 }
 separator.sidebar.selection-mode, .selection-mode separator.sidebar {
   background-color: #802727;
@@ -5614,14 +5614,14 @@ paned > separator {
   -gtk-icon-source: none;
   border-style: none;
   background-color: transparent;
-  background-image: image(#917e7e);
+  background-image: image(#b4a7a7);
   background-size: 1px 1px;
 }
 paned > separator:selected {
   background-image: image(#c74646);
 }
 paned > separator:backdrop {
-  background-image: image(#9c8b8b);
+  background-image: #b8acac;
 }
 paned > separator.wide {
   min-width: 5px;
