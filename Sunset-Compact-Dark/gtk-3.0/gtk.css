@@ -7089,7 +7089,7 @@ headerbar button.minimize.titlebutton:backdrop image, headerbar button.minimize.
   transition: 0s;
 }
 .nautilus-path-bar button:not(.popup).image-button:last-child, .nautilus-path-bar button:not(.popup).image-button:hover, .nautilus-path-bar button:not(.popup).text-button:last-child, .nautilus-path-bar button:not(.popup).text-button:hover, .nautilus-path-bar button:not(.popup):last-child, .nautilus-path-bar button:not(.popup):hover {
-  color: white;
+  color: #ffffff;
 }
 .nautilus-path-bar button:not(.popup).image-button:backdrop, .nautilus-path-bar button:not(.popup).text-button:backdrop, .nautilus-path-bar button:not(.popup):backdrop {
   background: black linear-gradient(to top, #0e0707, #140a0a);

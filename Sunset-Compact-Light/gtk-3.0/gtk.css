@@ -7120,7 +7120,7 @@ headerbar button.minimize.titlebutton:backdrop image, headerbar button.minimize.
   transition: 0s;
 }
 .nautilus-path-bar button:not(.popup).image-button:last-child, .nautilus-path-bar button:not(.popup).image-button:hover, .nautilus-path-bar button:not(.popup).text-button:last-child, .nautilus-path-bar button:not(.popup).text-button:hover, .nautilus-path-bar button:not(.popup):last-child, .nautilus-path-bar button:not(.popup):hover {
-  color: black;
+  color: #000000;
 }
 .nautilus-path-bar button:not(.popup).image-button:backdrop, .nautilus-path-bar button:not(.popup).text-button:backdrop, .nautilus-path-bar button:not(.popup):backdrop {
   background: #b5b5b5 linear-gradient(to top, #b0b0b0, #b8b8b8);
@@ -7200,7 +7200,7 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
 }
 .thunar menubar:backdrop,
 .thunar toolbar:backdrop {
-  background-color: #afa2a2;
+  background-color: #b1a5a5;
 }
 .thunar menubar button.flat,
 .thunar toolbar button.flat {
@@ -7256,7 +7256,7 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
 .thunar .linked.path-bar > button.toggle:hover label, .thunar .linked.path-bar > button.toggle:hover,
 .thunar button.path-bar-button.toggle:hover label,
 .thunar button.path-bar-button.toggle:hover {
-  color: #ffffff;
+  color: #000000;
 }
 .thunar .linked.path-bar > button.toggle:active, .thunar .linked.path-bar > button.toggle:checked,
 .thunar button.path-bar-button.toggle:active,
