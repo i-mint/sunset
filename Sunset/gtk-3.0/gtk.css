@@ -308,7 +308,7 @@ entry {
   -gtk-outline-bottom-right-radius: 20px;
 }
 
-headerbar .linked:not(.vertical) entry.search:focus, headerbar .linked:not(.vertical) entry.search:active, spinbutton:focus:not(.vertical),
+headerbar .linked:not(.vertical) entry.search:focus, headerbar .linked:not(.vertical) entry.search:active, dialog.csd headerbar entry:focus, dialog.csd headerbar entry:active, dialog.background headerbar entry:focus, dialog.background headerbar entry:active, spinbutton:focus:not(.vertical),
 entry:focus {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -2120,9 +2120,9 @@ headerbar button.toggle:hover,
 headerbar .linked button:hover {
   color: rgba(255, 255, 255, 0.6);
   outline-color: rgba(255, 255, 255, 0);
-  border-color: #040101;
+  border-color: black;
   border-bottom-color: black;
-  background-image: linear-gradient(to top, #2b0d0d, #2f0f0e 1px);
+  background-image: linear-gradient(to top, #1f0a09, #230b0b 1px);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
   border-radius: 999px;
 }
@@ -2261,7 +2261,7 @@ headerbar .linked > button.toggle.popup:not(.disclosure-button) {
 .titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):hover,
 headerbar .linked > button.toggle.popup:not(.disclosure-button):hover {
   border-radius: 100%;
-  border-color: #2b0d0d;
+  border-color: #1f0a09;
 }
 .titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):active, .titlebar:not(headerbar) .linked > button.toggle.popup:not(.disclosure-button):checked,
 headerbar .linked > button.toggle.popup:not(.disclosure-button):active,
@@ -5366,6 +5366,28 @@ messagedialog.csd .dialog-action-area button:last-child {
   -gtk-outline-bottom-right-radius: 22px;
 }
 
+dialog.csd headerbar entry, dialog.background headerbar entry {
+  color: #272121;
+  border-color: black;
+  background-color: #2b0d0d;
+  box-shadow: inset 0 0 0 1px rgba(199, 70, 70, 0);
+}
+dialog.csd headerbar entry label, dialog.csd headerbar entry image, dialog.csd headerbar entry, dialog.background headerbar entry label, dialog.background headerbar entry image, dialog.background headerbar entry {
+  color: rgba(255, 255, 255, 0.4);
+}
+dialog.csd headerbar entry:focus, dialog.csd headerbar entry:active, dialog.background headerbar entry:focus, dialog.background headerbar entry:active {
+  box-shadow: inset 0 0 0 1px black;
+  border-color: black;
+  background-color: #180707;
+  transition: all 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-right-color: #c74646;
+  border-left-color: #c74646;
+  caret-color: currentColor;
+}
+dialog.csd headerbar entry:focus label, dialog.csd headerbar entry:focus image, dialog.csd headerbar entry:focus, dialog.csd headerbar entry:active label, dialog.csd headerbar entry:active image, dialog.csd headerbar entry:active, dialog.background headerbar entry:focus label, dialog.background headerbar entry:focus image, dialog.background headerbar entry:focus, dialog.background headerbar entry:active label, dialog.background headerbar entry:active image, dialog.background headerbar entry:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 filechooser .dialog-action-box {
   border-top: 1px solid #9f8f8f;
 }
@@ -5382,9 +5404,9 @@ filechooserbutton:drop(active) {
 }
 
 filechooser .linked.path-bar button.image-button, filechooser .linked.path-bar button.text-button, filechooser .linked.path-bar button.slider-button, filechooser .linked.path-bar button.toggle {
-  background: #230b0b linear-gradient(to top, #33100f, #3b1212);
+  background: #180707 linear-gradient(to top, #270c0c, #2f0f0e);
   box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
-  border-color: #230b0b;
+  border-color: #180707;
   transition: 0s;
   color: rgba(255, 255, 255, 0.6);
   text-shadow: none;
@@ -6304,7 +6326,7 @@ combobox button.combo:hover, filechooserbutton button:hover, .tweak button.combo
 headerbar .linked:not(.vertical) entry.search {
   color: #272121;
   border-color: black;
-  background-color: #371110;
+  background-color: #2b0d0d;
   box-shadow: inset 0 0 0 1px rgba(199, 70, 70, 0);
   margin-right: 7px;
 }
@@ -6314,7 +6336,7 @@ headerbar .linked:not(.vertical) entry.search label, headerbar .linked:not(.vert
 headerbar .linked:not(.vertical) entry.search:focus, headerbar .linked:not(.vertical) entry.search:active {
   box-shadow: inset 0 0 0 1px black;
   border-color: black;
-  background-color: #230b0b;
+  background-color: #180707;
   transition: all 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border-right-color: #c74646;
   border-left-color: #c74646;
@@ -6324,19 +6346,12 @@ headerbar .linked:not(.vertical) entry.search:focus label, headerbar .linked:not
   color: rgba(255, 255, 255, 0.6);
 }
 
-/*
-// linked button radio (gnome screenshot)
-.linked:not(.vertical):last-child button {
-  &.radio { border-radius: $button_radius; }
-}
-
-remove in 1.3.4 */
 headerbar button:hover {
   color: rgba(255, 255, 255, 0.6);
   outline-color: rgba(255, 255, 255, 0);
-  border-color: #040101;
+  border-color: black;
   border-bottom-color: black;
-  background-image: linear-gradient(to top, #2b0d0d, #2f0f0e 1px);
+  background-image: linear-gradient(to top, #1f0a09, #230b0b 1px);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
   border-color: black;
 }
@@ -6372,9 +6387,9 @@ headerbar button.close.titlebutton image, headerbar button.close.titlebutton {
 headerbar button.minimize.titlebutton:hover, headerbar button.maximize.titlebutton:hover, headerbar button.close.titlebutton:hover {
   color: rgba(255, 255, 255, 0.6);
   outline-color: rgba(255, 255, 255, 0);
-  border-color: #040101;
+  border-color: black;
   border-bottom-color: black;
-  background-image: linear-gradient(to top, #2b0d0d, #2f0f0e 1px);
+  background-image: linear-gradient(to top, #1f0a09, #230b0b 1px);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
   border-color: black;
 }
@@ -7113,10 +7128,10 @@ headerbar button.minimize.titlebutton:backdrop image, headerbar button.minimize.
 }
 
 .nautilus-path-bar button:not(.popup).image-button, .nautilus-path-bar button:not(.popup).text-button, .nautilus-path-bar button:not(.popup) {
-  background: #230b0b linear-gradient(to top, #33100f, #3b1212);
+  background: #180707 linear-gradient(to top, #270c0c, #2f0f0e);
   box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
   color: rgba(255, 255, 255, 0.6);
-  border-color: #230b0b;
+  border-color: #180707;
   transition: 0s;
 }
 .nautilus-path-bar button:not(.popup).image-button:last-child, .nautilus-path-bar button:not(.popup).image-button:hover, .nautilus-path-bar button:not(.popup).text-button:last-child, .nautilus-path-bar button:not(.popup).text-button:hover, .nautilus-path-bar button:not(.popup):last-child, .nautilus-path-bar button:not(.popup):hover {
@@ -7237,10 +7252,10 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
 }
 .thunar .linked.path-bar > button,
 .thunar button.path-bar-button {
-  background: #230b0b linear-gradient(to top, #33100f, #3b1212);
+  background: #180707 linear-gradient(to top, #270c0c, #2f0f0e);
   box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
   color: rgba(255, 255, 255, 0.6);
-  border-color: #230b0b;
+  border-color: #180707;
   transition: 0s;
   text-shadow: none;
 }

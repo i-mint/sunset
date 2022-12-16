@@ -308,7 +308,7 @@ entry {
   -gtk-outline-bottom-right-radius: 20px;
 }
 
-headerbar .linked:not(.vertical) entry.search:focus, headerbar .linked:not(.vertical) entry.search:active, spinbutton:focus:not(.vertical),
+headerbar .linked:not(.vertical) entry.search:focus, headerbar .linked:not(.vertical) entry.search:active, dialog.csd headerbar entry:focus, dialog.csd headerbar entry:active, dialog.background headerbar entry:focus, dialog.background headerbar entry:active, spinbutton:focus:not(.vertical),
 entry:focus {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -5366,6 +5366,28 @@ messagedialog.csd .dialog-action-area button:last-child {
   -gtk-outline-bottom-right-radius: 22px;
 }
 
+dialog.csd headerbar entry, dialog.background headerbar entry {
+  color: #272121;
+  border-color: #b6aaaa;
+  background-color: #dcd6d6;
+  box-shadow: inset 0 0 0 1px rgba(199, 70, 70, 0);
+}
+dialog.csd headerbar entry label, dialog.csd headerbar entry image, dialog.csd headerbar entry, dialog.background headerbar entry label, dialog.background headerbar entry image, dialog.background headerbar entry {
+  color: rgba(39, 33, 33, 0.6);
+}
+dialog.csd headerbar entry:focus, dialog.csd headerbar entry:active, dialog.background headerbar entry:focus, dialog.background headerbar entry:active {
+  box-shadow: inset 0 0 0 1px #b6aaaa;
+  border-color: #b6aaaa;
+  background-color: #d0c8c8;
+  transition: all 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-right-color: #c74646;
+  border-left-color: #c74646;
+  caret-color: currentColor;
+}
+dialog.csd headerbar entry:focus label, dialog.csd headerbar entry:focus image, dialog.csd headerbar entry:focus, dialog.csd headerbar entry:active label, dialog.csd headerbar entry:active image, dialog.csd headerbar entry:active, dialog.background headerbar entry:focus label, dialog.background headerbar entry:focus image, dialog.background headerbar entry:focus, dialog.background headerbar entry:active label, dialog.background headerbar entry:active image, dialog.background headerbar entry:active {
+  color: rgba(39, 33, 33, 0.8);
+}
+
 filechooser .dialog-action-box {
   border-top: 1px solid #9f8f8f;
 }
@@ -6324,13 +6346,6 @@ headerbar .linked:not(.vertical) entry.search:focus label, headerbar .linked:not
   color: rgba(39, 33, 33, 0.8);
 }
 
-/*
-// linked button radio (gnome screenshot)
-.linked:not(.vertical):last-child button {
-  &.radio { border-radius: $button_radius; }
-}
-
-remove in 1.3.4 */
 headerbar button:hover {
   color: rgba(39, 33, 33, 0.8);
   outline-color: rgba(39, 33, 33, 0.1);
