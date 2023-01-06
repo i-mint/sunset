@@ -5398,12 +5398,12 @@ filechooser #pathbarbox {
   border-bottom: 1px solid #c9c0c0;
 }
 filechooser #pathbarbox.view.vertical > stack, filechooser iconview#pathbarbox.vertical > stack {
-  background: #c4bbbb linear-gradient(to top, #c0b5b5, #c7bdbd);
-  box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
+  background: image(#dcd4d4);
 }
 filechooser #pathbarbox.view.vertical > stack:backdrop, filechooser iconview#pathbarbox.vertical > stack:backdrop {
-  background: #b6aaaa linear-gradient(to top, #b1a5a5, #b9adad);
-  box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
+  background: image(#d5cdcd);
+  border-color: #a79999;
+  transition: 200ms ease-out;
 }
 
 filechooserbutton:drop(active) {
@@ -5412,20 +5412,60 @@ filechooserbutton:drop(active) {
 }
 
 filechooser .linked.path-bar button.image-button, filechooser .linked.path-bar button.text-button, filechooser .linked.path-bar button.slider-button, filechooser .linked.path-bar button.toggle {
-  background: #d0c8c8 linear-gradient(to top, #cbc3c3, #d2cbcb);
+  background: #d5cccc linear-gradient(to top, #d0c6c6, #d7cfcf);
   box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
-  border-color: #d0c8c8;
   transition: 0s;
-  color: rgba(39, 33, 33, 0.8);
+  border-color: rgba(159, 143, 143, 0.3);
+  color: rgba(39, 33, 33, 0.6);
   text-shadow: none;
+  box-shadow: none;
 }
-filechooser .linked.path-bar button.image-button:hover label, filechooser .linked.path-bar button.image-button:hover, filechooser .linked.path-bar button.image-button:active label, filechooser .linked.path-bar button.image-button:active, filechooser .linked.path-bar button.image-button:selected label, filechooser .linked.path-bar button.image-button:selected, filechooser .linked.path-bar button.image-button:checked label, filechooser .linked.path-bar button.image-button:checked, filechooser .linked.path-bar button.text-button:hover label, filechooser .linked.path-bar button.text-button:hover, filechooser .linked.path-bar button.text-button:active label, filechooser .linked.path-bar button.text-button:active, filechooser .linked.path-bar button.text-button:selected label, filechooser .linked.path-bar button.text-button:selected, filechooser .linked.path-bar button.text-button:checked label, filechooser .linked.path-bar button.text-button:checked, filechooser .linked.path-bar button.slider-button:hover label, filechooser .linked.path-bar button.slider-button:hover, filechooser .linked.path-bar button.slider-button:active label, filechooser .linked.path-bar button.slider-button:active, filechooser .linked.path-bar button.slider-button:selected label, filechooser .linked.path-bar button.slider-button:selected, filechooser .linked.path-bar button.slider-button:checked label, filechooser .linked.path-bar button.slider-button:checked, filechooser .linked.path-bar button.toggle:hover label, filechooser .linked.path-bar button.toggle:hover, filechooser .linked.path-bar button.toggle:active label, filechooser .linked.path-bar button.toggle:active, filechooser .linked.path-bar button.toggle:selected label, filechooser .linked.path-bar button.toggle:selected, filechooser .linked.path-bar button.toggle:checked label, filechooser .linked.path-bar button.toggle:checked {
-  color: black;
+filechooser .linked.path-bar button.image-button:hover, filechooser .linked.path-bar button.text-button:hover, filechooser .linked.path-bar button.slider-button:hover, filechooser .linked.path-bar button.toggle:hover {
+  color: #272121;
+  outline-color: rgba(39, 33, 33, 0.3);
+  border-color: #9f8f8f;
+  border-bottom-color: #917e7e;
+  background-image: linear-gradient(to top, #c9c0c0, #cbc3c3 1px);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+filechooser .linked.path-bar button.image-button:active, filechooser .linked.path-bar button.image-button:selected, filechooser .linked.path-bar button.image-button:checked, filechooser .linked.path-bar button.text-button:active, filechooser .linked.path-bar button.text-button:selected, filechooser .linked.path-bar button.text-button:checked, filechooser .linked.path-bar button.slider-button:active, filechooser .linked.path-bar button.slider-button:selected, filechooser .linked.path-bar button.slider-button:checked, filechooser .linked.path-bar button.toggle:active, filechooser .linked.path-bar button.toggle:selected, filechooser .linked.path-bar button.toggle:checked {
+  background: image(#c74646);
+}
+filechooser .linked.path-bar button.image-button:active label,
+filechooser .linked.path-bar button.image-button:active image, filechooser .linked.path-bar button.image-button:active, filechooser .linked.path-bar button.image-button:selected label,
+filechooser .linked.path-bar button.image-button:selected image, filechooser .linked.path-bar button.image-button:selected, filechooser .linked.path-bar button.image-button:checked label,
+filechooser .linked.path-bar button.image-button:checked image, filechooser .linked.path-bar button.image-button:checked, filechooser .linked.path-bar button.text-button:active label,
+filechooser .linked.path-bar button.text-button:active image, filechooser .linked.path-bar button.text-button:active, filechooser .linked.path-bar button.text-button:selected label,
+filechooser .linked.path-bar button.text-button:selected image, filechooser .linked.path-bar button.text-button:selected, filechooser .linked.path-bar button.text-button:checked label,
+filechooser .linked.path-bar button.text-button:checked image, filechooser .linked.path-bar button.text-button:checked, filechooser .linked.path-bar button.slider-button:active label,
+filechooser .linked.path-bar button.slider-button:active image, filechooser .linked.path-bar button.slider-button:active, filechooser .linked.path-bar button.slider-button:selected label,
+filechooser .linked.path-bar button.slider-button:selected image, filechooser .linked.path-bar button.slider-button:selected, filechooser .linked.path-bar button.slider-button:checked label,
+filechooser .linked.path-bar button.slider-button:checked image, filechooser .linked.path-bar button.slider-button:checked, filechooser .linked.path-bar button.toggle:active label,
+filechooser .linked.path-bar button.toggle:active image, filechooser .linked.path-bar button.toggle:active, filechooser .linked.path-bar button.toggle:selected label,
+filechooser .linked.path-bar button.toggle:selected image, filechooser .linked.path-bar button.toggle:selected, filechooser .linked.path-bar button.toggle:checked label,
+filechooser .linked.path-bar button.toggle:checked image, filechooser .linked.path-bar button.toggle:checked {
+  color: #ffffff;
+}
+filechooser .linked.path-bar button.image-button:active:backdrop, filechooser .linked.path-bar button.image-button:selected:backdrop, filechooser .linked.path-bar button.image-button:checked:backdrop, filechooser .linked.path-bar button.text-button:active:backdrop, filechooser .linked.path-bar button.text-button:selected:backdrop, filechooser .linked.path-bar button.text-button:checked:backdrop, filechooser .linked.path-bar button.slider-button:active:backdrop, filechooser .linked.path-bar button.slider-button:selected:backdrop, filechooser .linked.path-bar button.slider-button:checked:backdrop, filechooser .linked.path-bar button.toggle:active:backdrop, filechooser .linked.path-bar button.toggle:selected:backdrop, filechooser .linked.path-bar button.toggle:checked:backdrop {
+  color: #787171;
+  border-color: #a79999;
+  background-image: image(#baaeae);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 filechooser .linked.path-bar button.image-button:backdrop, filechooser .linked.path-bar button.text-button:backdrop, filechooser .linked.path-bar button.slider-button:backdrop, filechooser .linked.path-bar button.toggle:backdrop {
-  background: #b5b5b5 linear-gradient(to top, #b0b0b0, #b8b8b8);
-  box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
-  border-color: #b5b5b5;
+  color: #787171;
+  border-color: #a79999;
+  background-image: image(#c9c0c0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+filechooser .linked.path-bar button.image-button:backdrop label,
+filechooser .linked.path-bar button.image-button:backdrop image, filechooser .linked.path-bar button.image-button:backdrop, filechooser .linked.path-bar button.text-button:backdrop label,
+filechooser .linked.path-bar button.text-button:backdrop image, filechooser .linked.path-bar button.text-button:backdrop, filechooser .linked.path-bar button.slider-button:backdrop label,
+filechooser .linked.path-bar button.slider-button:backdrop image, filechooser .linked.path-bar button.slider-button:backdrop, filechooser .linked.path-bar button.toggle:backdrop label,
+filechooser .linked.path-bar button.toggle:backdrop image, filechooser .linked.path-bar button.toggle:backdrop {
+  color: inherit;
 }
 
 .sidebar {
