@@ -5397,6 +5397,14 @@ filechooser .dialog-action-box:backdrop {
 filechooser #pathbarbox {
   border-bottom: 1px solid #c9c0c0;
 }
+filechooser #pathbarbox.view.vertical > stack, filechooser iconview#pathbarbox.vertical > stack {
+  background: #c4bbbb linear-gradient(to top, #c0b5b5, #c7bdbd);
+  box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
+}
+filechooser #pathbarbox.view.vertical > stack:backdrop, filechooser iconview#pathbarbox.vertical > stack:backdrop {
+  background: #b6aaaa linear-gradient(to top, #b1a5a5, #b9adad);
+  box-shadow: inset 0 1px rgba(199, 70, 70, 0.1);
+}
 
 filechooserbutton:drop(active) {
   box-shadow: none;
