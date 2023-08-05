@@ -318,7 +318,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu-content {
-  padding: 16px 0;
+  padding: 6px;
   background-color: #3a3636;
   box-shadow: none;
   border-color: transparent;
@@ -328,22 +328,19 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-menu-item {
   spacing: 6px;
   padding: 6px;
-  border-radius: 0;
-  border-top: 1px solid transparent;
+  border-radius: 5px;
+  border: none;
 }
 .popup-menu-item:ltr {
-  padding-right: 1.75em;
-  padding-left: 0;
+  padding-left: 6px;
 }
 .popup-menu-item:rtl {
-  padding-right: 0;
-  padding-left: 1.75em;
+  padding-right: 6px;
 }
 .popup-menu-item:checked, .popup-menu-item:checked:hover {
-  background-color: #322f2f !important;
+  background-color: #2a2727 !important;
   box-shadow: none;
   font-weight: bold !important;
-  border-top: 1px solid rgba(32, 29, 29, 0.8);
   border-radius: 15px 0 0 0;
 }
 .popup-menu-item.selected {
@@ -371,10 +368,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-sub-menu {
-  background-color: #322f2f !important;
+  background-color: #2a2727 !important;
   box-shadow: none;
-  border-top: 0px solid rgba(32, 29, 29, 0.8);
-  border-bottom: 1px solid rgba(32, 29, 29, 0.8);
+  border: none;
   border-radius: 0 0 15px 0;
 }
 .popup-sub-menu .popup-menu-item:last-child {
@@ -418,11 +414,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   -st-icon-style: symbolic;
 }
 .aggregate-menu .popup-sub-menu .popup-menu-item > :first-child:ltr {
-  padding-left: 14px;
   margin-left: 1.09em;
 }
 .aggregate-menu .popup-sub-menu .popup-menu-item > :first-child:rtl {
-  padding-right: 14px;
   margin-right: 1.09em;
 }
 
