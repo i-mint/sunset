@@ -2686,8 +2686,8 @@ window.devel headerbar.titlebar:not(.selection-mode):backdrop {
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 .path-bar-box .linked > button:active {
-  color: #4D4444;
-  outline-color: rgba(77, 68, 68, 0.3);
+  color: rgba(77, 68, 68, 0.5);
+  outline-color: rgba(77, 68, 68, 0);
   border-color: rgba(0, 0, 0, 0.4);
   background-image: image(#a89a9a);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
@@ -6121,6 +6121,9 @@ popover.emoji-completion .emoji:hover {
 
 .thunar .sidebar .view, .thunar .sidebar iconview {
   background: #cec6c6;
+}
+.thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover {
+  border: none;
 }
 .thunar .sidebar .view:hover, .thunar .sidebar iconview:hover {
   background-color: rgba(77, 68, 68, 0.08);
