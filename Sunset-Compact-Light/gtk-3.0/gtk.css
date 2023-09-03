@@ -1565,7 +1565,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-radius: 0;
 }
 
-.linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
+headerbar.windowhandle box.path-buttons-box > box:first-child > button, headerbar.windowhandle box.path-buttons-box, .linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
 .linked:not(.vertical) > entry:first-child,
 .inline-toolbar button:first-child,
 .linked > button:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
@@ -1580,7 +1580,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-bottom-right-radius: 0;
 }
 
-.linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle, .linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
 .linked:not(.vertical) > entry:last-child,
 .inline-toolbar button:last-child,
 .linked > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
@@ -6117,6 +6117,112 @@ popover.emoji-completion contents row box {
 
 popover.emoji-completion .emoji:hover {
   background: #d5cece;
+}
+
+headerbar.windowhandle box.path-buttons-box {
+  color: #4D4444;
+  outline-color: rgba(77, 68, 68, 0.3);
+  border-color: #9f8f8f;
+  border-bottom-color: #917e7e;
+  background-image: linear-gradient(to top, #c0b5b5 2px, #c9c0c0);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 0;
+  margin: 2px 0;
+  padding: 0;
+  box-shadow: none;
+}
+headerbar.windowhandle box.path-buttons-box > box > button {
+  background: image(transparent);
+  border: none;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 0;
+}
+headerbar.windowhandle box.path-buttons-box > box > button:hover {
+  color: #4D4444;
+  outline-color: rgba(77, 68, 68, 0.3);
+  border-color: #9f8f8f;
+  border-bottom-color: #917e7e;
+  background-image: linear-gradient(to top, #c0b5b5 2px, #c9c0c0);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+headerbar.windowhandle box.path-buttons-box > box > button:active label, headerbar.windowhandle box.path-buttons-box > box > button:active image {
+  opacity: 0.3;
+}
+headerbar.windowhandle box.path-buttons-box > box > button.current-dir:active label, headerbar.windowhandle box.path-buttons-box > box > button.current-dir:active image {
+  opacity: 0.5;
+}
+headerbar.windowhandle box.path-buttons-box > box > button.current-dir label, headerbar.windowhandle box.path-buttons-box > box > button.current-dir image {
+  opacity: 1;
+}
+headerbar.windowhandle box.path-buttons-box > box > button:backdrop, headerbar.windowhandle box.path-buttons-box > box > button.current-dir:backdrop {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  color: #796f6f;
+}
+headerbar.windowhandle box.path-buttons-box:backdrop {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  color: #796f6f;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle {
+  color: #4D4444;
+  outline-color: rgba(77, 68, 68, 0.3);
+  border-color: #9f8f8f;
+  border-bottom-color: #917e7e;
+  background-image: linear-gradient(to top, #c0b5b5 2px, #c9c0c0);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 0;
+  margin: 2px 0;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle image {
+  opacity: 0.5;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:hover, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:active, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:checked {
+  color: #4D4444;
+  outline-color: rgba(77, 68, 68, 0.3);
+  border-color: #9f8f8f;
+  border-bottom-color: #917e7e;
+  background-image: linear-gradient(to top, #c0b5b5 2px, #c9c0c0);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.07);
+  animation: none;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:active label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:active image {
+  opacity: 0.5;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:checked {
+  box-shadow: none;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:checked label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:checked image {
+  opacity: 1;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  color: #796f6f;
 }
 
 event.slanted-end, event.color-light {
