@@ -36,7 +36,7 @@ entry:focus image {
 .titlebar:not(headerbar) stackswitcher button:checked,
 .titlebar:not(headerbar) button.toggle:checked,
 headerbar stackswitcher button:checked,
-headerbar button.toggle:checked, viewswitcher > box > button.radio:checked {
+headerbar button.toggle:checked, headerbar.windowhandle viewswitcher > box > button.radio:checked {
   animation-name: blinking_button;
   animation-duration: 4s;
   animation-iteration-count: 1;
@@ -1464,17 +1464,19 @@ button.circular:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:b
   border-color: transparent;
 }
 
-viewswitcher > box > button.radio {
+headerbar.windowhandle viewswitcher {
+  margin: 5px 0;
+}
+headerbar.windowhandle viewswitcher > box > button.radio {
   margin: 0;
   padding: 0;
   border-radius: 0;
-  border: none;
   box-shadow: none;
 }
-viewswitcher > box > button.radio:checked:hover {
+headerbar.windowhandle viewswitcher > box > button.radio:checked:hover {
   background: image(#c74646);
 }
-viewswitcher > box > button.radio:checked {
+headerbar.windowhandle viewswitcher > box > button.radio:checked {
   color: #ffffff;
   outline-color: rgba(255, 255, 255, 0.3);
   border-color: rgba(0, 0, 0, 0.4);
@@ -1486,7 +1488,7 @@ viewswitcher > box > button.radio:checked {
   box-shadow: none;
   border-top-color: #af3535;
 }
-viewswitcher > box > button.radio:checked:backdrop {
+headerbar.windowhandle viewswitcher > box > button.radio:checked:backdrop {
   color: #665d5d;
   border-color: black;
   background-image: image(#1c0f0f);
@@ -1597,7 +1599,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
 headerbar.windowhandle box.path-buttons-box > box:first-child > button, headerbar.windowhandle box.path-buttons-box, .linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
 .linked:not(.vertical) > entry:first-child,
 .inline-toolbar button:first-child,
-.linked > button:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
+.linked > button:first-child, headerbar.windowhandle viewswitcher > box > button.radio:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
   border-style: solid;
   border-top-left-radius: 15px;
   border-top-right-radius: 0;
@@ -1612,7 +1614,7 @@ headerbar.windowhandle box.path-buttons-box > box:first-child > button, headerba
 headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle, .linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
 .linked:not(.vertical) > entry:last-child,
 .inline-toolbar button:last-child,
-.linked > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
+.linked > button:last-child, headerbar.windowhandle viewswitcher > box > button.radio:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
   border-style: solid;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
