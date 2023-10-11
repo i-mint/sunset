@@ -5837,12 +5837,12 @@ decoration:backdrop {
 .ssd.maximized decoration, .ssd.maximized decoration:backdrop {
   box-shadow: none;
 }
+.csd.unified decoration {
+  border-radius: 8px;
+}
 .csd.popup decoration {
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.65);
-}
-.csd.unified decoration {
-  border-radius: 5px;
 }
 tooltip.csd decoration {
   border-radius: 5px;
