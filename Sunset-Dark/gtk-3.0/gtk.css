@@ -1584,7 +1584,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 
-.linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .linked:not(.vertical) > spinbutton:not(.vertical),
+.linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .budgie-popover .linked button, .linked:not(.vertical) > spinbutton:not(.vertical),
 .linked:not(.vertical) > entry,
 .inline-toolbar button,
 .linked > button, toolbar.inline-toolbar toolbutton > button.flat {
@@ -1593,7 +1593,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-radius: 0;
 }
 
-headerbar.windowhandle box.path-buttons-box > box:first-child > button, headerbar.windowhandle box.path-buttons-box, .linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
+headerbar.windowhandle box.path-buttons-box > box:first-child > button, headerbar.windowhandle box.path-buttons-box, .linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .budgie-popover .linked button:first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
 .linked:not(.vertical) > entry:first-child,
 .inline-toolbar button:first-child,
 .linked > button:first-child, headerbar.windowhandle viewswitcher > box > button.radio:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
@@ -1608,7 +1608,7 @@ headerbar.windowhandle box.path-buttons-box > box:first-child > button, headerba
   -gtk-outline-bottom-right-radius: 0;
 }
 
-headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle, .linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle, .linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .budgie-popover .linked button:last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
 .linked:not(.vertical) > entry:last-child,
 .inline-toolbar button:last-child,
 .linked > button:last-child, headerbar.windowhandle viewswitcher > box > button.radio:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
@@ -1623,7 +1623,7 @@ headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle, .link
   -gtk-outline-bottom-right-radius: 15px;
 }
 
-.linked:not(.vertical) > combobox:only-child > box > button.combo, filechooser .path-bar.linked > button:only-child, .linked:not(.vertical) > spinbutton:only-child:not(.vertical),
+.linked:not(.vertical) > combobox:only-child > box > button.combo, filechooser .path-bar.linked > button:only-child, .budgie-popover .linked button:only-child, .linked:not(.vertical) > spinbutton:only-child:not(.vertical),
 .linked:not(.vertical) > entry:only-child,
 .inline-toolbar button:only-child,
 .linked > button:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat {
@@ -6123,6 +6123,220 @@ popover.emoji-completion contents row box {
 
 popover.emoji-completion .emoji:hover {
   background: #474242;
+}
+
+.budgie-container {
+  background-color: transparent;
+  border: none;
+}
+.budgie-container:backdrop {
+  background: transparent;
+}
+
+.budgie-menu entry.search {
+  box-shadow: inset 0 -2px 0 0 #be3b39;
+  border-radius: 0;
+  border-color: transparent;
+  background-color: transparent;
+}
+.budgie-menu .category-button {
+  border: 1px solid transparent;
+  border-right: 2px solid transparent;
+  font-weight: normal;
+  border-radius: 7px;
+  transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.budgie-menu .category-button label, .budgie-menu .category-button image, .budgie-menu .category-button {
+  color: #B5AAAA;
+}
+.budgie-menu .category-button:hover {
+  background: image(rgba(181, 170, 170, 0.09));
+  border: 1px solid rgba(32, 29, 29, 0.5);
+  border-right: 2px solid rgba(32, 29, 29, 0.5);
+}
+.budgie-menu .category-button:checked, .budgie-menu .category-button:checked:hover {
+  background: #3a3636;
+  border: 1px solid #222020;
+  border-right: 2px solid #be3b39;
+  font-weight: normal;
+}
+.budgie-menu .category-button:checked label, .budgie-menu .category-button:checked image, .budgie-menu .category-button:checked, .budgie-menu .category-button:checked:hover label, .budgie-menu .category-button:checked:hover image, .budgie-menu .category-button:checked:hover {
+  color: #B5AAAA;
+}
+.budgie-menu row button:hover, .budgie-menu row button:active, .budgie-menu row button {
+  background: image(transparent);
+  box-shadow: none;
+  border-color: transparent;
+}
+
+raven,
+.raven-background,
+.raven-frame {
+  background-color: #3a3636;
+}
+
+.budgie-panel {
+  color: #B5AAAA;
+  background: image(black);
+  box-shadow: none;
+  border: none;
+  transition: all 150ms ease-in;
+}
+.budgie-panel.transparent {
+  background: image(rgba(0, 0, 0, 0.6));
+}
+.budgie-panel button,
+.budgie-panel button.flat:not(.running) {
+  background: image(transparent);
+  border-color: transparent;
+  border-radius: 0;
+}
+.budgie-panel button:hover,
+.budgie-panel button.flat:not(.running):hover {
+  color: #888080;
+  background: image(transparent);
+  box-shadow: none;
+  border-radius: 0;
+  border-color: transparent;
+}
+.budgie-panel button:active, .budgie-panel button:checked,
+.budgie-panel button.flat:not(.running):active,
+.budgie-panel button.flat:not(.running):checked {
+  color: #b3a8a8;
+  background: image(#230b0b);
+  box-shadow: inset 0 -2px 0 0 #be3b39;
+  border-radius: 0;
+  border-color: transparent;
+}
+.bottom revealer > .workspace-item grid {
+  background-color: rgba(181, 170, 170, 0.2);
+  border-bottom: 2px solid rgba(181, 170, 170, 0.6);
+  margin-right: 2px;
+}
+.bottom .workspace-item.current-workspace grid {
+  border-bottom: 2px solid #be3b39;
+}
+
+.top revealer > .workspace-item grid {
+  background-color: rgba(181, 170, 170, 0.2);
+  border-top: 2px solid rgba(181, 170, 170, 0.6);
+  margin-right: 2px;
+}
+.top .workspace-item.current-workspace grid {
+  border-top: 2px solid #be3b39;
+}
+
+.left revealer > .workspace-item grid {
+  background-color: rgba(181, 170, 170, 0.2);
+  border-left: 2px solid rgba(181, 170, 170, 0.6);
+  margin-right: 2px;
+}
+.left .workspace-item.current-workspace grid {
+  border-left: 2px solid #be3b39;
+}
+
+.right revealer > .workspace-item grid {
+  background-color: rgba(181, 170, 170, 0.2);
+  border-right: 2px solid rgba(181, 170, 170, 0.6);
+  margin-right: 2px;
+}
+.right .workspace-item.current-workspace grid {
+  border-right: 2px solid #be3b39;
+}
+
+.budgie-panel.transparent .workspace-switcher {
+  background: image(rgba(0, 0, 0, 0.6));
+}
+
+.budgie-popover {
+  box-shadow: 0 0 0 1px #201d1d;
+  border-color: transparent;
+  border-radius: 8px;
+}
+.budgie-popover .linked button {
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: #201d1d;
+  border-bottom-color: #0a0a0a;
+  background-image: linear-gradient(to top, #373434 2px, #3a3636);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8243137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8243137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.budgie-popover .linked button:hover {
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: #201d1d;
+  border-bottom-color: #0a0a0a;
+  background-image: linear-gradient(to bottom left, #423e3e, #433d3d, #443c3c);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.budgie-popover .linked button:active, .budgie-popover .linked button:checked {
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: #000000;
+  background-image: image(#222020);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.budgie-popover.user-menu list, .budgie-popover.places-menu list {
+  background: image(transparent);
+}
+.budgie-popover.user-menu button, .budgie-popover.places-menu button {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.budgie-popover button {
+  border: 1px solid transparent;
+  border-right: 2px solid transparent;
+  font-weight: normal;
+  border-radius: 7px;
+  transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.budgie-popover button label, .budgie-popover button image, .budgie-popover button {
+  color: #B5AAAA;
+}
+.budgie-popover > frame.container > border, .budgie-popover > frame.container {
+  border-style: none;
+  background: transparent;
+}
+
+.budgie-power-dialog {
+  border-radius: 8px 8px 0 0;
+}
+
+.budgie-run-dialog {
+  border-radius: 8px;
+}
+.budgie-run-dialog entry.search,
+.budgie-run-dialog entry.search:focus {
+  box-shadow: none;
+  border-radius: 8px 8px 0 0;
+  border-color: transparent;
+  box-shadow: inset 0 -2px 0 0 #be3b39;
+}
+
+.nemo-window paned treeview.view {
+  background-color: #3c3838;
+  box-shadow: none;
+}
+.nemo-window paned treeview.view:selected, .nemo-window paned treeview.view:selected:backdrop {
+  background-color: #be3b39;
+  box-shadow: none;
+  border: none;
+}
+.nemo-window scrolledwindow.frame.nemo-places-sidebar {
+  border: none;
+}
+.nemo-window paned > box.nemo-inactive-pane.nemo-window-pane.vertical .view, .nemo-window paned > box.nemo-inactive-pane.nemo-window-pane.vertical iconview {
+  background-color: #373434;
 }
 
 headerbar.windowhandle box.path-buttons-box {
