@@ -6217,13 +6217,14 @@ raven,
   background: image(rgba(180, 167, 167, 0.6));
 }
 .budgie-panel button,
-.budgie-panel button.flat:not(.running) {
+.budgie-panel button.flat {
+  color: #4D4444;
   background: image(transparent);
   border-color: transparent;
   border-radius: 0;
 }
 .budgie-panel button:hover,
-.budgie-panel button.flat:not(.running):hover {
+.budgie-panel button.flat:hover {
   color: #6c6262;
   background: image(transparent);
   box-shadow: none;
@@ -6231,14 +6232,57 @@ raven,
   border-color: transparent;
 }
 .budgie-panel button:active, .budgie-panel button:checked,
-.budgie-panel button.flat:not(.running):active,
-.budgie-panel button.flat:not(.running):checked {
+.budgie-panel button.flat:active,
+.budgie-panel button.flat:checked {
   color: #574e4e;
   background: image(#c2b8b8);
-  box-shadow: inset 0 -2px 0 0 #c74646;
   border-radius: 0;
-  border-color: transparent;
+  border: none;
 }
+.top .budgie-panel button.toggle,
+.top .budgie-panel button.flat {
+  border: none;
+}
+.top .budgie-panel button.toggle:active, .top .budgie-panel button.toggle:checked,
+.top .budgie-panel button.flat:active,
+.top .budgie-panel button.flat:checked {
+  box-shadow: inset 0 2px 0 0 #c74646;
+  border: none;
+}
+
+.bottom .budgie-panel button.toggle,
+.bottom .budgie-panel button.flat {
+  border: none;
+}
+.bottom .budgie-panel button.toggle:active, .bottom .budgie-panel button.toggle:checked,
+.bottom .budgie-panel button.flat:active,
+.bottom .budgie-panel button.flat:checked {
+  box-shadow: inset 0 -2px 0 0 #c74646;
+  border: none;
+}
+
+.left .budgie-panel button.toggle,
+.left .budgie-panel button.flat {
+  border: none;
+}
+.left .budgie-panel button.toggle:active, .left .budgie-panel button.toggle:checked,
+.left .budgie-panel button.flat:active,
+.left .budgie-panel button.flat:checked {
+  box-shadow: inset 2px 0 0 0 #c74646;
+  border: none;
+}
+
+.right .budgie-panel button.toggle,
+.right .budgie-panel button.flat {
+  border: none;
+}
+.right .budgie-panel button.toggle:active, .right .budgie-panel button.toggle:checked,
+.right .budgie-panel button.flat:active,
+.right .budgie-panel button.flat:checked {
+  box-shadow: inset -2px 0 0 0 #c74646;
+  border: none;
+}
+
 .bottom revealer > .workspace-item grid {
   background-color: rgba(77, 68, 68, 0.2);
   border-bottom: 2px solid rgba(77, 68, 68, 0.6);
