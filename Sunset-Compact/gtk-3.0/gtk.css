@@ -6392,10 +6392,11 @@ raven,
 }
 .budgie-run-dialog entry.search,
 .budgie-run-dialog entry.search:focus {
-  box-shadow: none;
   border-radius: 8px 8px 0 0;
   border-color: transparent;
   box-shadow: inset 0 -2px 0 0 #c74646;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .nemo-window paned treeview.view {
