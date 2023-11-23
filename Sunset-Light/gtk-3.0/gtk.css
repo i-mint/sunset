@@ -6703,6 +6703,10 @@ event.slanted-end label, event.slanted-end {
   background-color: #c74646;
 }
 
+.nemo-window toolbar.primary-toolbar {
+  border-bottom: 1px solid #917e7e;
+}
+
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */
