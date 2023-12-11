@@ -770,6 +770,11 @@ button:checked {
   -gtk-icon-shadow: none;
   transition-duration: 50ms;
 }
+notebook > header > tabs > arrow:checked label, notebook > header > tabs > arrow:checked image,
+button:checked label,
+button:checked image {
+  color: inherit;
+}
 notebook > header > tabs > arrow:backdrop,
 button:backdrop.flat,
 button:backdrop {
