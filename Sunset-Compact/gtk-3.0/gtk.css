@@ -2670,7 +2670,10 @@ window.csd > .titlebar:not(headerbar) {
   box-shadow: none;
 }
 .titlebar:not(headerbar) separator {
-  background-color: #9f8f8f;
+  background-color: #190807;
+}
+.titlebar:not(headerbar) separator:backdrop {
+  background-color: #090303;
 }
 
 window.devel headerbar.titlebar:not(.selection-mode) {
@@ -2795,7 +2798,7 @@ treeview.view.separator {
   color: #c9c0c0;
 }
 treeview.view.separator:backdrop {
-  color: rgba(201, 192, 192, 0.1);
+  color: #d2cbcb;
 }
 treeview.view:backdrop {
   border-left-color: #988f8f;
@@ -5152,6 +5155,21 @@ separator {
   min-height: 1px;
 }
 
+separator.sidebar:dir(ltr), separator.sidebar.left, separator.sidebar.left:dir(rtl), separator.sidebar:dir(rtl), separator.sidebar.right {
+  background-color: #9f8f8f;
+  border: 0;
+}
+.titlebar separator.sidebar:dir(ltr), .titlebar separator.sidebar.left, .titlebar separator.sidebar.left:dir(rtl), .titlebar separator.sidebar:dir(rtl), .titlebar separator.sidebar.right {
+  background-color: #190807;
+  margin: 0;
+}
+.titlebar separator.sidebar:dir(ltr):backdrop, .titlebar separator.sidebar.left:backdrop, .titlebar separator.sidebar.left:dir(rtl):backdrop, .titlebar separator.sidebar:dir(rtl):backdrop, .titlebar separator.sidebar.right:backdrop {
+  background-color: #090303;
+}
+separator.sidebar.selection-mode, .selection-mode separator.sidebar {
+  background-color: #802727;
+}
+
 /*********
  * Lists *
  *********/
@@ -5214,6 +5232,9 @@ row.activatable:selected.has-open-popup, row.activatable:selected:hover {
 }
 row.activatable:selected:backdrop {
   background-color: #c9c0c0;
+}
+row.activatable separator.vertical {
+  background-color: transparent;
 }
 row:selected, row:selected:hover {
   background-color: #c9c0c0;
@@ -5402,16 +5423,6 @@ stacksidebar row.needs-attention > label {
   background-size: 6px 6px, 0 0;
 }
 
-separator.sidebar {
-  background-color: #9f8f8f;
-}
-separator.sidebar:backdrop {
-  background-color: #a79999;
-}
-separator.sidebar.selection-mode, .selection-mode separator.sidebar {
-  background-color: #802727;
-}
-
 /****************
  * File chooser *
  ****************/
@@ -5515,14 +5526,14 @@ paned > separator {
   -gtk-icon-source: none;
   border-style: none;
   background-color: transparent;
-  background-image: image(#9f8f8f);
-  background-size: 1px 1px;
+  background-image: image(#190807);
+  background-size: 0.5px 0.5px;
 }
 paned > separator:selected {
   background-image: image(#c74646);
 }
 paned > separator:backdrop {
-  background-image: image(#a79999);
+  background-image: image(#090303);
 }
 paned > separator.wide {
   min-width: 5px;
