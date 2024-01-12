@@ -6412,6 +6412,9 @@ raven,
   background-color: #3c3838;
   box-shadow: none;
 }
+.nemo-window paned treeview.view:hover {
+  background-color: rgba(181, 170, 170, 0.09);
+}
 .nemo-window paned treeview.view:selected, .nemo-window paned treeview.view:selected:backdrop {
   background-color: #be3b39;
   box-shadow: none;
