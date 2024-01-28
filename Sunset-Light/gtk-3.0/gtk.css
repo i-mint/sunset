@@ -6185,6 +6185,8 @@ popover.emoji-completion .emoji:hover {
   border-radius: 0;
   border-color: transparent;
   background-color: transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 .budgie-menu .category-button {
   border: 1px solid transparent;
@@ -6435,8 +6437,8 @@ raven,
   border-radius: 8px 8px 0 0;
   border-color: transparent;
   box-shadow: inset 0 -2px 0 0 #c74646;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .nemo-window paned treeview.view {
