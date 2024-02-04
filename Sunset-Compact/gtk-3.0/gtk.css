@@ -6700,6 +6700,9 @@ event.slanted-end label, event.slanted-end {
   background: image(#2b1c1c);
   box-shadow: none;
 }
+.thunar scrolledwindow.frame.standard-view > widget.view:backdrop, .thunar scrolledwindow.frame.standard-view > widget.view {
+  background-color: #e3dddd;
+}
 
 .panel.xfce4-panel {
   background-color: #150706;
