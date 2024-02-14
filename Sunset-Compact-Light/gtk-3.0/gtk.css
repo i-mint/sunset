@@ -6441,6 +6441,10 @@ raven,
   padding-bottom: 3px;
 }
 
+.night-light-indicator .container {
+  padding: 4px 6px;
+}
+
 .nemo-window paned treeview.view {
   background-color: #cec6c6;
   box-shadow: none;
