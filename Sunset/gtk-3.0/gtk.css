@@ -6707,40 +6707,10 @@ event.slanted-end label, event.slanted-end {
 .thunar scrolledwindow.frame.standard-view > widget.view:backdrop, .thunar scrolledwindow.frame.standard-view > widget.view {
   background-color: #e3dddd;
 }
-.thunar paned > grid > paned > notebook tabs > tab.reorderable-page > box > button.flat {
-  color: #4D4444;
-  outline-color: rgba(77, 68, 68, 0.3);
-  border-color: #816f6f;
-  border-bottom-color: #665757;
-  background-image: linear-gradient(to top, #917e7e 2px, #9a8989);
-  text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
-  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.07);
-}
-.thunar paned > grid > paned > notebook tabs > tab.reorderable-page > box > button.flat:hover {
-  color: #4D4444;
-  outline-color: rgba(77, 68, 68, 0.3);
-  border-color: #9a8989;
-  border-bottom-color: #816f6f;
-  background-image: linear-gradient(to top, #a89a9a 2px, #b1a5a5);
-  text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
-  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.07);
-}
-.thunar paned > grid > paned > notebook tabs > tab.reorderable-page > box > button.flat:active {
-  color: #4D4444;
-  outline-color: rgba(77, 68, 68, 0.3);
-  border-color: #952d27;
-  border-bottom-color: #6c211d;
-  background-image: linear-gradient(to top, #ad342e 2px, #bd3932);
-  text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
-  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
-}
 
 .panel.xfce4-panel {
   background-color: #150706;
-  color: #ada2a2;
+  color: #B5AAAA;
   text-shadow: none;
   box-shadow: none;
   border-radius: 0;
@@ -6749,6 +6719,7 @@ event.slanted-end label, event.slanted-end {
 .panel.xfce4-panel #clock-button,
 .panel.xfce4-panel .tasklist button {
   background-color: transparent;
+  color: #B5AAAA;
   background: image(transparent);
   border-radius: 5px;
   border: 1px solid transparent;
@@ -6772,7 +6743,7 @@ event.slanted-end label, event.slanted-end {
 .panel.xfce4-panel .tasklist button:checked:hover {
   color: #b3a8a8;
   border-radius: 0;
-  box-shadow: inset 0 -4px 0 0 #c74646;
+  box-shadow: inset 0 -2px 0 0 #c74646;
   text-shadow: none;
 }
 .panel.xfce4-panel wnck-pager {
