@@ -6724,6 +6724,34 @@ event.slanted-end label, event.slanted-end {
 .panel.xfce4-panel wnck-pager:selected {
   background-color: #be3b39;
 }
+.panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button {
+  box-shadow: none;
+  border: 1px solid #201d1d;
+}
+.panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button image, .panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button {
+  color: #B5AAAA;
+}
+.panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button image {
+  margin: 0;
+  padding: 2px;
+}
+.panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button:focus, .panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button {
+  background: image(linear-gradient(to top, #373434));
+}
+.panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button:active image {
+  background: image(#222020);
+  border-radius: 5px;
+}
+.panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button:first-child {
+  border: 1px solid #201d1d;
+  border-right: none;
+  box-shadow: none;
+}
+.panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button:last-child {
+  border: 1px solid #201d1d;
+  border-left: none;
+  box-shadow: none;
+}
 
 .nemo-window toolbar.primary-toolbar {
   border-bottom: 1px solid #0a0a0a;

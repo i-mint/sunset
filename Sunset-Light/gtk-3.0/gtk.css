@@ -6755,6 +6755,34 @@ event.slanted-end label, event.slanted-end {
 .panel.xfce4-panel wnck-pager:selected {
   background-color: #c74646;
 }
+.panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button {
+  box-shadow: none;
+  border: 1px solid #9f8f8f;
+}
+.panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button image, .panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button {
+  color: #4D4444;
+}
+.panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button image {
+  margin: 0;
+  padding: 2px;
+}
+.panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button:focus, .panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button {
+  background: image(linear-gradient(to top, #c0b5b5));
+}
+.panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button:active image {
+  background: image(#a89a9a);
+  border-radius: 5px;
+}
+.panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button:first-child {
+  border: 1px solid #9f8f8f;
+  border-right: none;
+  box-shadow: none;
+}
+.panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button:last-child {
+  border: 1px solid #9f8f8f;
+  border-left: none;
+  box-shadow: none;
+}
 
 .nemo-window toolbar.primary-toolbar {
   border-bottom: 1px solid #917e7e;
