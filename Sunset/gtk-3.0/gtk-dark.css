@@ -5147,7 +5147,7 @@ list {
   background-color: #444040;
   border-color: #201d1d;
 }
-list label, list image {
+list label {
   color: inherit;
 }
 list:backdrop {
@@ -5155,7 +5155,7 @@ list:backdrop {
   background-color: #474242;
   border-color: #252222;
 }
-list:backdrop label, list:backdrop image {
+list:backdrop label {
   color: inherit;
 }
 list row {
@@ -5170,7 +5170,7 @@ row {
   border-radius: 7px;
   transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-row label, row image, row {
+row label, row {
   color: #B5AAAA;
 }
 row:hover {
