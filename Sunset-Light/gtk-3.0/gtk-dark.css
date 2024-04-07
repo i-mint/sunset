@@ -6617,11 +6617,21 @@ event.slanted-end label, event.slanted-end {
   text-shadow: none;
   -gtk-icon-shadow: none;
 }
+.thunar menubar button.flat:backdrop image, .thunar menubar button.flat:backdrop,
+.thunar toolbar button.flat:backdrop image,
+.thunar toolbar button.flat:backdrop {
+  color: #484444;
+}
 .thunar menubar:backdrop,
 .thunar toolbar:backdrop {
-  color: #484444;
   border-color: #111010;
   background-color: #171616;
+}
+.thunar menubar:backdrop label, .thunar menubar:backdrop,
+.thunar toolbar:backdrop label,
+.thunar toolbar:backdrop {
+  color: #484444;
+  text-shadow: none;
 }
 .thunar .linked.path-bar > button,
 .thunar button.path-bar-button {
@@ -6668,10 +6678,16 @@ event.slanted-end label, event.slanted-end {
 }
 .thunar .linked.path-bar > button:backdrop,
 .thunar button.path-bar-button:backdrop {
-  color: #484444;
   border-color: #111010;
   background: image(#171616);
   box-shadow: none;
+}
+.thunar .linked.path-bar > button:backdrop label, .thunar .linked.path-bar > button:backdrop image, .thunar .linked.path-bar > button:backdrop,
+.thunar button.path-bar-button:backdrop label,
+.thunar button.path-bar-button:backdrop image,
+.thunar button.path-bar-button:backdrop {
+  color: #484444;
+  text-shadow: none;
 }
 .thunar scrolledwindow.frame.standard-view > widget.view:backdrop, .thunar scrolledwindow.frame.standard-view > widget.view {
   background-color: #444040;
