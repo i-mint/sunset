@@ -1435,8 +1435,7 @@ button.font > box > box > label {
 button.circular {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
-  padding: 2px;
-  /* circles instead of ellipses */
+  padding: 2px; /* circles instead of ellipses */
   background-origin: padding-box, border-box;
   background-clip: padding-box, border-box;
 }
@@ -1682,7 +1681,9 @@ headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle, .link
 button:visited:hover,
 button:visited:active,
 button:visited:checked, button:link,
-button:visited, list row button.image-button:not(.flat), modelbutton.flat:backdrop, modelbutton.flat:backdrop:hover, modelbutton.flat,
+button:visited, list row button.image-button:not(.flat), modelbutton.flat:backdrop, modelbutton.flat:backdrop:hover,
+.menuitem.button.flat:backdrop,
+.menuitem.button.flat:backdrop:hover, modelbutton.flat,
 .menuitem.button.flat {
   background-color: transparent;
   background-image: none;
@@ -1772,38 +1773,38 @@ button:visited,
   color: #ebbebe;
 }
 button:link > label:hover,
-button:visited > label:hover, button:hover:link,
+button:visited > label:hover,
 button:hover:visited,
 *:link:hover {
   color: #e6abaa;
 }
 *:selected button:link > label:hover,
-*:selected button:visited > label:hover, *:selected button:hover:link,
+*:selected button:visited > label:hover,
 *:selected button:hover:visited,
 *:selected *:link:hover {
   color: #fdf7f7;
 }
 button:link > label:active,
-button:visited > label:active, button:active:link,
+button:visited > label:active,
 button:active:visited,
 *:link:active {
   color: #da8483;
 }
 *:selected button:link > label:active,
-*:selected button:visited > label:active, *:selected button:active:link,
+*:selected button:visited > label:active,
 *:selected button:active:visited,
 *:selected *:link:active {
   color: #f8e6e6;
 }
 button:link > label:disabled,
-button:visited > label:disabled, button:disabled:link,
+button:visited > label:disabled,
 button:disabled:visited,
 *:link:disabled,
 *:link:disabled:backdrop {
   color: rgba(174, 174, 174, 0.8);
 }
 button:link > label:backdrop,
-button:visited > label:backdrop, button:backdrop:link,
+button:visited > label:backdrop,
 button:backdrop:visited,
 *:link:backdrop:backdrop:hover,
 *:link:backdrop:backdrop:hover:selected,
@@ -1813,9 +1814,9 @@ button:backdrop:visited,
 .selection-mode .titlebar:not(headerbar) .subtitle:link, .selection-mode.titlebar:not(headerbar) .subtitle:link,
 .selection-mode headerbar .subtitle:link,
 headerbar.selection-mode .subtitle:link, button:link > label:selected,
-button:visited > label:selected, button:selected:link,
+button:visited > label:selected,
 button:selected:visited, *:selected button:link > label,
-*:selected button:visited > label, *:selected button:link,
+*:selected button:visited > label,
 *:selected button:visited,
 *:link:selected,
 *:selected *:link {
@@ -2668,8 +2669,7 @@ window.devel headerbar.titlebar:not(.selection-mode) {
   background: #3a3636 cross-fade(10% -gtk-icontheme("system-run-symbolic"), image(transparent)) 90% 0/256px 256px no-repeat, linear-gradient(to right, transparent 65%, rgba(190, 59, 57, 0.1)), linear-gradient(to top, #282525 3px, #2d2a2a);
 }
 window.devel headerbar.titlebar:not(.selection-mode):backdrop {
-  background: #3a3636 cross-fade(10% -gtk-icontheme("system-run-symbolic"), image(transparent)) 90% 0/256px 256px no-repeat, image(#3a3636);
-  /* background-color would flash */
+  background: #3a3636 cross-fade(10% -gtk-icontheme("system-run-symbolic"), image(transparent)) 90% 0/256px 256px no-repeat, image(#3a3636); /* background-color would flash */
 }
 
 /************
@@ -5639,8 +5639,7 @@ infobar.info *:link, infobar.question *:link, infobar.warning *:link, infobar.er
  * Tooltips *
  ************/
 tooltip {
-  padding: 4px;
-  /* not working */
+  padding: 4px; /* not working */
   border-radius: 5px;
   box-shadow: none;
   text-shadow: 0 1px black;
@@ -6655,19 +6654,32 @@ event.slanted-end label, event.slanted-end {
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8291764706);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
 }
-.thunar .linked.path-bar > button:active, .thunar .linked.path-bar > button:checked,
-.thunar button.path-bar-button:active,
-.thunar button.path-bar-button:checked {
-  color: #B5AAAA;
-  outline-color: rgba(181, 170, 170, 0.3);
+.thunar .linked.path-bar > button:active,
+.thunar button.path-bar-button:active {
+  color: rgba(181, 170, 170, 0.5);
+  outline-color: rgba(181, 170, 170, 0);
   border-color: black;
   background-image: image(black);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none;
+  font-weight: bold;
 }
-.thunar .linked.path-bar > button:active:backdrop, .thunar .linked.path-bar > button:checked:backdrop,
-.thunar button.path-bar-button:active:backdrop,
+.thunar .linked.path-bar > button:active label,
+.thunar button.path-bar-button:active label {
+  color: inherit;
+}
+.thunar .linked.path-bar > button:checked,
+.thunar button.path-bar-button:checked {
+  background-color: transparent;
+  font-weight: bold;
+}
+.thunar .linked.path-bar > button:checked label, .thunar .linked.path-bar > button:checked,
+.thunar button.path-bar-button:checked label,
+.thunar button.path-bar-button:checked {
+  color: #ffffff;
+}
+.thunar .linked.path-bar > button:checked:backdrop,
 .thunar button.path-bar-button:checked:backdrop {
   border-color: transparent;
   background-color: transparent;
@@ -6675,6 +6687,11 @@ event.slanted-end label, event.slanted-end {
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none;
+  color: #484444;
+}
+.thunar .linked.path-bar > button:checked:active label,
+.thunar button.path-bar-button:checked:active label {
+  color: rgba(255, 255, 255, 0.5);
 }
 .thunar .linked.path-bar > button:backdrop,
 .thunar button.path-bar-button:backdrop {
