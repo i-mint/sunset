@@ -3408,6 +3408,9 @@ notebook > stack:not(:only-child) {
 notebook > stack:not(:only-child):backdrop {
   background-color: #474242;
 }
+notebook frame > list > row.activatable button.circular image {
+  padding: 4px;
+}
 
 /**************
  * Scrollbars *
