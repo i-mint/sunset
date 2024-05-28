@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=Sunset
+Type=X-GNOME-Metatheme
+Comment=Sunset Gtk Themes 
+Encoding=UTF-8
+GtkTheme=Sunset
+MetacityTheme=Sunset
+IconTheme=Yaru
+CursorTheme=Adwaita
+CursorSize=24
