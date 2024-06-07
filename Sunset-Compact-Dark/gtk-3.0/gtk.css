@@ -6798,6 +6798,120 @@ event.slanted-end label, event.slanted-end {
   border: 1px solid #be3b39;
   border-radius: 5px;
 }
+.mate-panel-menu-bar {
+  background-color: black;
+}
+.mate-panel-menu-bar label, .mate-panel-menu-bar image, .mate-panel-menu-bar {
+  color: #B5AAAA;
+}
+.mate-panel-menu-bar #PanelApplet button,
+.mate-panel-menu-bar #PanelApplet button.flat,
+.mate-panel-menu-bar #PanelApplet button.toggle,
+.mate-panel-menu-bar #PanelApplet #tasklist-button {
+  background-color: black;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+.mate-panel-menu-bar #PanelApplet button label, .mate-panel-menu-bar #PanelApplet button image, .mate-panel-menu-bar #PanelApplet button,
+.mate-panel-menu-bar #PanelApplet button.flat label,
+.mate-panel-menu-bar #PanelApplet button.flat image,
+.mate-panel-menu-bar #PanelApplet button.flat,
+.mate-panel-menu-bar #PanelApplet button.toggle label,
+.mate-panel-menu-bar #PanelApplet button.toggle image,
+.mate-panel-menu-bar #PanelApplet button.toggle,
+.mate-panel-menu-bar #PanelApplet #tasklist-button label,
+.mate-panel-menu-bar #PanelApplet #tasklist-button image,
+.mate-panel-menu-bar #PanelApplet #tasklist-button {
+  color: #B5AAAA;
+}
+.mate-panel-menu-bar #PanelApplet button:hover,
+.mate-panel-menu-bar #PanelApplet button.flat:hover,
+.mate-panel-menu-bar #PanelApplet button.toggle:hover,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:hover {
+  background-color: black;
+  background: image(black);
+  text-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+.mate-panel-menu-bar #PanelApplet button:hover label, .mate-panel-menu-bar #PanelApplet button:hover image, .mate-panel-menu-bar #PanelApplet button:hover,
+.mate-panel-menu-bar #PanelApplet button.flat:hover label,
+.mate-panel-menu-bar #PanelApplet button.flat:hover image,
+.mate-panel-menu-bar #PanelApplet button.flat:hover,
+.mate-panel-menu-bar #PanelApplet button.toggle:hover label,
+.mate-panel-menu-bar #PanelApplet button.toggle:hover image,
+.mate-panel-menu-bar #PanelApplet button.toggle:hover,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:hover label,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:hover image,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:hover {
+  color: #888080;
+}
+.mate-panel-menu-bar #PanelApplet button:active, .mate-panel-menu-bar #PanelApplet button:checked, .mate-panel-menu-bar #PanelApplet button:checked:hover,
+.mate-panel-menu-bar #PanelApplet button.flat:active,
+.mate-panel-menu-bar #PanelApplet button.flat:checked,
+.mate-panel-menu-bar #PanelApplet button.flat:checked:hover,
+.mate-panel-menu-bar #PanelApplet button.toggle:active,
+.mate-panel-menu-bar #PanelApplet button.toggle:checked,
+.mate-panel-menu-bar #PanelApplet button.toggle:checked:hover,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:active,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:checked,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:checked:hover {
+  background-color: black;
+  background: image(black);
+  text-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid #be3b39;
+}
+.mate-panel-menu-bar #PanelApplet button:active label, .mate-panel-menu-bar #PanelApplet button:active image, .mate-panel-menu-bar #PanelApplet button:active, .mate-panel-menu-bar #PanelApplet button:checked label, .mate-panel-menu-bar #PanelApplet button:checked image, .mate-panel-menu-bar #PanelApplet button:checked, .mate-panel-menu-bar #PanelApplet button:checked:hover label, .mate-panel-menu-bar #PanelApplet button:checked:hover image, .mate-panel-menu-bar #PanelApplet button:checked:hover,
+.mate-panel-menu-bar #PanelApplet button.flat:active label,
+.mate-panel-menu-bar #PanelApplet button.flat:active image,
+.mate-panel-menu-bar #PanelApplet button.flat:active,
+.mate-panel-menu-bar #PanelApplet button.flat:checked label,
+.mate-panel-menu-bar #PanelApplet button.flat:checked image,
+.mate-panel-menu-bar #PanelApplet button.flat:checked,
+.mate-panel-menu-bar #PanelApplet button.flat:checked:hover label,
+.mate-panel-menu-bar #PanelApplet button.flat:checked:hover image,
+.mate-panel-menu-bar #PanelApplet button.flat:checked:hover,
+.mate-panel-menu-bar #PanelApplet button.toggle:active label,
+.mate-panel-menu-bar #PanelApplet button.toggle:active image,
+.mate-panel-menu-bar #PanelApplet button.toggle:active,
+.mate-panel-menu-bar #PanelApplet button.toggle:checked label,
+.mate-panel-menu-bar #PanelApplet button.toggle:checked image,
+.mate-panel-menu-bar #PanelApplet button.toggle:checked,
+.mate-panel-menu-bar #PanelApplet button.toggle:checked:hover label,
+.mate-panel-menu-bar #PanelApplet button.toggle:checked:hover image,
+.mate-panel-menu-bar #PanelApplet button.toggle:checked:hover,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:active label,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:active image,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:active,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:checked label,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:checked image,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:checked,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:checked:hover label,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:checked:hover image,
+.mate-panel-menu-bar #PanelApplet #tasklist-button:checked:hover {
+  color: #b3a8a8;
+}
+.mate-panel-menu-bar #PanelApplet button:not(#tasklist-button) {
+  font-weight: bold;
+}
+.mate-panel-menu-bar #PanelApplet .wnck-pager {
+  background-color: #918888;
+}
+.mate-panel-menu-bar #PanelApplet .wnck-pager:hover {
+  background-color: #6d6666;
+}
+.mate-panel-menu-bar #PanelApplet .wnck-pager:selected {
+  background-color: #be3b39;
+}
+
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */
