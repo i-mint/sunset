@@ -6943,6 +6943,47 @@ event.slanted-end label, event.slanted-end {
   background-color: #c74646;
 }
 
+.caja-navigation-window box.caja-side-pane .frame treeview.view {
+  color: #4D4444;
+  background-color: #cec6c6;
+}
+.caja-navigation-window box.caja-side-pane .frame treeview.view:hover {
+  background-color: rgba(77, 68, 68, 0.08);
+  border-top: 1px solid rgba(159, 143, 143, 0.5);
+  border-bottom: 1px solid rgba(159, 143, 143, 0.5);
+}
+.caja-navigation-window box.caja-side-pane .frame treeview.view:active, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:hover {
+  background-color: #c74646;
+  border: none;
+}
+.caja-navigation-window box.caja-side-pane .frame treeview.view:active label, .caja-navigation-window box.caja-side-pane .frame treeview.view:active image, .caja-navigation-window box.caja-side-pane .frame treeview.view:active, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected label, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected image, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:hover label, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:hover image, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:hover {
+  color: #ffffff;
+}
+.caja-navigation-window box.caja-side-pane .frame treeview.view:selected:backdrop {
+  background-color: rgba(199, 70, 70, 0.5);
+}
+.caja-navigation-window box.caja-side-pane .frame treeview.view:selected:backdrop label, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:backdrop image, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:backdrop {
+  color: rgba(255, 255, 255, 0.5);
+}
+.caja-navigation-window box.caja-side-pane .frame treeview.view:backdrop {
+  color: #6b6262;
+  background-color: #d5cdcd;
+  border-color: #a79999;
+  transition: 200ms ease-out;
+}
+.caja-navigation-window .caja-notebook .frame {
+  border-width: 0 0 1px;
+}
+.caja-navigation-window .caja-side-pane .frame {
+  border-width: 1px 0 0;
+}
+.caja-navigation-window .caja-notebook {
+  border-top: 1px solid #9f8f8f;
+}
+.caja-navigation-window toolbar.horizontal.primary-toolbar {
+  border-bottom: 1px solid #9f8f8f;
+}
+
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */
