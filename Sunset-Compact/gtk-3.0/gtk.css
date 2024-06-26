@@ -5962,21 +5962,21 @@ headerbar.selection-mode button.titlebutton:backdrop,
   -gtk-icon-shadow: none;
 }
 
-.nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .view text selection:focus, .view text selection,
+entry.caja-location-entry selection:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .view text selection:focus, .view text selection,
 textview text selection:focus,
 textview text selection, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected,
 entry selection, modelbutton.flat:selected,
 .menuitem.button.flat:selected, spinbutton:not(.vertical) selection, treeview.view:selected:focus, treeview.view:selected, calendar:selected {
   background-color: #c74646;
 }
-label:selected, .selection-mode button.titlebutton, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .view text selection:focus, .view text selection,
+label:selected, .selection-mode button.titlebutton, entry.caja-location-entry selection:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .view text selection:focus, .view text selection,
 textview text selection:focus,
 textview text selection, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected,
 entry selection, modelbutton.flat:selected,
 .menuitem.button.flat:selected, spinbutton:not(.vertical) selection, treeview.view:selected:focus, treeview.view:selected, calendar:selected {
   color: #ffffff;
 }
-label:disabled selection, label:disabled:selected, .selection-mode button.titlebutton:disabled, .nemo-window paned > .nemo-window-pane widget.entry:disabled:selected, .thunar .sidebar .view:disabled:selected, .thunar .sidebar iconview:disabled:selected, .view text selection:disabled,
+label:disabled selection, label:disabled:selected, .selection-mode button.titlebutton:disabled, entry.caja-location-entry selection:disabled:focus, .nemo-window paned > .nemo-window-pane widget.entry:disabled:selected, .thunar .sidebar .view:disabled:selected, .thunar .sidebar iconview:disabled:selected, .view text selection:disabled,
 textview text selection:disabled:focus,
 textview text selection:disabled, iconview text selection:disabled:focus, iconview text selection:disabled, flowbox flowboxchild:disabled:selected,
 entry selection:disabled, modelbutton.flat:disabled:selected,
@@ -5984,7 +5984,7 @@ entry selection:disabled, modelbutton.flat:disabled:selected,
   color: #e3a3a3;
 }
 
-label:backdrop selection, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:selected, .thunar .sidebar .view:backdrop:selected, .thunar .sidebar iconview:backdrop:selected, .view text selection:backdrop,
+label:backdrop selection, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, entry.caja-location-entry selection:backdrop:focus, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:selected, .thunar .sidebar .view:backdrop:selected, .thunar .sidebar iconview:backdrop:selected, .view text selection:backdrop,
 textview text selection:backdrop:focus,
 textview text selection:backdrop, iconview text selection:backdrop:focus, iconview text selection:backdrop, flowbox flowboxchild:backdrop:selected,
 entry selection:backdrop, modelbutton.flat:backdrop:selected,
@@ -6982,6 +6982,41 @@ event.slanted-end label, event.slanted-end {
 }
 .caja-navigation-window toolbar.horizontal.primary-toolbar {
   border-bottom: 1px solid #9f8f8f;
+}
+
+entry.caja-location-entry {
+  background: image(#e3dddd);
+  border-color: #9f8f8f;
+  box-shadow: none;
+  transition: 200ms ease-out;
+}
+entry.caja-location-entry label, entry.caja-location-entry image, entry.caja-location-entry {
+  color: #4D4444;
+}
+entry.caja-location-entry:focus {
+  background: image(#e3dddd);
+  border-color: #c74646;
+  box-shadow: none;
+}
+entry.caja-location-entry:focus label, entry.caja-location-entry:focus image, entry.caja-location-entry:focus {
+  color: #4D4444;
+}
+entry.caja-location-entry selection:focus label, entry.caja-location-entry selection:focus image {
+  color: inherit;
+}
+entry.caja-location-entry:backdrop {
+  background: image(#e1dada);
+  border-color: #a79999;
+}
+entry.caja-location-entry:backdrop label, entry.caja-location-entry:backdrop image, entry.caja-location-entry:backdrop {
+  color: #6b6262;
+}
+entry.caja-location-entry:disabled {
+  background: image(#d3cccc);
+  border-color: #9f8f8f;
+}
+entry.caja-location-entry:disabled label, entry.caja-location-entry:disabled image, entry.caja-location-entry:disabled {
+  color: #8b8282;
 }
 
 /* GTK NAMED COLORS
