@@ -640,12 +640,15 @@ treeview entry.flat:focus, treeview entry:focus {
 }
 
 .entry-tag {
-  padding: 5px;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  padding: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   border-style: none;
-  color: #ffffff;
-  background-color: #c74646;
+  color: #4D4444;
+  background-color: #c9c0c0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #9f8f8f;
 }
 :dir(ltr) .entry-tag {
   margin-left: 8px;
@@ -656,23 +659,24 @@ treeview entry.flat:focus, treeview entry:focus {
   margin-right: 8px;
 }
 .entry-tag:hover {
-  background-color: #d36d6d;
+  background-color: #e1dbdb;
 }
 :backdrop .entry-tag {
-  color: #e1dada;
-  background-color: #c74646;
+  color: #665d5d;
+  background-color: #c9c0c0;
 }
 .entry-tag.button {
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(77, 68, 68, 0.7);
+  border-radius: 999px;
 }
 :not(:backdrop) .entry-tag.button:hover {
-  border: 1px solid #c74646;
-  color: #ffffff;
+  border: 1px solid #c9c0c0;
+  color: #4D4444;
 }
 :not(:backdrop) .entry-tag.button:active {
-  background-color: #c74646;
-  color: rgba(255, 255, 255, 0.7);
+  background-color: #c9c0c0;
+  color: rgba(77, 68, 68, 0.7);
 }
 
 /***********
@@ -5962,21 +5966,21 @@ headerbar.selection-mode button.titlebutton:backdrop,
   -gtk-icon-shadow: none;
 }
 
-entry.caja-location-entry selection:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .view text selection:focus, .view text selection,
+entry.caja-location-entry selection:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .thunar paned > grid > paned > notebook > stack > .standard-view .view:selected, .thunar paned > grid > paned > notebook > stack > .standard-view iconview:selected, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .view text selection:focus, .view text selection,
 textview text selection:focus,
 textview text selection, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected,
 entry selection, modelbutton.flat:selected,
 .menuitem.button.flat:selected, spinbutton:not(.vertical) selection, treeview.view:selected:focus, treeview.view:selected, calendar:selected {
   background-color: #c74646;
 }
-label:selected, .selection-mode button.titlebutton, entry.caja-location-entry selection:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .view text selection:focus, .view text selection,
+label:selected, .selection-mode button.titlebutton, entry.caja-location-entry selection:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .thunar paned > grid > paned > notebook > stack > .standard-view .view:selected, .thunar paned > grid > paned > notebook > stack > .standard-view iconview:selected, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .view text selection:focus, .view text selection,
 textview text selection:focus,
 textview text selection, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected,
 entry selection, modelbutton.flat:selected,
 .menuitem.button.flat:selected, spinbutton:not(.vertical) selection, treeview.view:selected:focus, treeview.view:selected, calendar:selected {
   color: #ffffff;
 }
-label:disabled selection, label:disabled:selected, .selection-mode button.titlebutton:disabled, entry.caja-location-entry selection:disabled:focus, .nemo-window paned > .nemo-window-pane widget.entry:disabled:selected, .thunar .sidebar .view:disabled:selected, .thunar .sidebar iconview:disabled:selected, .view text selection:disabled,
+label:disabled selection, label:disabled:selected, .selection-mode button.titlebutton:disabled, entry.caja-location-entry selection:disabled:focus, .nemo-window paned > .nemo-window-pane widget.entry:disabled:selected, .thunar paned > grid > paned > notebook > stack > .standard-view .view:disabled:selected, .thunar paned > grid > paned > notebook > stack > .standard-view iconview:disabled:selected, .thunar .sidebar .view:disabled:selected, .thunar .sidebar iconview:disabled:selected, .view text selection:disabled,
 textview text selection:disabled:focus,
 textview text selection:disabled, iconview text selection:disabled:focus, iconview text selection:disabled, flowbox flowboxchild:disabled:selected,
 entry selection:disabled, modelbutton.flat:disabled:selected,
@@ -5984,14 +5988,14 @@ entry selection:disabled, modelbutton.flat:disabled:selected,
   color: #e3a3a3;
 }
 
-label:backdrop selection, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, entry.caja-location-entry selection:backdrop:focus, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:selected, .thunar .sidebar .view:backdrop:selected, .thunar .sidebar iconview:backdrop:selected, .view text selection:backdrop,
+label:backdrop selection, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, entry.caja-location-entry selection:backdrop:focus, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:selected, .thunar paned > grid > paned > notebook > stack > .standard-view .view:backdrop:selected, .thunar paned > grid > paned > notebook > stack > .standard-view iconview:backdrop:selected, .thunar .sidebar .view:backdrop:selected, .thunar .sidebar iconview:backdrop:selected, .view text selection:backdrop,
 textview text selection:backdrop:focus,
 textview text selection:backdrop, iconview text selection:backdrop:focus, iconview text selection:backdrop, flowbox flowboxchild:backdrop:selected,
 entry selection:backdrop, modelbutton.flat:backdrop:selected,
 .menuitem.button.flat:backdrop:selected, spinbutton:not(.vertical) selection:backdrop, treeview.view:backdrop:selected, calendar:backdrop:selected {
   color: #e1dada;
 }
-label:backdrop selection:disabled, label:backdrop:disabled:selected, .selection-mode button.titlebutton:backdrop:disabled, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:disabled:selected, .thunar .sidebar .view:backdrop:disabled:selected, .thunar .sidebar iconview:backdrop:disabled:selected, .view text selection:backdrop:disabled,
+label:backdrop selection:disabled, label:backdrop:disabled:selected, .selection-mode button.titlebutton:backdrop:disabled, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:disabled:selected, .thunar paned > grid > paned > notebook > stack > .standard-view .view:backdrop:disabled:selected, .thunar paned > grid > paned > notebook > stack > .standard-view iconview:backdrop:disabled:selected, .thunar .sidebar .view:backdrop:disabled:selected, .thunar .sidebar iconview:backdrop:disabled:selected, .view text selection:backdrop:disabled,
 textview text selection:backdrop:disabled, iconview text selection:backdrop:disabled, flowbox flowboxchild:backdrop:disabled:selected,
 entry selection:backdrop:disabled, modelbutton.flat:backdrop:disabled:selected,
 .menuitem.button.flat:backdrop:disabled:selected, spinbutton:not(.vertical) selection:backdrop:disabled, treeview.view:backdrop:disabled:selected, calendar:backdrop:disabled:selected {
@@ -6744,7 +6748,6 @@ event.slanted-end label, event.slanted-end {
 .thunar scrolledwindow.frame.standard-view > widget.view:backdrop, .thunar scrolledwindow.frame.standard-view > widget.view {
   background-color: #e3dddd;
 }
-
 .panel.xfce4-panel {
   background-color: #b4a7a7;
   color: #4D4444;
