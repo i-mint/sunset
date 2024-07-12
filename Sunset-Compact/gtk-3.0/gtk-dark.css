@@ -5167,7 +5167,7 @@ list:backdrop label {
   color: inherit;
 }
 list row {
-  padding: 2px;
+  padding: 1px;
   margin: 0 3px;
 }
 
@@ -5411,7 +5411,7 @@ placessidebar > viewport.frame {
   border-style: none;
 }
 placessidebar row {
-  min-height: 36px;
+  min-height: 28px;
   padding: 0px;
 }
 placessidebar row > revealer {
