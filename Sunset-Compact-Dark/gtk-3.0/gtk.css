@@ -6991,6 +6991,17 @@ entry.caja-location-entry:disabled label, entry.caja-location-entry:disabled ima
   color: #787070;
 }
 
+.gedit-side-panel-paned .view:hover, .gedit-side-panel-paned iconview:hover {
+  color: #cac3c3;
+  background: image(#555050);
+}
+.gedit-side-panel-paned .view:selected, .gedit-side-panel-paned iconview:selected, .gedit-side-panel-paned .view:selected:hover {
+  background: image(#be3b39);
+}
+.gedit-side-panel-paned .view:selected label, .gedit-side-panel-paned iconview:selected label, .gedit-side-panel-paned .view:selected, .gedit-side-panel-paned iconview:selected, .gedit-side-panel-paned .view:selected:hover label, .gedit-side-panel-paned .view:selected:hover {
+  color: #ffffff;
+}
+
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */
