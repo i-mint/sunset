@@ -593,11 +593,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .calendar .calendar-day-base {
   font-size: 8pt;
   text-align: center;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  margin: 4px;
-  border-radius: 18px;
+  width: 32px !important;
+  height: 32px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 18px !important;
   border: 2px solid transparent;
   font-feature-settings: "tnum";
 }
@@ -608,7 +608,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #efecec;
   background-color: #322f2f;
   font-weight: bold;
-  box-shadow: inset 0 0 0 2px #be3b39;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #be3b39;
+  box-shadow: none;
 }
 .calendar .calendar-day-base.calendar-day-heading {
   color: #fafafa;
@@ -617,6 +620,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .calendar .calendar-day {
   border-width: 0;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  margin: 4px !important;
 }
 .calendar .calendar-day-top {
   border-top-width: 1px;
@@ -632,11 +639,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-left-width: 0;
   border-right-width: 0;
   border-color: #2a2727;
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 .calendar .calendar-today {
   font-weight: bold;
-  border: 1px solid transparent;
   background-color: #be3b39;
   color: #ffffff;
 }
