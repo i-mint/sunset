@@ -1604,7 +1604,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-radius: 0;
 }
 
-headerbar.windowhandle box.path-buttons-box > box:first-child > button, headerbar.windowhandle box.path-buttons-box, .linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .budgie-popover .linked button:first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
+.path-buttons-box button:first-child, .path-buttons-box, .linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .budgie-popover .linked button:first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
 .linked:not(.vertical) > entry:first-child,
 .inline-toolbar button:first-child,
 .linked > button:first-child, headerbar.windowhandle viewswitcher > box > button.radio:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
@@ -1619,7 +1619,7 @@ headerbar.windowhandle box.path-buttons-box > box:first-child > button, headerba
   -gtk-outline-bottom-right-radius: 0;
 }
 
-headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle, .linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .budgie-popover .linked button:last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
+.nautilus-path-bar.linked > button.popup.toggle, .linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .budgie-popover .linked button:last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
 .linked:not(.vertical) > entry:last-child,
 .inline-toolbar button:last-child,
 .linked > button:last-child, headerbar.windowhandle viewswitcher > box > button.radio:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
@@ -2713,54 +2713,6 @@ window.devel headerbar.titlebar:not(.selection-mode):backdrop {
 .path-bar button.slider-button {
   padding-left: 0;
   padding-right: 0;
-}
-
-.path-bar-box .linked > button {
-  color: #B5AAAA;
-  outline-color: rgba(181, 170, 170, 0.3);
-  border-color: #010000;
-  border-bottom-color: black;
-  background-image: linear-gradient(to top, #190807 2px, #290d0c);
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.9171764706);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.9171764706);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
-}
-.path-bar-box .linked > button:hover {
-  color: #B5AAAA;
-  outline-color: rgba(181, 170, 170, 0.3);
-  border-color: #1d0909;
-  border-bottom-color: black;
-  background-image: linear-gradient(to bottom left, #260c0b, #260c0b, #270b0a);
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.8131764706);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8131764706);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
-}
-.path-bar-box .linked > button:active {
-  color: rgba(181, 170, 170, 0.5);
-  outline-color: rgba(181, 170, 170, 0);
-  border-color: rgba(0, 0, 0, 0.4);
-  background-image: image(black);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-  text-shadow: none;
-  -gtk-icon-shadow: none;
-  font-weight: bold;
-}
-.path-bar-box .linked > button.image-button:last-child {
-  background-color: transparent;
-  color: #ffffff;
-  font-weight: bold;
-}
-.path-bar-box .linked > button.image-button:last-child:active {
-  color: rgba(255, 255, 255, 0.5);
-}
-.path-bar-box .linked > button:backdrop, .path-bar-box .linked > button.image-button:last-child:backdrop {
-  border-color: transparent;
-  background-color: transparent;
-  background-image: none;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-  text-shadow: none;
-  -gtk-icon-shadow: none;
-  color: #5c4a4a;
 }
 
 /**************
@@ -6471,110 +6423,34 @@ raven,
   background-color: #d7cfcf;
 }
 
-headerbar.windowhandle box.path-buttons-box {
-  color: #B5AAAA;
-  outline-color: rgba(181, 170, 170, 0.3);
-  border-color: #010000;
-  border-bottom-color: black;
-  background-image: linear-gradient(to top, #190807 2px, #290d0c);
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.9171764706);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.9171764706);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  border-right: 0;
-  margin: 2px 0;
-  padding: 0;
-  box-shadow: none;
-}
-headerbar.windowhandle box.path-buttons-box > box > button {
-  background: image(transparent);
-  border: none;
+.nautilus-path-bar.linked > button.popup.toggle {
   margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  border-radius: 0;
 }
-headerbar.windowhandle box.path-buttons-box > box > button:hover {
-  color: #B5AAAA;
-  outline-color: rgba(181, 170, 170, 0.3);
-  border-color: #010000;
-  border-bottom-color: black;
-  background-image: linear-gradient(to top, #190807 2px, #290d0c);
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.9171764706);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.9171764706);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+.nautilus-path-bar.linked > button.image-button:last-child {
+  color: #ffffff;
 }
-headerbar.windowhandle box.path-buttons-box > box > button:active label, headerbar.windowhandle box.path-buttons-box > box > button:active image {
-  opacity: 0.3;
+.nautilus-path-bar.linked > button.image-button:last-child:active {
+  color: rgba(255, 255, 255, 0.5);
 }
-headerbar.windowhandle box.path-buttons-box > box > button.current-dir:active label, headerbar.windowhandle box.path-buttons-box > box > button.current-dir:active image {
+.nautilus-path-bar.linked > button.image-button:last-child:backdrop {
   opacity: 0.5;
 }
-headerbar.windowhandle box.path-buttons-box > box > button.current-dir label, headerbar.windowhandle box.path-buttons-box > box > button.current-dir image {
-  opacity: 1;
-}
-headerbar.windowhandle box.path-buttons-box > box > button:backdrop, headerbar.windowhandle box.path-buttons-box > box > button.current-dir:backdrop {
-  border-color: transparent;
-  background-color: transparent;
-  background-image: none;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-  text-shadow: none;
-  -gtk-icon-shadow: none;
-  color: #5c4a4a;
-}
-headerbar.windowhandle box.path-buttons-box:backdrop {
-  border-color: transparent;
-  background-color: transparent;
-  background-image: none;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-  text-shadow: none;
-  -gtk-icon-shadow: none;
-  color: #5c4a4a;
-}
-headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle {
-  color: #B5AAAA;
-  outline-color: rgba(181, 170, 170, 0.3);
-  border-color: #010000;
-  border-bottom-color: black;
-  background-image: linear-gradient(to top, #190807 2px, #290d0c);
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.9171764706);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.9171764706);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+
+.path-buttons-box {
+  background-color: #290d0c;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  border-left: 0;
-  margin: 2px 0;
+  border-right: none;
 }
-headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle image {
-  opacity: 0.5;
-}
-headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:hover, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:active, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:checked {
-  color: #B5AAAA;
-  outline-color: rgba(181, 170, 170, 0.3);
-  border-color: #010000;
-  border-bottom-color: black;
-  background-image: linear-gradient(to top, #190807 2px, #290d0c);
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.9171764706);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.9171764706);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
-  animation: none;
-}
-headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:active label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:active image {
-  opacity: 0.5;
-}
-headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:checked {
+.path-buttons-box button {
+  background: transparent;
+  border: none;
   box-shadow: none;
+  margin: 0;
 }
-headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:checked label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:checked image {
-  opacity: 1;
-}
-headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop {
-  border-color: transparent;
-  background-color: transparent;
-  background-image: none;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-  text-shadow: none;
-  -gtk-icon-shadow: none;
-  color: #5c4a4a;
+.path-buttons-box button.current-dir:hover, .path-buttons-box button.current-dir:active {
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 event.slanted-end, event.color-light {
