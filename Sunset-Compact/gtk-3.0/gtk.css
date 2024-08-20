@@ -6453,6 +6453,19 @@ raven,
   box-shadow: none;
 }
 
+.nautilus-window .floating-bar {
+  color: #000000;
+  background-color: rgba(199, 70, 70, 0.3);
+  border: 1px solid #c74646;
+  padding: 1px;
+}
+.nautilus-window .floating-bar.bottom.right {
+  border-radius: 5px 0 0 0;
+}
+.nautilus-window .floating-bar.bottom.left {
+  border-radius: 0 5px 0 0;
+}
+
 event.slanted-end, event.color-light {
   box-shadow: inset 0 100px 0 0 #c74646;
 }
