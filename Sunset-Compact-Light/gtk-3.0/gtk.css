@@ -5198,7 +5198,13 @@ row.activatable:selected:active {
   box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5);
 }
 row.activatable:selected.has-open-popup, row.activatable:selected:hover {
-  background-color: #c9c0c0;
+  background-color: #c4bbbb;
+  border: 1px solid #b4a7a7;
+  border-right: 2px solid #c74646;
+  font-weight: normal;
+}
+row.activatable:selected.has-open-popup label, row.activatable:selected.has-open-popup image, row.activatable:selected.has-open-popup, row.activatable:selected:hover label, row.activatable:selected:hover image, row.activatable:selected:hover {
+  color: #4D4444;
 }
 row.activatable:selected:backdrop {
   background-color: #c9c0c0;
@@ -5206,8 +5212,13 @@ row.activatable:selected:backdrop {
 row.activatable separator.vertical {
   background-color: transparent;
 }
-row:selected, row:selected:hover {
+row:selected {
   background-color: #c9c0c0;
+}
+row:selected:hover {
+  background-color: #c4bbbb;
+}
+row:selected, row:selected:hover {
   border: 1px solid #b4a7a7;
   border-right: 2px solid #c74646;
   font-weight: normal;
@@ -5928,14 +5939,14 @@ headerbar.selection-mode button.titlebutton:backdrop,
   -gtk-icon-shadow: none;
 }
 
-entry.caja-location-entry selection:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .thunar paned > grid > paned > notebook > stack > .standard-view .view:selected, .thunar paned > grid > paned > notebook > stack > .standard-view iconview:selected, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .view text selection:focus, .view text selection,
+entry.caja-location-entry selection:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .thunar paned > grid > paned > notebook > stack > .standard-view .view:selected, .thunar paned > grid > paned > notebook > stack > .standard-view iconview:selected, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .view text selection:focus, .view text selection,
 textview text selection:focus,
 textview text selection, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected,
 entry selection, modelbutton.flat:selected,
 .menuitem.button.flat:selected, spinbutton:not(.vertical) selection, treeview.view:selected:focus, treeview.view:selected, calendar:selected {
   background-color: #c74646;
 }
-label:selected, .selection-mode button.titlebutton, entry.caja-location-entry selection:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .thunar paned > grid > paned > notebook > stack > .standard-view .view:selected, .thunar paned > grid > paned > notebook > stack > .standard-view iconview:selected, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .view text selection:focus, .view text selection,
+label:selected, .selection-mode button.titlebutton, entry.caja-location-entry selection:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .thunar paned > grid > paned > notebook > stack > .standard-view .view:selected, .thunar paned > grid > paned > notebook > stack > .standard-view iconview:selected, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .view text selection:focus, .view text selection,
 textview text selection:focus,
 textview text selection, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected,
 entry selection, modelbutton.flat:selected,
@@ -6492,8 +6503,11 @@ event.slanted-end label, event.slanted-end {
 .thunar .sidebar .view, .thunar .sidebar iconview {
   background: #cec6c6;
 }
-.thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover {
+.thunar .sidebar .view:selected, .thunar .sidebar iconview:selected {
   border: none;
+}
+.thunar .sidebar .view:selected:hover, .thunar .sidebar iconview:selected:hover {
+  background-color: #b64646;
 }
 .thunar .sidebar .view:hover, .thunar .sidebar iconview:hover {
   background-color: rgba(77, 68, 68, 0.08);
@@ -6731,6 +6745,10 @@ event.slanted-end label, event.slanted-end {
   border: 1px solid #c74646;
   border-radius: 5px;
 }
+.nemo-window treeview.places-treeview.view:selected:hover {
+  background-color: #b64646;
+}
+
 .mate-panel-menu-bar {
   background-color: #b4a7a7;
 }
@@ -6854,12 +6872,15 @@ event.slanted-end label, event.slanted-end {
   border-top: 1px solid rgba(159, 143, 143, 0.5);
   border-bottom: 1px solid rgba(159, 143, 143, 0.5);
 }
-.caja-navigation-window box.caja-side-pane .frame treeview.view:active, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:hover {
+.caja-navigation-window box.caja-side-pane .frame treeview.view:active, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected {
   background-color: #c74646;
   border: none;
 }
-.caja-navigation-window box.caja-side-pane .frame treeview.view:active label, .caja-navigation-window box.caja-side-pane .frame treeview.view:active image, .caja-navigation-window box.caja-side-pane .frame treeview.view:active, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected label, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected image, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:hover label, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:hover image, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:hover {
+.caja-navigation-window box.caja-side-pane .frame treeview.view:active label, .caja-navigation-window box.caja-side-pane .frame treeview.view:active image, .caja-navigation-window box.caja-side-pane .frame treeview.view:active, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected label, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected image, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected {
   color: #ffffff;
+}
+.caja-navigation-window box.caja-side-pane .frame treeview.view:active:hover, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:hover {
+  background-color: #b64646;
 }
 .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:backdrop {
   background-color: rgba(199, 70, 70, 0.5);
@@ -6925,11 +6946,15 @@ entry.caja-location-entry:disabled label, entry.caja-location-entry:disabled ima
   color: #352e2e;
   background: image(#c5bebe);
 }
-.gedit-side-panel-paned .view:selected, .gedit-side-panel-paned iconview:selected, .gedit-side-panel-paned .view:selected:hover {
+.gedit-side-panel-paned .view:selected, .gedit-side-panel-paned iconview:selected {
   background: image(#c74646);
 }
-.gedit-side-panel-paned .view:selected label, .gedit-side-panel-paned iconview:selected label, .gedit-side-panel-paned .view:selected, .gedit-side-panel-paned iconview:selected, .gedit-side-panel-paned .view:selected:hover label, .gedit-side-panel-paned .view:selected:hover {
+.gedit-side-panel-paned .view:selected label, .gedit-side-panel-paned iconview:selected label, .gedit-side-panel-paned .view:selected, .gedit-side-panel-paned iconview:selected {
   color: #ffffff;
+}
+.gedit-side-panel-paned .view:selected:hover, .gedit-side-panel-paned iconview:selected:hover {
+  background: image(#b64646);
+  border-color: #b64646;
 }
 
 /* GTK NAMED COLORS
