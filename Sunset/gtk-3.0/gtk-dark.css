@@ -6445,8 +6445,8 @@ raven,
 
 .nautilus-window .floating-bar {
   color: #ffffff;
-  background-color: rgba(190, 59, 57, 0.3);
-  border: 1px solid #be3b39;
+  background-color: #be3b39;
+  border: 1px solid #201d1d;
   padding: 1px;
 }
 .nautilus-window .floating-bar.bottom.right {
