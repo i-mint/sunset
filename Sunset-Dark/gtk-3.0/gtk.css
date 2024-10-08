@@ -2165,7 +2165,7 @@ headerbar {
   border-color: #0a0a0a;
   border-radius: 0;
   background: #180707 linear-gradient(to top, #270c0c, #2f0f0e);
-  box-shadow: inset 0 1px rgba(181, 170, 170, 0.2);
+  box-shadow: inset 0 1px rgba(181, 170, 170, 0.07);
   /* Darken switchbuttons for headerbars. issue #1588 */
   /* hide the close button separator */
 }
@@ -2175,7 +2175,7 @@ headerbar:backdrop {
   border-color: #111010;
   background-color: #171616;
   background-image: none;
-  box-shadow: inset 0 1px rgba(27, 26, 26, 0.84);
+  box-shadow: inset 0 1px rgba(24, 23, 23, 0.814);
   transition: 200ms ease-out;
 }
 .titlebar:not(headerbar) .title,
@@ -2219,14 +2219,14 @@ headerbar.selection-mode {
   border-color: #481616;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
   background: #be3b39 linear-gradient(to top, #c74644, #c94e4c);
-  box-shadow: inset 0 1px rgba(189, 70, 68, 0.6);
+  box-shadow: inset 0 1px rgba(190, 63, 61, 0.535);
 }
 .selection-mode .titlebar:backdrop:not(headerbar), .selection-mode.titlebar:backdrop:not(headerbar),
 .selection-mode headerbar:backdrop,
 headerbar.selection-mode:backdrop {
   background-color: #be3b39;
   background-image: none;
-  box-shadow: inset 0 1px rgba(189, 75, 73, 0.52);
+  box-shadow: inset 0 1px rgba(190, 65, 63, 0.442);
 }
 .selection-mode .titlebar:backdrop:not(headerbar) label, .selection-mode.titlebar:backdrop:not(headerbar) label,
 .selection-mode headerbar:backdrop label,
@@ -2560,7 +2560,7 @@ headerbar button:hover {
   outline-color: rgba(181, 170, 170, 0.3);
   border-color: black;
   border-bottom-color: black;
-  background-image: linear-gradient(to bottom left, #2d2727, #2e2626, #322222);
+  background-image: linear-gradient(to bottom left, #140606, #140606, #140606);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.8851764706);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8851764706);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -2604,7 +2604,7 @@ headerbar .linked > button:hover {
   outline-color: rgba(181, 170, 170, 0.3);
   border-color: black;
   border-bottom-color: black;
-  background-image: linear-gradient(to bottom left, #2d2727, #2e2626, #322222);
+  background-image: linear-gradient(to bottom left, #140606, #140606, #140606);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.8851764706);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8851764706);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -5803,11 +5803,11 @@ colorchooser .popover.osd {
 decoration {
   border-radius: 8px 8px 0 0;
   border-width: 0px;
-  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.64);
+  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.75);
   margin: 10px;
 }
 decoration:backdrop {
-  box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.6);
   transition: 200ms ease-out;
 }
 .maximized decoration, .fullscreen decoration {
@@ -5816,19 +5816,19 @@ decoration:backdrop {
 }
 .tiled decoration, .tiled-top decoration, .tiled-right decoration, .tiled-bottom decoration, .tiled-left decoration {
   border-radius: 0;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.64), 0 0 0 20px transparent;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75), 0 0 0 20px transparent;
 }
 .tiled decoration:backdrop, .tiled-top decoration:backdrop, .tiled-right decoration:backdrop, .tiled-bottom decoration:backdrop, .tiled-left decoration:backdrop {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4), 0 0 0 20px transparent;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6), 0 0 0 20px transparent;
 }
 .popup decoration {
   box-shadow: none;
 }
 .ssd decoration {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.64);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75);
 }
 .ssd decoration:backdrop {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6);
 }
 .ssd.maximized decoration, .ssd.maximized decoration:backdrop {
   box-shadow: none;
@@ -5838,7 +5838,7 @@ decoration:backdrop {
 }
 .csd.popup decoration {
   border-radius: 5px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.54);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.65);
 }
 tooltip.csd decoration {
   border-radius: 5px;
@@ -5846,7 +5846,7 @@ tooltip.csd decoration {
 }
 messagedialog.csd decoration {
   border-radius: 8px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.54);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.65);
 }
 .solid-csd decoration {
   margin: 0;
@@ -5854,10 +5854,10 @@ messagedialog.csd decoration {
   background-color: #201d1d;
   border: solid 1px #201d1d;
   border-radius: 0;
-  box-shadow: inset 0 0 0 3px black, inset 0 1px rgba(181, 170, 170, 0.2);
+  box-shadow: inset 0 0 0 3px black, inset 0 1px rgba(181, 170, 170, 0.07);
 }
 .solid-csd decoration:backdrop {
-  box-shadow: inset 0 0 0 3px #3a3636, inset 0 1px rgba(181, 170, 170, 0.2);
+  box-shadow: inset 0 0 0 3px #3a3636, inset 0 1px rgba(181, 170, 170, 0.07);
 }
 
 button.titlebutton {
@@ -6513,7 +6513,7 @@ event.slanted-end label, event.slanted-end {
   outline-color: rgba(181, 170, 170, 0.3);
   border-color: black;
   border-bottom-color: black;
-  background-image: linear-gradient(to bottom left, #2d2727, #2e2626, #322222);
+  background-image: linear-gradient(to bottom left, #140606, #140606, #140606);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.8851764706);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8851764706);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -6570,7 +6570,7 @@ event.slanted-end label, event.slanted-end {
   outline-color: rgba(181, 170, 170, 0.3);
   border-color: #150706;
   border-bottom-color: black;
-  background-image: linear-gradient(to bottom left, #2d2727, #2e2626, #322222);
+  background-image: linear-gradient(to bottom left, #140606, #140606, #140606);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.8291764706);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8291764706);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
