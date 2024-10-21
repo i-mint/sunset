@@ -1946,7 +1946,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .dash-label {
   background-color: rgba(48, 48, 48, 0.9);
   border-radius: 7px;
-  box-shadow: 0 0 0 0.2px #6f2321;
+  box-shadow: none;
   color: #eeeeec;
   padding: 6px 8px;
   text-align: center;
