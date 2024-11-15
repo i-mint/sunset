@@ -33,10 +33,10 @@ entry:focus image {
   }
 }
 
-.titlebar:not(headerbar) stackswitcher button:checked,
+headerbar.windowhandle viewswitcher > box > button:checked, .titlebar:not(headerbar) stackswitcher button:checked,
 .titlebar:not(headerbar) button.toggle:checked,
 headerbar stackswitcher button:checked,
-headerbar button.toggle:checked, headerbar.windowhandle viewswitcher > box > button.radio:checked {
+headerbar button.toggle:checked {
   animation-name: blinking_button;
   animation-duration: 4s;
   animation-iteration-count: 1;
@@ -1472,37 +1472,6 @@ button.circular:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:b
   border-color: transparent;
 }
 
-headerbar.windowhandle viewswitcher {
-  margin: 5px 0;
-}
-headerbar.windowhandle viewswitcher > box > button.radio {
-  margin: 0;
-  padding: 0;
-  border-radius: 0;
-  box-shadow: none;
-}
-headerbar.windowhandle viewswitcher > box > button.radio:checked:hover {
-  background: image(#c74646);
-}
-headerbar.windowhandle viewswitcher > box > button.radio:checked {
-  color: #ffffff;
-  outline-color: rgba(255, 255, 255, 0.3);
-  border-color: rgba(0, 0, 0, 0.4);
-  background-image: image(#c74646);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-  text-shadow: none;
-  -gtk-icon-shadow: none;
-  border: none;
-  box-shadow: none;
-  border-top-color: #af3535;
-}
-headerbar.windowhandle viewswitcher > box > button.radio:checked:backdrop {
-  color: #665d5d;
-  border-color: black;
-  background-image: image(#1c0f0f);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-}
-
 stacksidebar row.needs-attention > label,
 .stack-switcher > button.needs-attention > label,
 .stack-switcher > button.needs-attention > image {
@@ -1614,10 +1583,10 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-radius: 0;
 }
 
-.path-buttons-box button:first-child, .path-buttons-box, .linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .budgie-popover .linked button:first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
+.path-buttons-box button:first-child, .path-buttons-box, headerbar.windowhandle viewswitcher > box > button:first-child, .linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .budgie-popover .linked button:first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
 .linked:not(.vertical) > entry:first-child,
 .inline-toolbar button:first-child,
-.linked > button:first-child, headerbar.windowhandle viewswitcher > box > button.radio:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
+.linked > button:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
   border-style: solid;
   border-top-left-radius: 15px;
   border-top-right-radius: 0;
@@ -1629,10 +1598,10 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-bottom-right-radius: 0;
 }
 
-.nautilus-path-bar.linked > button.popup.toggle, .linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .budgie-popover .linked button:last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
+.nautilus-path-bar.linked > button.popup.toggle, headerbar.windowhandle viewswitcher > box > button:last-child, .linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .budgie-popover .linked button:last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
 .linked:not(.vertical) > entry:last-child,
 .inline-toolbar button:last-child,
-.linked > button:last-child, headerbar.windowhandle viewswitcher > box > button.radio:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
+.linked > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
   border-style: solid;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -2544,6 +2513,41 @@ headerbar button {
 headerbar switch {
   margin-top: 7px;
   margin-bottom: 7px;
+}
+headerbar.windowhandle viewswitcher > box > button {
+  margin: 0;
+  padding: 0;
+  min-width: 120px;
+  box-shadow: none;
+  border-radius: 0;
+}
+headerbar.windowhandle viewswitcher > box > button > stack > box {
+  padding: 0 14px;
+}
+headerbar.windowhandle viewswitcher > box > button:checked:hover {
+  background: image(#c74646);
+}
+headerbar.windowhandle viewswitcher > box > button, headerbar.windowhandle viewswitcher > box > button:hover, headerbar.windowhandle viewswitcher > box > button:active, headerbar.windowhandle viewswitcher > box > button:checked {
+  border-bottom: none;
+  border-top: none;
+}
+headerbar.windowhandle viewswitcher > box > button:not(:last-child), headerbar.windowhandle viewswitcher > box > button:not(:last-child):hover, headerbar.windowhandle viewswitcher > box > button:not(:last-child):active, headerbar.windowhandle viewswitcher > box > button:not(:last-child):checked {
+  border-right: none;
+}
+headerbar.windowhandle viewswitcher > box > button:checked {
+  color: #ffffff;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(0, 0, 0, 0.4);
+  background-image: image(#c74646);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+headerbar.windowhandle viewswitcher > box > button:checked:backdrop {
+  color: #665d5d;
+  border-color: black;
+  background-image: image(#1c0f0f);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 headerbar.titlebar headerbar:not(.titlebar) {
   background: none;
