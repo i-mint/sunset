@@ -1587,7 +1587,6 @@ stacksidebar row.needs-attention > label:dir(rtl),
 .linked:not(.vertical) > entry:first-child,
 .inline-toolbar button:first-child,
 .linked > button:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
-  border-style: solid;
   border-top-left-radius: 15px;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -2523,6 +2522,12 @@ headerbar.windowhandle viewswitcher > box > button {
 }
 headerbar.windowhandle viewswitcher > box > button > stack > box {
   padding: 0 14px;
+}
+headerbar.windowhandle viewswitcher > box > button > stack > box.wide {
+  font-size: 1em;
+}
+headerbar.windowhandle viewswitcher > box > button > stack > box.narrow {
+  font-size: 0.75em;
 }
 headerbar.windowhandle viewswitcher > box > button:checked:hover {
   background: image(#c74646);
@@ -6757,7 +6762,7 @@ event.slanted-end label, event.slanted-end {
   padding: 2px;
 }
 .panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button:focus, .panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button {
-  background: image(linear-gradient(to top, #c0b5b5));
+  background: image(#c0b5b5);
 }
 .panel.xfce4-panel #pulseaudio-button window.popup.csd .linked button:active image {
   background: image(#a89a9a);
