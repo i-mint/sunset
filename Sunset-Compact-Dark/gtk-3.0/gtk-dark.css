@@ -2164,15 +2164,15 @@ headerbar button.toggle:checked {
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none;
-  border-top-color: #9e312f;
+  border-top-color: black;
 }
 .titlebar:not(headerbar) stackswitcher button:checked:backdrop,
 .titlebar:not(headerbar) button.toggle:checked:backdrop,
 headerbar stackswitcher button:checked:backdrop,
 headerbar button.toggle:checked:backdrop {
-  color: #9c9393;
+  color: #c7a7a7;
   border-color: black;
-  background-image: image(#020202);
+  background-image: image(#722322);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 .selection-mode .titlebar:not(headerbar), .selection-mode.titlebar:not(headerbar),
@@ -2619,11 +2619,12 @@ headerbar.windowhandle viewswitcher > box > button:checked {
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none;
+  border-top-color: black;
 }
 headerbar.windowhandle viewswitcher > box > button:checked:backdrop {
-  color: #9c9393;
+  color: #c7a7a7;
   border-color: black;
-  background-image: image(#020202);
+  background-image: image(#722322);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 headerbar.titlebar headerbar:not(.titlebar) {
@@ -2679,7 +2680,7 @@ headerbar button:backdrop {
 headerbar button:checked:backdrop {
   color: #9c9393;
   border-color: black;
-  background-image: image(#020202);
+  background-image: image(#484444);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 headerbar .linked > button {
