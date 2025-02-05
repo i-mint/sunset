@@ -1931,7 +1931,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   height: 32px;
 }
 #dash .app-well-app:hover .overview-icon, .right #dash .app-well-app:hover .overview-icon, .bottom #dash .app-well-app:hover .overview-icon, .top #dash .app-well-app:hover .overview-icon {
-  background-color: rgba(39, 33, 33, 0.1);
+  background-color: rgba(110, 100, 100, 0.88);
 }
 #dash .app-well-app:active .overview-icon, .right #dash .app-well-app:active .overview-icon, .bottom #dash .app-well-app:active .overview-icon, .top #dash .app-well-app:active .overview-icon {
   box-shadow: none;
