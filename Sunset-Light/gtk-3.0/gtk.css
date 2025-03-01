@@ -2781,10 +2781,7 @@ window.csd > .titlebar:not(headerbar) {
   box-shadow: none;
 }
 .titlebar:not(headerbar) separator {
-  background-color: #a89a9a;
-}
-.titlebar:not(headerbar) separator:backdrop {
-  background-color: #9f8f8f;
+  background-image: linear-gradient(to bottom, #a89a9a, #a89a9a);
 }
 
 window.devel headerbar.titlebar:not(.selection-mode) {
@@ -5220,19 +5217,20 @@ separator {
   min-height: 1px;
 }
 
-separator.sidebar:dir(ltr), separator.sidebar.left, separator.sidebar.left:dir(rtl), separator.sidebar:dir(rtl), separator.sidebar.right {
-  background-color: #9f8f8f;
+separator.sidebar:dir(ltr), separator.sidebar:dir(rtl), separator.sidebar.left, separator.sidebar.left:dir(rtl), separator.sidebar.right {
+  background-image: linear-gradient(to bottom, #9f8f8f, #9f8f8f);
   border: 0;
 }
-.titlebar separator.sidebar:dir(ltr), .titlebar separator.sidebar.left, .titlebar separator.sidebar.left:dir(rtl), .titlebar separator.sidebar:dir(rtl), .titlebar separator.sidebar.right {
-  background-color: #a89a9a;
+.titlebar separator.sidebar:dir(ltr), .titlebar separator.sidebar:dir(rtl), .titlebar separator.sidebar.left, .titlebar separator.sidebar.left:dir(rtl), .titlebar separator.sidebar.right {
+  background-image: linear-gradient(to bottom, #a89a9a, #a89a9a);
   margin: 0;
-}
-.titlebar separator.sidebar:dir(ltr):backdrop, .titlebar separator.sidebar.left:backdrop, .titlebar separator.sidebar.left:dir(rtl):backdrop, .titlebar separator.sidebar:dir(rtl):backdrop, .titlebar separator.sidebar.right:backdrop {
-  background-color: #9f8f8f;
 }
 separator.sidebar.selection-mode, .selection-mode separator.sidebar {
   background-color: #802727;
+}
+
+hdyleaflet:not(.titlebar) > separator {
+  background-image: linear-gradient(to bottom, #9f8f8f, #9f8f8f);
 }
 
 /*********
@@ -5587,20 +5585,17 @@ paned > separator {
   -gtk-icon-source: none;
   border-style: none;
   background-color: transparent;
-  background-image: image(#a89a9a);
+  background-image: linear-gradient(to bottom, #9f8f8f, #9f8f8f);
   background-size: 1px 1px;
 }
 paned > separator:selected {
-  background-image: image(#c74646);
-}
-paned > separator:backdrop {
-  background-image: image(#9f8f8f);
+  background-image: linear-gradient(to bottom, #c74646, #c74646);
 }
 paned > separator.wide {
   min-width: 5px;
   min-height: 5px;
   background-color: #c9c0c0;
-  background-image: image(#9f8f8f), image(#9f8f8f);
+  background-image: linear-gradient(to bottom, #9f8f8f, #9f8f8f), linear-gradient(to bottom, #9f8f8f, #9f8f8f);
   background-size: 1px 1px, 1px 1px;
 }
 paned > separator.wide:backdrop {
