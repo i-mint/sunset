@@ -1619,7 +1619,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-bottom-right-radius: 15px;
 }
 
-.linked.vertical > combobox > box > button.combo, popover.combo list > row, popover.combo list > row:hover, popover.combo list > row:active, .linked.vertical > spinbutton:not(.vertical),
+.linked.vertical > combobox > box > button.combo, .linked.vertical > spinbutton:not(.vertical),
 .linked.vertical > entry,
 .linked.vertical > button {
   border-style: solid solid none solid;
@@ -1627,7 +1627,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-radius: 0;
 }
 
-.linked.vertical > combobox:first-child > box > button.combo, popover.combo list > row:first-child, .linked.vertical > spinbutton:first-child:not(.vertical),
+.linked.vertical > combobox:first-child > box > button.combo, .linked.vertical > spinbutton:first-child:not(.vertical),
 .linked.vertical > entry:first-child,
 .linked.vertical > button:first-child {
   border-top-left-radius: 5px;
@@ -1636,7 +1636,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-top-right-radius: 5px;
 }
 
-.linked.vertical > combobox:last-child > box > button.combo, popover.combo list > row:last-child, .linked.vertical > spinbutton:last-child:not(.vertical),
+.linked.vertical > combobox:last-child > box > button.combo, .linked.vertical > spinbutton:last-child:not(.vertical),
 .linked.vertical > entry:last-child,
 .linked.vertical > button:last-child {
   border-bottom-style: solid;
@@ -1646,7 +1646,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-bottom-right-radius: 5px;
 }
 
-.linked.vertical > combobox:only-child > box > button.combo, popover.combo list > row:only-child, .linked.vertical > spinbutton:only-child:not(.vertical),
+.linked.vertical > combobox:only-child > box > button.combo, .linked.vertical > spinbutton:only-child:not(.vertical),
 .linked.vertical > entry:only-child,
 .linked.vertical > button:only-child {
   border-style: solid;
@@ -5093,6 +5093,20 @@ actionbar > revealer > box:backdrop {
 scrolledwindow viewport.frame {
   border-style: none;
 }
+scrolledwindow viewport.frame > stack > list,
+scrolledwindow viewport.frame > list {
+  padding: 6px;
+}
+scrolledwindow viewport.frame > stack > list > row.activatable,
+scrolledwindow viewport.frame > list > row.activatable {
+  border-radius: 7px;
+}
+scrolledwindow frame > list > row.activatable {
+  border-radius: 0;
+}
+scrolledwindow frame > list > row.activatable:hover, scrolledwindow frame > list > row.activatable:active, scrolledwindow frame > list > row.activatable:disabled {
+  border-color: transparent;
+}
 scrolledwindow overshoot.top {
   background-image: -gtk-gradient(radial, center top, 0, center top, 0.5, to(#050505), to(rgba(5, 5, 5, 0))), -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(181, 170, 170, 0.07)), to(rgba(181, 170, 170, 0)));
   background-size: 100% 5%, 100% 100%;
@@ -5220,7 +5234,6 @@ row {
   border-right: 2px solid transparent;
   color: #B5AAAA;
   font-weight: normal;
-  border-radius: 7px;
   transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 row:hover {
@@ -5459,6 +5472,13 @@ row image.sidebar-icon {
 
 placessidebar > viewport.frame {
   border-style: none;
+}
+placessidebar > viewport.frame list {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+placessidebar > viewport.frame list > row {
+  border-radius: 7px;
 }
 placessidebar row {
   min-height: 36px;
@@ -7040,7 +7060,7 @@ popover.combo list {
   border-style: none;
   background-color: transparent;
 }
-popover.combo list > row, popover.combo list > row:hover, popover.combo list > row:active {
+popover.combo list > row.activatable, popover.combo list > row.activatable:hover, popover.combo list > row.activatable:active {
   padding: 0px 12px 0px 12px;
   border: none;
   min-height: 40px;
