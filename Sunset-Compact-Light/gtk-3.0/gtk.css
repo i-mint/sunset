@@ -6301,10 +6301,80 @@ popover.emoji-completion .emoji:hover {
   padding-top: 4px;
 }
 
-raven,
 .raven-background,
-.raven-frame {
+.raven-header,
+.raven,
+.raven-notifications-view > .raven-background > .frame > list {
   background-color: #c9c0c0;
+}
+
+.raven {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.right frame.raven-frame {
+  margin-left: 32px;
+}
+.right frame.raven-frame > border {
+  border: none;
+  border-left: 1px solid #9f8f8f;
+}
+
+.left frame.raven-frame {
+  margin-right: 32px;
+}
+.left frame.raven-frame > border {
+  border: none;
+  border-right: 1px solid #9f8f8f;
+}
+
+.top frame.raven-frame {
+  margin-bottom: 32px;
+}
+.top frame.raven-frame > border {
+  border: none;
+  border-bottom: 1px solid #9f8f8f;
+}
+
+.bottom frame.raven-frame {
+  margin-top: 32px;
+}
+.bottom frame.raven-frame > border {
+  border: none;
+  border-top: 1px solid #9f8f8f;
+}
+
+frame.raven-frame > border {
+  box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.32), 0 6px 6px 2px rgba(0, 0, 0, 0.24), 0 4px 4px 0 rgba(0, 0, 0, 0.11);
+}
+
+.raven-calendar {
+  border-style: solid;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 15px;
+}
+.raven-calendar:indeterminate {
+  color: alpha(currentColor,0.3);
+}
+.raven-calendar:selected {
+  color: #ffffff;
+  background-color: #c74646;
+}
+.raven-calendar.header {
+  color: #4D4444;
+  border: none;
+  border-radius: 0;
+}
+.raven-calendar.button, .raven-calendar.button:focus {
+  color: alpha(currentColor,0.5);
+  background-color: transparent;
+}
+.raven-calendar.button:hover, .raven-calendar.button:focus:hover {
+  color: #4D4444;
+  background-color: transparent;
 }
 
 .budgie-panel {
