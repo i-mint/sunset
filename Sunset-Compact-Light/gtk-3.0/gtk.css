@@ -6257,13 +6257,13 @@ popover.emoji-completion .emoji:hover {
 
 .budgie-menu entry.search {
   box-shadow: inset 0 -2px 0 0 #c74646;
-  border-radius: 0;
-  border-color: transparent;
+  border-radius: 8px 8px 0 0;
+  border: none;
   background-color: transparent;
   padding-top: 3px;
   padding-bottom: 3px;
 }
-.budgie-menu .category-button {
+.budgie-menu button.category-button {
   border: 1px solid transparent;
   border-right: 2px solid transparent;
   font-weight: normal;
@@ -6272,21 +6272,21 @@ popover.emoji-completion .emoji:hover {
   padding: 4px 0;
   margin: 1px 0;
 }
-.budgie-menu .category-button label, .budgie-menu .category-button image, .budgie-menu .category-button {
+.budgie-menu button.category-button label, .budgie-menu button.category-button image, .budgie-menu button.category-button {
   color: #4D4444;
 }
-.budgie-menu .category-button:hover {
+.budgie-menu button.category-button:hover {
   background: image(rgba(77, 68, 68, 0.09));
   border: 1px solid rgba(159, 143, 143, 0.5);
   border-right: 2px solid rgba(159, 143, 143, 0.5);
 }
-.budgie-menu .category-button:checked, .budgie-menu .category-button:checked:hover {
+.budgie-menu button.category-button:checked, .budgie-menu button.category-button:checked:hover {
   background: #c9c0c0;
   border: 1px solid #b4a7a7;
   border-right: 2px solid #c74646;
   font-weight: normal;
 }
-.budgie-menu .category-button:checked label, .budgie-menu .category-button:checked image, .budgie-menu .category-button:checked, .budgie-menu .category-button:checked:hover label, .budgie-menu .category-button:checked:hover image, .budgie-menu .category-button:checked:hover {
+.budgie-menu button.category-button:checked label, .budgie-menu button.category-button:checked image, .budgie-menu button.category-button:checked, .budgie-menu button.category-button:checked:hover label, .budgie-menu button.category-button:checked:hover image, .budgie-menu button.category-button:checked:hover {
   color: #4D4444;
 }
 .budgie-menu row button:hover, .budgie-menu row button:active, .budgie-menu row button {
@@ -6296,6 +6296,8 @@ popover.emoji-completion .emoji:hover {
 }
 .budgie-menu list button {
   padding: 2px 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 .budgie-menu list:first-child {
   padding-top: 4px;
@@ -6467,50 +6469,63 @@ frame.raven-frame > border {
   border: none;
 }
 
-.bottom revealer > .workspace-item grid {
-  background-color: rgba(77, 68, 68, 0.2);
-  border-bottom: 2px solid rgba(77, 68, 68, 0.6);
-  margin-right: 2px;
+.workspace-popover frame.container {
+  padding: 0;
 }
-.bottom .workspace-item.current-workspace grid {
-  border-bottom: 2px solid #c74646;
+.workspace-popover .workspace-popover-button-box > button {
+  padding: 4px 6px;
+}
+
+.workspace-switcher .workspace-item grid {
+  background-color: rgba(77, 68, 68, 0.2);
+  color: #4D4444;
+}
+.workspace-switcher .workspace-item.current-workspace grid {
+  background-color: rgba(77, 68, 68, 0.4);
+  border-color: #c74646;
+}
+.workspace-switcher .workspace-layout {
+  background-color: transparent;
+}
+.bottom revealer > .workspace-item grid {
+  border-bottom: 2px solid rgba(77, 68, 68, 0.6);
 }
 
 .top revealer > .workspace-item grid {
-  background-color: rgba(77, 68, 68, 0.2);
   border-top: 2px solid rgba(77, 68, 68, 0.6);
-  margin-right: 2px;
-}
-.top .workspace-item.current-workspace grid {
-  border-top: 2px solid #c74646;
 }
 
 .left revealer > .workspace-item grid {
-  background-color: rgba(77, 68, 68, 0.2);
   border-left: 2px solid rgba(77, 68, 68, 0.6);
-  margin-right: 2px;
-}
-.left .workspace-item.current-workspace grid {
-  border-left: 2px solid #c74646;
 }
 
 .right revealer > .workspace-item grid {
-  background-color: rgba(77, 68, 68, 0.2);
   border-right: 2px solid rgba(77, 68, 68, 0.6);
-  margin-right: 2px;
-}
-.right .workspace-item.current-workspace grid {
-  border-right: 2px solid #c74646;
 }
 
-.budgie-panel.transparent .workspace-switcher {
-  background: image(rgba(180, 167, 167, 0.6));
+.workspace-switcher label.workspace-more-label {
+  padding: 0;
+  margin: 0;
+}
+.workspace-switcher button.workspace-icon-button {
+  padding: 0;
+  border-color: transparent;
+  background: transparent;
+}
+
+.transparent .workspace-switcher .workspace-layout,
+.transparent .workspace-switcher .workspace-item grid {
+  background-color: transparent;
+  padding: 0;
+}
+.transparent .workspace-switcher .workspace-item.current-workspace grid {
+  background-color: rgba(77, 68, 68, 0.04);
 }
 
 .budgie-popover {
-  box-shadow: 0 0 0 1px #9f8f8f;
-  border-color: transparent;
-  border-radius: 8px;
+  border: 1px solid #b8acac;
+  border-radius: 9px;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.22), 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.22);
 }
 .budgie-popover .linked button {
   color: #4D4444;
