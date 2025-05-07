@@ -6215,6 +6215,9 @@ popover.emoji-completion .emoji:hover {
   background: #474242;
 }
 
+/******************
+* Budgie Desktop *
+******************/
 .budgie-container {
   background-color: transparent;
   border: none;
@@ -6223,6 +6226,9 @@ popover.emoji-completion .emoji:hover {
   background: transparent;
 }
 
+/**************
+* Budgie Menu *
+***************/
 .budgie-menu entry.search {
   box-shadow: inset 0 -2px 0 0 #be3b39;
   border-radius: 8px 8px 0 0;
@@ -6278,6 +6284,9 @@ popover.emoji-completion .emoji:hover {
   margin-bottom: 2px;
 }
 
+/***************
+* Budgie Raven * 2.0.1.0
+***************/
 .raven-background,
 .raven-header,
 .raven,
@@ -6354,6 +6363,9 @@ frame.raven-frame > border {
   background-color: transparent;
 }
 
+/***************
+* Budgie Panel *
+****************/
 .budgie-panel {
   color: #B5AAAA;
   background: image(black);
@@ -6444,6 +6456,9 @@ frame.raven-frame > border {
   border: none;
 }
 
+/****************************
+* Budgie Workspace switcher * 2.0.2.0
+****************************/
 .workspace-popover frame.container {
   padding: 0;
 }
@@ -6497,6 +6512,9 @@ frame.raven-frame > border {
   background-color: rgba(181, 170, 170, 0.04);
 }
 
+/*****************
+* Budgie Popover *
+******************/
 .budgie-popover {
   border: 1px solid #302c2c;
   border-radius: 9px;
@@ -6568,6 +6586,9 @@ frame.raven-frame > border {
   border-radius: 8px 8px 0 0;
 }
 
+/*********************
+* Budgie run dialog *
+*********************/
 .budgie-run-dialog {
   border-radius: 8px;
 }
@@ -6580,8 +6601,46 @@ frame.raven-frame > border {
   padding-bottom: 3px;
 }
 
+/*******************************
+* Budgie Night Light Indicator *
+********************************/
 .night-light-indicator .container {
   padding: 4px 6px;
+}
+
+/**********************
+* Budgie Notification *
+***********************/
+.budgie-notification-window button.close {
+  margin-top: 7px;
+  margin-right: 2px;
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: #201d1d;
+  border-bottom-color: #0a0a0a;
+  background-image: linear-gradient(to top, #373434 2px, #3a3636);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8243137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8243137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.budgie-notification-window button.close:hover {
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: #201d1d;
+  border-bottom-color: #0a0a0a;
+  background-image: linear-gradient(to bottom left, #423e3e, #433d3d, #443c3c);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.budgie-notification-window button.close:active {
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: #000000;
+  background-image: image(#222020);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
 }
 
 .nemo-window paned treeview.view {
