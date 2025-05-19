@@ -7176,14 +7176,17 @@ event.slanted-end label, event.slanted-end {
   border-color: #a79999;
   transition: 200ms ease-out;
 }
-.caja-navigation-window .caja-notebook .frame {
-  border-width: 0 0 1px;
-}
 .caja-navigation-window .caja-side-pane .frame {
   border-width: 1px 0 0;
 }
 .caja-navigation-window .caja-notebook {
   border-top: 1px solid #9f8f8f;
+}
+.caja-navigation-window .caja-notebook .frame {
+  border-width: 0 0 1px;
+}
+.caja-navigation-window .caja-notebook treeview.view:selected, .caja-navigation-window .caja-notebook treeview.view:selected:backdrop, .caja-navigation-window .caja-notebook treeview.view:focus, .caja-navigation-window .caja-notebook treeview.view:focus:backdrop {
+  border-color: #c74646;
 }
 .caja-navigation-window toolbar.horizontal.primary-toolbar {
   border-bottom: 1px solid #9f8f8f;

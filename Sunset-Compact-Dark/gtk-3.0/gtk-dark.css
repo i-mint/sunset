@@ -7145,14 +7145,17 @@ event.slanted-end label, event.slanted-end {
   border-color: #252222;
   transition: 200ms ease-out;
 }
-.caja-navigation-window .caja-notebook .frame {
-  border-width: 0 0 1px;
-}
 .caja-navigation-window .caja-side-pane .frame {
   border-width: 1px 0 0;
 }
 .caja-navigation-window .caja-notebook {
   border-top: 1px solid #201d1d;
+}
+.caja-navigation-window .caja-notebook .frame {
+  border-width: 0 0 1px;
+}
+.caja-navigation-window .caja-notebook treeview.view:selected, .caja-navigation-window .caja-notebook treeview.view:selected:backdrop, .caja-navigation-window .caja-notebook treeview.view:focus, .caja-navigation-window .caja-notebook treeview.view:focus:backdrop {
+  border-color: #be3b39;
 }
 .caja-navigation-window toolbar.horizontal.primary-toolbar {
   border-bottom: 1px solid #201d1d;
