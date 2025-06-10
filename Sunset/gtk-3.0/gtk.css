@@ -2836,8 +2836,7 @@ treeview.view:selected:focus, treeview.view:selected {
   border-radius: 0;
 }
 treeview.view:selected:backdrop, treeview.view:selected {
-  border-left-color: #e3a3a3;
-  border-top-color: rgba(77, 68, 68, 0.1);
+  border-color: transparent;
 }
 treeview.view:disabled {
   color: #8b8282;
