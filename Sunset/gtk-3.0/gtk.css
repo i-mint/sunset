@@ -3010,8 +3010,12 @@ menubar > menuitem menu:dir(rtl), menubar > menuitem menu:dir(ltr),
 }
 menubar > menuitem:hover,
 .menubar > menuitem:hover {
-  box-shadow: inset 0 -3px #c74646;
-  color: #a73333;
+  color: #ffffff;
+  background-color: #c74646;
+}
+menubar > menuitem:hover label,
+.menubar > menuitem:hover label {
+  color: inherit;
 }
 menubar > menuitem:disabled,
 .menubar > menuitem:disabled {
