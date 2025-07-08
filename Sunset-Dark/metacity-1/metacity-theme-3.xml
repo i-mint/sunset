@@ -4,7 +4,7 @@
         <name>Sunset-Dark</name>
         <author>auoi</author>
         <copyright>Intel, Red Hat, Lapo Calamandrei - Edit by auoi</copyright>
-        <date>2024</date>
+        <date>2025</date>
         <description>
             Sunset-Dark Metacity theme base on Adwaita "Default GNOME 3 window theme"
         </description>
@@ -13,14 +13,14 @@
     <!-- meaningfull constants -->
     <constant name="C_border_focused" value="#0a0a0a" />
     <constant name="C_border_unfocused" value="#111010" />
-    <constant name="C_titlebar_focused_hilight" value="#300f0f" />
+    <constant name="C_titlebar_focused_hilight" value="#270c0c" />
     <constant name="C_titlebar_unfocused" value="#2b1c1c" />
     <constant name="C_title_focused" value="#B5AAAA" />
-    <constant name="C_title_unfocused" value="#5c4a4a" />
+    <constant name="C_title_unfocused" value="#484444" />
 
     <!-- color of the button icons -->
     <constant name="C_icons_focused" value="#B5AAAA"/>
-    <constant name="C_icons_unfocused" value="#5c4a4a" />
+    <constant name="C_icons_unfocused" value="#484444" />
     <constant name="D_icons_unfocused_offset" value="2" /> <!-- offset of the unfocused icons -->
     <constant name="D_icons_shrink" value="1" /> <!-- increasing this value makes the icons in buttons smaller -->
     <constant name="D_icons_grow" value="0" /> <!-- increasing this value makes the icons in buttons bigger -->
@@ -31,9 +31,9 @@
     <constant name="C_icons_maximize" value="#47c43a"/>
 
     <!-- background button -->
-    <constant name="C_button_normal" value="#300f0f"/>
-    <constant name="C_button_prelight" value="#260c0b"/>
-    <constant name="C_border_prelight" value="#010000"/>
+    <constant name="C_button_normal" value="#270c0c"/>
+    <constant name="C_button_prelight" value="#2d2727"/>
+    <constant name="C_border_prelight" value="#000000"/>
     <constant name="C_button_pressed" value="#000000"/>
     <constant name="C_border_pressed" value="#000000"/>
 

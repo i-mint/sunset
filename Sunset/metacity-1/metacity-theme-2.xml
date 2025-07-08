@@ -4,7 +4,7 @@
         <name>Sunset</name>
         <author>auoi</author>
         <copyright>Intel, Red Hat, Lapo Calamandrei - Edit by auoi</copyright>
-        <date>2024</date>
+        <date>2025</date>
         <description>
             Sunset Metacity theme base on Adwaita "Default GNOME 3 window theme"
         </description>
@@ -32,10 +32,10 @@
 
     <!-- background button -->
     <constant name="C_button_normal" value="#300f0f"/>
-    <constant name="C_button_prelight" value="#260c0b"/>
+    <constant name="C_button_prelight" value="#472e2e"/>
     <constant name="C_border_prelight" value="#010000"/>
     <constant name="C_button_pressed" value="#000000"/>
-    <constant name="C_border_pressed" value="#000000"/>
+    <constant name="C_border_pressed" value="#1d0909"/>
 
     <!-- geometries -->
     <frame_geometry name="normal" title_scale="medium" rounded_top_left="4" rounded_top_right="4">
