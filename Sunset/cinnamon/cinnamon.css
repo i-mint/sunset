@@ -219,7 +219,7 @@ stage {
   -slider-active-border-color: transparent;
   -slider-border-width: 1px;
   -slider-handle-radius: 8.5px;
-  color: #e1dbdb;
+  color: #4D4444;
 }
 .popup-slider-menu-item:hover, .slider:hover {
   background-color: #bdb2b2;
@@ -844,7 +844,7 @@ StScrollBar StButton#hhandle:active {
 .dialog {
   background-color: #c9c0c0;
   color: #4D4444;
-  border-radius: 18px;
+  border-radius: 6px;
   border: 1px solid #9f8f8f;
   padding: 18px;
 }
@@ -1039,11 +1039,11 @@ StScrollBar StButton#hhandle:active {
   padding: 6px 9px;
   spacing: 4px;
   border: 1px solid #9f8f8f;
-  background-color: #393939;
+  background-color: #c9c0c0;
   -cinnamon-caption-spacing: 6px;
 }
 .window-caption:focus {
-  background-color: #656565;
+  background-color: #b4a7a7;
 }
 
 #overview {
@@ -1094,7 +1094,7 @@ StScrollBar StButton#hhandle:active {
   background-gradient-start: #dad2d2;
   background-gradient-end: #cdbcbc;
   padding: 6px;
-  border-radius: 16px;
+  border-radius: 6px;
   border: 1px solid #9f8f8f;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }

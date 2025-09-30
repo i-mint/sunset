@@ -844,7 +844,7 @@ StScrollBar StButton#hhandle:active {
 .dialog {
   background-color: #3a3636;
   color: #B5AAAA;
-  border-radius: 18px;
+  border-radius: 6px;
   border: 1px solid #201d1d;
   padding: 18px;
 }
@@ -1039,11 +1039,11 @@ StScrollBar StButton#hhandle:active {
   padding: 6px 9px;
   spacing: 4px;
   border: 1px solid #201d1d;
-  background-color: #393939;
+  background-color: #3a3636;
   -cinnamon-caption-spacing: 6px;
 }
 .window-caption:focus {
-  background-color: #656565;
+  background-color: #4a4545;
 }
 
 #overview {
@@ -1094,7 +1094,7 @@ StScrollBar StButton#hhandle:active {
   background-gradient-start: #423e3e;
   background-gradient-end: #443c3c;
   padding: 6px;
-  border-radius: 16px;
+  border-radius: 6px;
   border: 1px solid #201d1d;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
