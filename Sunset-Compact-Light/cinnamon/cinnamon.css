@@ -1012,8 +1012,8 @@ StScrollBar StButton#hhandle:active {
   border: 1px solid #9f8f8f;
 }
 .expo-workspace-thumbnail-frame#active {
-  border-color: #ffffff;
-  border-width: 2px;
+  border-color: #c74646;
+  border-width: 3px;
 }
 .expo-workspaces-name-entry {
   height: 1.5em;
