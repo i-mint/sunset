@@ -124,40 +124,40 @@ stage {
 }
 
 .dialog .dialog-button:default {
-  color: #B5AAAA;
+  color: #ffffff;
   background-color: #ae3634;
   border: 1px solid #201d1d;
 }
 .dialog .dialog-button:hover:default {
-  color: #B5AAAA;
-  background-color: #443c3c;
+  color: #ffffff;
+  background-color: #c94e4c;
 }
 .dialog .dialog-button:active:default {
-  color: #B5AAAA;
-  background-color: #9a302e;
+  color: #ffffff;
+  background-color: #ae3634;
 }
 .dialog .dialog-button:checked:default {
-  color: #B5AAAA;
+  color: #ffffff;
   background-color: #be3b39;
 }
 .dialog .dialog-button:insensitive:default {
   border-color: #201d1d;
-  color: rgba(181, 170, 170, 0.5);
-  background-color: #3e3a3a;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(202, 95, 93, 0.8);
 }
 
 .dialog .dialog-button:destructive-action {
-  color: #B5AAAA;
-  background-color: #ae1924;
+  color: #ffffff;
+  background-color: #a0131a;
   border: 1px solid #201d1d;
 }
 .dialog .dialog-button:hover:destructive-action {
-  color: #B5AAAA;
-  background-color: #443c3c;
+  color: #ffffff;
+  background-color: #ce1921;
 }
 .dialog .dialog-button:active:destructive-action {
-  color: #B5AAAA;
-  background-color: #981620;
+  color: #ffffff;
+  background-color: #a0131a;
 }
 .dialog .dialog-button:checked:destructive-action {
   color: #B5AAAA;
@@ -165,8 +165,8 @@ stage {
 }
 .dialog .dialog-button:insensitive:destructive-action {
   border-color: #201d1d;
-  color: rgba(181, 170, 170, 0.5);
-  background-color: #3e3a3a;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(192, 64, 70, 0.8);
 }
 
 .popup-combobox-item, .popup-sub-menu .popup-menu-item, .popup-menu-item {
@@ -939,6 +939,7 @@ StScrollBar StButton#hhandle:active {
 }
 .prompt-dialog-password-entry {
   width: 20em;
+  border-radius: 16px 0 16px 0;
 }
 .prompt-dialog-password-layout {
   spacing: 8px;
