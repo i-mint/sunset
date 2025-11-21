@@ -1137,6 +1137,9 @@ StScrollBar StButton#hhandle:active {
 .popup-sub-menu .popup-menu-item:only-child, .popup-sub-menu .popup-menu-item:first-child:last-child {
   border-radius: 8px;
 }
+.popup-sub-menu .popup-menu-item:insensitive {
+  color: #706969;
+}
 .popup-sub-menu StScrollBar {
   padding: 4px;
 }
