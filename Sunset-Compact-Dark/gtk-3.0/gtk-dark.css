@@ -33,7 +33,7 @@ entry:focus image {
   }
 }
 
-headerbar.windowhandle viewswitcher > box > button:checked, .titlebar:not(headerbar) stackswitcher button:checked,
+headerbar viewswitcher button:checked, .titlebar:not(headerbar) stackswitcher button:checked,
 .titlebar:not(headerbar) button.toggle:checked,
 headerbar stackswitcher button:checked,
 headerbar button.toggle:checked {
@@ -1575,7 +1575,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-radius: 0;
 }
 
-.path-buttons-box button:first-child, .path-buttons-box, headerbar.windowhandle viewswitcher > box > button:first-child, .linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .budgie-popover .linked button:first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
+headerbar viewswitcher button:first-child, viewswitcher button:first-child, .path-buttons-box button:first-child, .path-buttons-box, .linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .budgie-popover .linked button:first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
 .linked:not(.vertical) > entry:first-child,
 .inline-toolbar button:first-child,
 .linked > button:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
@@ -1589,7 +1589,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-bottom-right-radius: 0;
 }
 
-.nautilus-path-bar.linked > button.popup.toggle, headerbar.windowhandle viewswitcher > box > button:last-child, .linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .budgie-popover .linked button:last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
+headerbar viewswitcher button:last-child, viewswitcher button:last-child, .nautilus-path-bar.linked > button.popup.toggle, .linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .budgie-popover .linked button:last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
 .linked:not(.vertical) > entry:last-child,
 .inline-toolbar button:last-child,
 .linked > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
@@ -2583,48 +2583,6 @@ headerbar switch:backdrop:disabled slider {
   background-image: image(#3e3a3a);
   text-shadow: none;
   -gtk-icon-shadow: none;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-}
-headerbar.windowhandle viewswitcher > box > button {
-  margin: 0;
-  padding: 0;
-  min-width: 120px;
-  box-shadow: none;
-  border-radius: 0;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box {
-  padding: 0 14px;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box.wide {
-  font-size: 1em;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box.narrow {
-  font-size: 0.75em;
-}
-headerbar.windowhandle viewswitcher > box > button:checked:hover {
-  background: image(#be3b39);
-}
-headerbar.windowhandle viewswitcher > box > button, headerbar.windowhandle viewswitcher > box > button:hover, headerbar.windowhandle viewswitcher > box > button:active, headerbar.windowhandle viewswitcher > box > button:checked {
-  border-bottom: none;
-  border-top: none;
-}
-headerbar.windowhandle viewswitcher > box > button:not(:last-child), headerbar.windowhandle viewswitcher > box > button:not(:last-child):hover, headerbar.windowhandle viewswitcher > box > button:not(:last-child):active, headerbar.windowhandle viewswitcher > box > button:not(:last-child):checked {
-  border-right: none;
-}
-headerbar.windowhandle viewswitcher > box > button:checked {
-  color: #ffffff;
-  outline-color: rgba(255, 255, 255, 0.3);
-  border-color: black;
-  background-image: image(#be3b39);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-  text-shadow: none;
-  -gtk-icon-shadow: none;
-  border-top-color: black;
-}
-headerbar.windowhandle viewswitcher > box > button:checked:backdrop {
-  color: #c7a7a7;
-  border-color: black;
-  background-image: image(#722322);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 headerbar.titlebar headerbar:not(.titlebar) {
@@ -7538,6 +7496,262 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration,
 window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration-overlay {
   border-radius: 8px;
+}
+
+viewswitcher {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+viewswitcher button {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 1rem;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 0;
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: #201d1d;
+  border-bottom-color: #0a0a0a;
+  background-image: linear-gradient(to top, #373434 2px, #3a3636);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8243137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8243137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+viewswitcher button:hover {
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: #201d1d;
+  border-bottom-color: #0a0a0a;
+  background-image: linear-gradient(to bottom left, #423e3e, #433d3d, #443c3c);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7763137255);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+  -gtk-icon-effect: highlight;
+}
+viewswitcher button:active {
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: #000000;
+  background-image: image(#222020);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  transition-duration: 50ms;
+}
+viewswitcher button:checked {
+  color: #ffffff;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: black;
+  background-image: image(#be3b39);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  transition-duration: 50ms;
+}
+viewswitcher button:backdrop {
+  color: #9c9393;
+  border-color: #252222;
+  background-image: image(#3a3636);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  transition: 200ms ease-out;
+  -gtk-icon-effect: none;
+}
+viewswitcher button:backdrop:active, viewswitcher button:backdrop:checked {
+  color: #e5d7d7;
+  border-color: black;
+  background-image: image(#7f3736);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+viewswitcher button:backdrop:disabled {
+  color: #625b5b;
+  border-color: #252222;
+  background-image: image(#3e3a3a);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+viewswitcher button:backdrop:disabled:active, viewswitcher button:backdrop:disabled:checked {
+  color: #625b5b;
+  border-color: #252222;
+  background-image: image(#312e2e);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+viewswitcher button:disabled {
+  color: #787070;
+  border-color: #201d1d;
+  background-image: image(#3e3a3a);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+viewswitcher button:disabled:active, viewswitcher button:disabled:checked {
+  color: #787070;
+  border-color: #201d1d;
+  background-image: image(#2c2929);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+viewswitcher button:not(:only-child):not(:last-child) {
+  border-right-width: 0px;
+}
+viewswitcher button:not(only-child):first-child:not(:checked):hover, viewswitcher button:not(:checked):hover + button:not(:checked):not(:hover), viewswitcher button:not(:checked):not(:hover) + button:not(:checked):hover {
+  border-left-color: #201d1d;
+}
+viewswitcher button:not(only-child):last-child:not(:checked):hover {
+  border-right-color: #201d1d;
+}
+viewswitcher button:not(only-child):first-child:hover, viewswitcher button:hover + button:not(:checked):not(:hover), viewswitcher button:not(:hover) + button:not(:checked):hover {
+  border-left-color: #201d1d;
+}
+viewswitcher button:not(only-child):last-child:hover {
+  border-right-color: #201d1d;
+}
+headerbar viewswitcher button {
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: black;
+  border-bottom-color: black;
+  background-image: linear-gradient(to top, #1d0909 2px, #210a0a);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.9331764706);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.9331764706);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+headerbar viewswitcher button:hover {
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: black;
+  border-bottom-color: black;
+  background-image: linear-gradient(to bottom left, #2d2727, #2e2626, #322222);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8851764706);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8851764706);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+headerbar viewswitcher button:active {
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: black;
+  background-image: image(black);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+headerbar viewswitcher button:checked {
+  color: #ffffff;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: black;
+  background-image: image(#be3b39);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  border-top-color: black;
+}
+headerbar viewswitcher button:backdrop {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  color: #484444;
+}
+headerbar viewswitcher button:checked:backdrop {
+  color: #c7a7a7;
+  border-color: black;
+  background-image: image(#722322);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar viewswitcher button:disabled {
+  color: #686262;
+  border-color: black;
+  background-image: image(#1b1a1a);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar viewswitcher button:disabled:backdrop {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  color: #484444;
+}
+headerbar viewswitcher button > stack {
+  margin-top: -4px;
+  margin-bottom: -4px;
+}
+headerbar viewswitcher button > stack > box.narrow > stack {
+  margin-top: -7px;
+}
+headerbar viewswitcher button:not(:only-child):not(:last-child) {
+  border-right-width: 0px;
+}
+headerbar viewswitcher button:not(only-child):first-child:not(:checked):hover, headerbar viewswitcher button:not(:checked):hover + button:not(:checked):not(:hover), headerbar viewswitcher button:not(:checked):not(:hover) + button:not(:checked):hover {
+  border-left-color: black;
+}
+headerbar viewswitcher button:not(only-child):last-child:not(:checked):hover {
+  border-right-color: black;
+}
+headerbar viewswitcher button:not(only-child):first-child:hover, headerbar viewswitcher button:hover + button:not(:checked):not(:hover), headerbar viewswitcher button:not(:hover) + button:not(:checked):hover {
+  border-left-color: black;
+}
+headerbar viewswitcher button:not(only-child):last-child:hover {
+  border-right-color: black;
+}
+viewswitcher button > stack > box {
+  padding: 0;
+}
+viewswitcher button > stack > box.narrow {
+  font-size: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 4px;
+}
+viewswitcher button > stack > box.narrow image,
+viewswitcher button > stack > box.narrow label {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+viewswitcher button > stack > box.wide {
+  padding: 0px 12px;
+}
+viewswitcher button > stack > box.wide image:dir(ltr) {
+  padding-left: 7px;
+}
+viewswitcher button > stack > box.wide image:dir(rtl) {
+  padding-right: 7px;
+}
+viewswitcher button > stack > box.wide label:dir(ltr) {
+  padding-right: 7px;
+}
+viewswitcher button > stack > box.wide label:dir(rtl) {
+  padding-left: 7px;
+}
+viewswitcher button > stack > box label.active {
+  font-weight: bold;
+}
+viewswitcher button.needs-attention:active > stack > box label, viewswitcher button.needs-attention:checked > stack > box label {
+  animation: none;
+  background-image: none;
+}
+viewswitcher button.needs-attention > stack > box label {
+  animation: needs_attention 150ms ease-in;
+  background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#be3b39), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.5, to(#ffffff), to(transparent));
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  background-position: right 0px, right 1px;
+}
+viewswitcher button.needs-attention > stack > box label:backdrop {
+  background-size: 6px 6px, 0 0;
+}
+viewswitcher button.needs-attention > stack > box label:dir(rtl) {
+  background-position: left 0px, left 1px;
+}
+
+viewswitcherbar actionbar > revealer > box {
+  padding: 0;
 }
 
 /* GTK NAMED COLORS
