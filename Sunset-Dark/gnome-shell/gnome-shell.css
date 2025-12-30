@@ -1727,7 +1727,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .grid-search-results {
-  spacing: 36px;
+  spacing: 30px;
 }
 
 .search-provider-icon .list-search-provider-content {
