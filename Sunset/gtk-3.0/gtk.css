@@ -7164,6 +7164,76 @@ event.slanted-end label, event.slanted-end {
   background-color: #e1dada;
   box-shadow: none;
 }
+.thunar toolbar > toolitem > button.popup.toggle {
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: #010000;
+  border-bottom-color: black;
+  background-image: linear-gradient(to top, #190807 2px, #290d0c);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.9171764706);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.9171764706);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.thunar toolbar > toolitem > button.popup.toggle:hover {
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: #010000;
+  border-bottom-color: black;
+  background-image: linear-gradient(to bottom left, #472e2e, #4a2b2b, #4e2727);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8691764706);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8691764706);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.thunar toolbar > toolitem > button.popup.toggle:active {
+  color: #B5AAAA;
+  outline-color: rgba(181, 170, 170, 0.3);
+  border-color: rgba(0, 0, 0, 0.4);
+  background-image: image(black);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.thunar toolbar > toolitem > button.popup.toggle:checked {
+  color: #ffffff;
+  outline-color: rgba(77, 68, 68, 0.3);
+  border-color: #1a1a1a;
+  background-image: image(#c74646);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.thunar toolbar > toolitem > button.popup.toggle:checked:backdrop {
+  color: #ceabab;
+  border-color: rgba(0, 0, 0, 0.4);
+  background-image: image(#852e2e);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+.thunar toolbar > toolitem > button.popup.toggle:backdrop {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  color: #5c4a4a;
+}
+.thunar toolbar > toolitem > button.popup.toggle:disabled {
+  color: #766666;
+  border-color: black;
+  background-image: image(#372222);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+.thunar toolbar > toolitem > button.popup.toggle:disabled:backdrop {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  color: #5c4a4a;
+}
 .thunar menubar {
   background-color: #300f0f;
   color: #B5AAAA;
